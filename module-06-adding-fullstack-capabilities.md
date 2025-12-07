@@ -1050,7 +1050,7 @@ This mini-project taught you:
 - Link comments to posts using post ID
 - Test adding and viewing comments
 
-**Check your solution:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-6-challenge-1)
+**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-6-challenge-1)
 
 ---
 
@@ -1070,7 +1070,7 @@ This mini-project taught you:
 - Store API key in secrets manager
 - Use Resend to send email when comment is created
 
-**Check your solution:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-6-challenge-2)
+**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-6-challenge-2)
 
 ---
 
@@ -1091,7 +1091,7 @@ This mini-project taught you:
 - Add authorization checks
 - Test that users can't access others' profiles
 
-**Check your solution:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-6-challenge-3)
+**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-6-challenge-3)
 
 ---
 
@@ -1111,7 +1111,7 @@ This mini-project taught you:
 - Add rate limiting to prevent spam
 - Test the complete flow
 
-**Check your solution:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-6-challenge-4)
+**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-6-challenge-4)
 
 ---
 

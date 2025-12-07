@@ -545,7 +545,7 @@ Add some features
 - Specify design preferences
 - Include validation requirements
 
-**Check your answers:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-5-challenge-1)
+**Check your answers:** See [Challenge Solutions](supplement-challenge-solutions.md#module-5-challenge-1)
 
 ---
 
@@ -567,7 +567,7 @@ Create a user dashboard
 - You want it to be clean and efficient
 - You're not sure about all the features yet
 
-**Check your answer:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-5-challenge-2)
+**Check your answer:** See [Challenge Solutions](supplement-challenge-solutions.md#module-5-challenge-2)
 
 ---
 
@@ -584,7 +584,7 @@ Build a blog
 **Iteration 2:** Add design preferences and specific features  
 **Iteration 3:** Add technical requirements and edge cases
 
-**Check your answer:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-5-challenge-3)
+**Check your answer:** See [Challenge Solutions](supplement-challenge-solutions.md#module-5-challenge-3)
 
 ---
 
@@ -603,7 +603,7 @@ Build a blog
 - Target: Couples, special occasions
 - Needs: Menu, reservations, location, hours
 
-**Check your answer:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-5-challenge-4)
+**Check your answer:** See [Challenge Solutions](supplement-challenge-solutions.md#module-5-challenge-4)
 
 ---
 

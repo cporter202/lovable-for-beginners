@@ -118,7 +118,7 @@ After Chat Mode helps you plan, you might see a button that says **"Implement th
 - **What this means:** Each question or message you send costs 1 credit
 - **Is it worth it?** Yes! Getting help and planning saves time and prevents mistakes
 
-**📊 For complete pricing information:** See the [Pricing and Plans Guide](../PRICING-AND-PLANS.md) for details on credits, plans, and how to monitor usage.
+**📊 For complete pricing information:** See the [Pricing and Plans Guide](supplement-pricing-and-plans.md) for details on credits, plans, and how to monitor usage.
 
 **💡 Beginner Tip:** Use Chat Mode liberally when you're learning. It's like having a tutor who never gets tired of your questions!
 
@@ -535,7 +535,7 @@ Change it back to how it was before
 - **What this means:** Simple tasks might cost less than 1 credit, complex tasks might cost more
 - **Why it varies:** More complex tasks require more AI processing
 
-**📊 For complete pricing information:** See the [Pricing and Plans Guide](../PRICING-AND-PLANS.md) for details on credits, plans, and how to monitor usage.
+**📊 For complete pricing information:** See the [Pricing and Plans Guide](supplement-pricing-and-plans.md) for details on credits, plans, and how to monitor usage.
 
 **💡 Beginner Tip:** Don't worry about credits too much when starting. Focus on learning - you'll get a feel for what costs what as you use Lovable more. Most simple tasks cost very little!
 
@@ -808,7 +808,7 @@ Let's practice using both modes!
 - Review the plan before implementing
 - Test after building
 
-**Check your solution:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-3-challenge-1)
+**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-3-challenge-1)
 
 ---
 
@@ -832,7 +832,7 @@ Let's practice using both modes!
 - Ask for adjustments if needed
 - Use clear, specific instructions
 
-**Check your solution:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-3-challenge-2)
+**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-3-challenge-2)
 
 ---
 
@@ -855,7 +855,7 @@ Let's practice using both modes!
 - Test thoroughly
 - Use History if needed
 
-**Check your solution:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-3-challenge-3)
+**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-3-challenge-3)
 
 ---
 

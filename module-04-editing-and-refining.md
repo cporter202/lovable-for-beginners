@@ -536,7 +536,7 @@ Let's practice all these editing techniques!
 - Add knowledge in Settings → Custom Knowledge
 - Reference the knowledge in your next prompt
 
-**Check your solution:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-4-challenge-1)
+**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-4-challenge-1)
 
 ---
 
@@ -565,7 +565,7 @@ Let's practice all these editing techniques!
 - Don't try to do everything at once
 - Use both Visual Edits and prompts
 
-**Check your solution:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-4-challenge-2)
+**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-4-challenge-2)
 
 ---
 
@@ -588,7 +588,7 @@ Let's practice all these editing techniques!
 - Keep design consistent
 - Use custom knowledge for brand consistency
 
-**Check your solution:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-4-challenge-3)
+**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-4-challenge-3)
 
 ---
 

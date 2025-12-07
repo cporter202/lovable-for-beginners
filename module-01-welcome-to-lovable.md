@@ -267,7 +267,7 @@ Before moving to Module 2, make sure you can:
 **A:** No! That's the whole point of Lovable. You describe what you want, and it builds it for you.
 
 ### Q: Is Lovable free?
-**A:** Lovable has a free tier that lets you try it out. Some features require credits, but you'll get some free credits to start with. You can build almost everything on the free plan using prompts! See the [Pricing and Plans Guide](../PRICING-AND-PLANS.md) for complete details.
+**A:** Lovable has a free tier that lets you try it out. Some features require credits, but you'll get some free credits to start with. You can build almost everything on the free plan using prompts! See the [Pricing and Plans Guide](supplement-pricing-and-plans.md) for complete details.
 
 ### Q: What if I make a mistake?
 **A:** No problem! You can always ask Lovable to change things, or you can start over. Nothing is permanent until you publish.

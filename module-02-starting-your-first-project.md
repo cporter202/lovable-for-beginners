@@ -407,7 +407,7 @@ Here's a simple guide:
 - Include design preferences
 - Mention target audience
 
-**Check your solution:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-2-challenge-1)
+**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-2-challenge-1)
 
 ---
 
@@ -429,7 +429,7 @@ Here's a simple guide:
 - Make at least 5 significant changes
 - Test each change as you go
 
-**Check your solution:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-2-challenge-2)
+**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-2-challenge-2)
 
 ---
 
@@ -451,7 +451,7 @@ Here's a simple guide:
 - Then add visual references
 - Finally, remix specific components
 
-**Check your solution:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-2-challenge-3)
+**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-2-challenge-3)
 
 ---
 

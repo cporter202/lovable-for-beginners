@@ -4,9 +4,15 @@
 
 **Your Complete Beginner's Course to Mastering Lovable Vibe Coding**
 
+> **💚 This course is 100% free!** You do not have to pay anything to view or learn from this course. All content is freely available for everyone.
+
 ![AI Powered](https://img.shields.io/badge/AI%20Powered-0066FF?style=for-the-badge&logoColor=ffffff)
 ![Beginner Friendly](https://img.shields.io/badge/Beginner%20Friendly-32CD32?style=for-the-badge&logoColor=ffffff)
 ![No Code Required](https://img.shields.io/badge/No%20Code%20Required-6A0DAD?style=for-the-badge&logoColor=ffffff)
+
+[![GitHub stars](https://img.shields.io/github/stars/cporter202/lovable-for-beginners?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=24292e&color=FFD700)](https://github.com/cporter202/lovable-for-beginners/stargazers)
+
+**⭐ If this course has been helpful for you, please consider starring the repo! It helps others discover this free resource and motivates continued improvements.**
 
 [![Lovable Platform](https://firebasestorage.googleapis.com/v0/b/facesift.firebasestorage.app/o/user_uploads%2F83EXwNWgaKe1BHmyd9ISw3HCEfi2%2F1765069752349-Screenshot%202025-12-06%20200858.png?alt=media&token=b4b0a8ea-e345-43ee-9da9-e9da54fb00b3)](https://lovable.dev?via=chris-porter)
 
@@ -14,17 +20,13 @@
 
 ---
 
-<div align="center">
-
 ## 🎯 What is Lovable?
 
-> **Lovable is an AI-powered platform that lets you create full-stack websites and applications by simply describing what you want in natural language. No coding experience required!**
+**Lovable is an AI-powered platform that lets you create full-stack websites and applications by simply describing what you want in natural language. No coding experience required!**
 
 Instead of writing code line by line, you chat with AI, and Lovable builds your app for you. It's like having a conversation with a developer who understands exactly what you mean.
 
 **[🚀 Get Started with Lovable →](https://lovable.dev?via=chris-porter)**
-
-</div>
 
 ---
 
@@ -445,7 +447,7 @@ After completing this course, you will:
 
 **Understanding what you can build on free vs. paid plans:**
 
-- **📊 [Pricing and Plans Guide](PRICING-AND-PLANS.md)** - Complete breakdown of free vs. paid features
+- **📊 [Pricing and Plans Guide](supplement-pricing-and-plans.md)** - Complete breakdown of free vs. paid features
 - **💳 [Official Pricing](https://lovable.dev/pricing?via=chris-porter)** - Current pricing and plan details
 - **💡 Key Point:** You can build almost everything on the free plan using prompts!
 
@@ -461,7 +463,7 @@ Each module includes hands-on challenges that get progressively harder:
 - **Advanced challenges** - Security, complex features, best practices
 - **Expert challenges** - Complete systems and production-ready features
 
-**📚 [Challenge Solutions](CHALLENGE-SOLUTIONS.md)** - Suggested solutions and hints for self-assessment
+**📚 [Challenge Solutions](supplement-challenge-solutions.md)** - Suggested solutions and hints for self-assessment
 
 **💡 Tip:** Try each challenge yourself first, then check the solutions to compare approaches!
 
@@ -470,8 +472,8 @@ Each module includes hands-on challenges that get progressively harder:
 ## 🤝 Need Help?
 
 - **📖 Documentation:** Check [docs.lovable.dev](https://docs.lovable.dev?via=chris-porter) for detailed guides
-- **🔧 Troubleshooting Guide:** [Common issues and solutions](TROUBLESHOOTING.md)
-- **⚡ Quick Reference:** [Cheat sheet for common tasks](QUICK-REFERENCE.md)
+- **🔧 Troubleshooting Guide:** [Common issues and solutions](supplement-troubleshooting.md)
+- **⚡ Quick Reference:** [Cheat sheet for common tasks](supplement-quick-reference.md)
 - **💬 Community Discord:** Ask questions and share your progress
 - **🆘 Support:** Reach out through Lovable's support channels
 - **🎥 Videos:** Watch tutorials on [lovable.dev/videos](https://lovable.dev/videos?via=chris-porter)
