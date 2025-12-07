@@ -4,6 +4,8 @@
 
 **Your Complete Beginner's Course to Mastering Lovable Vibe Coding**
 
+[![Lovable Platform](https://firebasestorage.googleapis.com/v0/b/facesift.firebasestorage.app/o/user_uploads%2F83EXwNWgaKe1BHmyd9ISw3HCEfi2%2F1765069752349-Screenshot%202025-12-06%20200858.png?alt=media&token=b4b0a8ea-e345-43ee-9da9-e9da54fb00b3)](https://lovable.dev?via=chris-porter)
+
 ![Lovable](https://img.shields.io/badge/Lovable-AI%20Powered-blue?style=flat-square&logo=lovable)
 ![Beginner Friendly](https://img.shields.io/badge/Beginner-Friendly-green?style=flat-square)
 ![No Code Required](https://img.shields.io/badge/No%20Code-Required-purple?style=flat-square)
@@ -11,6 +13,8 @@
 </div>
 
 ---
+
+<div align="center">
 
 ## 🎯 What is Lovable?
 
@@ -20,7 +24,11 @@ Instead of writing code line by line, you chat with AI, and Lovable builds your 
 
 **[🚀 Get Started with Lovable →](https://lovable.dev?via=chris-porter)**
 
+</div>
+
 ---
+
+<div align="center">
 
 ## 👥 Who is This Course For?
 
@@ -29,7 +37,11 @@ Instead of writing code line by line, you chat with AI, and Lovable builds your 
 - **🎨 Designers** - Turn designs into apps and showcase portfolios.
 - **📊 Marketers** - Create landing pages and marketing sites easily.
 
+</div>
+
 ---
+
+<div align="center">
 
 ## 🎓 What Will You Learn?
 
@@ -43,6 +55,8 @@ By the end of this course, you'll be able to:
 ✅ Understand Lovable's features and when to use them  
 ✅ Master prompt engineering for better results  
 ✅ Feel confident building your own projects  
+
+</div>
 
 ---
 
