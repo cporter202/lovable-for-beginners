@@ -4,11 +4,14 @@
 
 **Your Complete Beginner's Course to Mastering Lovable Vibe Coding**
 
-[![Lovable Platform](https://firebasestorage.googleapis.com/v0/b/facesift.firebasestorage.app/o/user_uploads%2F83EXwNWgaKe1BHmyd9ISw3HCEfi2%2F1765069752349-Screenshot%202025-12-06%20200858.png?alt=media&token=b4b0a8ea-e345-43ee-9da9-e9da54fb00b3)](https://lovable.dev?via=chris-porter)
+![Lovable](https://img.shields.io/badge/Lovable-424242?style=flat-square&labelColor=424242&color=ffffff)
+![AI Powered](https://img.shields.io/badge/AI%20Powered-0066FF?style=flat-square&labelColor=0066FF&color=ffffff)
+![Beginner](https://img.shields.io/badge/Beginner-424242?style=flat-square&labelColor=424242&color=ffffff)
+![Friendly](https://img.shields.io/badge/Friendly-32CD32?style=flat-square&labelColor=32CD32&color=ffffff)
+![No Code](https://img.shields.io/badge/No%20Code-424242?style=flat-square&labelColor=424242&color=ffffff)
+![Required](https://img.shields.io/badge/Required-6A0DAD?style=flat-square&labelColor=6A0DAD&color=ffffff)
 
-![Lovable](https://img.shields.io/badge/Lovable-AI%20Powered-blue?style=flat-square&logo=lovable)
-![Beginner Friendly](https://img.shields.io/badge/Beginner-Friendly-green?style=flat-square)
-![No Code Required](https://img.shields.io/badge/No%20Code-Required-purple?style=flat-square)
+[![Lovable Platform](https://firebasestorage.googleapis.com/v0/b/facesift.firebasestorage.app/o/user_uploads%2F83EXwNWgaKe1BHmyd9ISw3HCEfi2%2F1765069752349-Screenshot%202025-12-06%20200858.png?alt=media&token=b4b0a8ea-e345-43ee-9da9-e9da54fb00b3)](https://lovable.dev?via=chris-porter)
 
 </div>
 
@@ -28,8 +31,6 @@ Instead of writing code line by line, you chat with AI, and Lovable builds your 
 
 ---
 
-<div align="center">
-
 ## 👥 Who is This Course For?
 
 - **🎓 Complete Beginners** - Never coded before? Perfect! No technical background needed.
@@ -37,11 +38,7 @@ Instead of writing code line by line, you chat with AI, and Lovable builds your 
 - **🎨 Designers** - Turn designs into apps and showcase portfolios.
 - **📊 Marketers** - Create landing pages and marketing sites easily.
 
-</div>
-
 ---
-
-<div align="center">
 
 ## 🎓 What Will You Learn?
 
@@ -54,9 +51,7 @@ By the end of this course, you'll be able to:
 ✅ Build real-world projects from scratch  
 ✅ Understand Lovable's features and when to use them  
 ✅ Master prompt engineering for better results  
-✅ Feel confident building your own projects  
-
-</div>
+✅ Feel confident building your own projects
 
 ---
 
