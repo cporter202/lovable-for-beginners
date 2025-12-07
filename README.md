@@ -12,8 +12,6 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/cporter202/lovable-for-beginners?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=24292e&color=FFD700)](https://github.com/cporter202/lovable-for-beginners/stargazers)
 
-**⭐ If this course has been helpful for you, please consider starring the repo! It helps others discover this free resource and motivates continued improvements.**
-
 [![Lovable Platform](https://firebasestorage.googleapis.com/v0/b/facesift.firebasestorage.app/o/user_uploads%2F83EXwNWgaKe1BHmyd9ISw3HCEfi2%2F1765069752349-Screenshot%202025-12-06%20200858.png?alt=media&token=b4b0a8ea-e345-43ee-9da9-e9da54fb00b3)](https://lovable.dev?via=chris-porter)
 
 </div>
