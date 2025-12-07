@@ -1,20 +1,12 @@
-<div align="center">
+# ✨ Lovable for Beginners
 
-# ✨ Lovable for Beginners ✨
+**Your Complete Beginner's Course to Mastering Lovable Vibe Coding**
 
-### Your Complete Beginner's Course to Mastering Lovable Vibe Coding
-
-![Lovable](https://img.shields.io/badge/Lovable-AI%20Powered-blue?style=for-the-badge&logo=lovable)
-![Beginner Friendly](https://img.shields.io/badge/Beginner-Friendly-green?style=for-the-badge)
-![No Code Required](https://img.shields.io/badge/No%20Code-Required-purple?style=for-the-badge)
-
-**Transform from absolute beginner to confident Lovable developer**
-
-*A step-by-step learning hub designed for complete beginners*
+![Lovable](https://img.shields.io/badge/Lovable-AI%20Powered-blue?style=flat-square&logo=lovable)
+![Beginner Friendly](https://img.shields.io/badge/Beginner-Friendly-green?style=flat-square)
+![No Code Required](https://img.shields.io/badge/No%20Code-Required-purple?style=flat-square)
 
 ---
-
-</div>
 
 ## 🎯 What is Lovable?
 
@@ -22,70 +14,41 @@
 
 Instead of writing code line by line, you chat with AI, and Lovable builds your app for you. It's like having a conversation with a developer who understands exactly what you mean.
 
-<div align="center">
-
-### 🚀 **Start Building Today** 🚀
-
-**[Get Started with Lovable →](https://lovable.dev?via=chris-porter)**
-
-</div>
+**[🚀 Get Started with Lovable →](https://lovable.dev?via=chris-porter)**
 
 ---
 
 ## 👥 Who is This Course For?
 
-| 🎓 Complete Beginners | 💼 Entrepreneurs | 🎨 Designers | 📊 Marketers |
-|:---:|:---:|:---:|:---:|
-| Never coded before? Perfect! | Build MVPs quickly | Turn designs into apps | Create landing pages |
-| No technical background needed | Validate ideas fast | Prototype interactively | Build marketing sites |
-| Start from absolute zero | Launch products faster | Showcase portfolios | Capture leads easily |
+- **🎓 Complete Beginners** - Never coded before? Perfect! No technical background needed.
+- **💼 Entrepreneurs** - Build MVPs quickly and validate ideas fast.
+- **🎨 Designers** - Turn designs into apps and showcase portfolios.
+- **📊 Marketers** - Create landing pages and marketing sites easily.
 
 ---
 
 ## 🎓 What Will You Learn?
 
-<div align="center">
+By the end of this course, you'll be able to:
 
-### By the end of this course, you'll be able to:
-
-</div>
-
-<table>
-<tr>
-<td width="50%">
-
-✅ **Create full-stack applications** using just your words  
-✅ **Communicate effectively** with AI to build what you want  
-✅ **Add powerful features** like authentication, databases, and payments  
-✅ **Deploy applications** to the web  
-
-</td>
-<td width="50%">
-
-✅ **Build real-world projects** from scratch  
-✅ **Understand Lovable's features** and when to use them  
-✅ **Master prompt engineering** for better results  
-✅ **Feel confident** building your own projects  
-
-</td>
-</tr>
-</table>
+✅ Create full-stack applications using just your words  
+✅ Communicate effectively with AI to build what you want  
+✅ Add powerful features like authentication, databases, and payments  
+✅ Deploy applications to the web  
+✅ Build real-world projects from scratch  
+✅ Understand Lovable's features and when to use them  
+✅ Master prompt engineering for better results  
+✅ Feel confident building your own projects  
 
 ---
 
 ## 📚 Course Structure
 
-<div align="center">
-
-### **9 Comprehensive Modules** | **Self-Paced Learning** | **Project-Based**
-
-</div>
+**9 Comprehensive Modules | Self-Paced Learning | Project-Based**
 
 ---
 
-### 📖 **Module 1: Welcome to Lovable - Your First Steps**
-
-<div style="background-color: #f0f9ff; padding: 20px; border-radius: 10px; border-left: 4px solid #3b82f6;">
+### 📖 Module 1: Welcome to Lovable - Your First Steps
 
 **🎯 Goal:** Get comfortable with Lovable and understand what it can do
 
@@ -98,13 +61,9 @@ Instead of writing code line by line, you chat with AI, and Lovable builds your 
 
 **🛠️ Hands-on:** Create your first simple project (a basic landing page)
 
-</div>
-
 ---
 
-### 🚀 **Module 2: Starting Your First Project**
-
-<div style="background-color: #f0fdf4; padding: 20px; border-radius: 10px; border-left: 4px solid #22c55e;">
+### 🚀 Module 2: Starting Your First Project
 
 **🎯 Goal:** Learn all the different ways to begin building in Lovable
 
@@ -117,25 +76,21 @@ Instead of writing code line by line, you chat with AI, and Lovable builds your 
 
 **🛠️ Hands-on:** Try each method and see which works best for you
 
-</div>
-
 ---
 
-### 🤖 **Module 3: Understanding Lovable's Modes - How to Talk to AI**
-
-<div style="background-color: #fef3c7; padding: 20px; border-radius: 10px; border-left: 4px solid #f59e0b;">
+### 🤖 Module 3: Understanding Lovable's Modes - How to Talk to AI
 
 **🎯 Goal:** Master the different ways to interact with Lovable
 
 **📝 What you'll learn:**
 
-#### 🤖 **Agent Mode** (The Autonomous Builder)
+#### 🤖 Agent Mode (The Autonomous Builder)
 - 🧠 AI thinks, plans, and builds on its own
 - ⚡ Perfect for complex tasks that need multiple steps
 - 🔍 AI explores your code, fixes errors, and searches the web
 - 💰 Usage-based pricing (many messages cost less than 1 credit)
 
-#### 💬 **Chat Mode** (Your Development Partner)
+#### 💬 Chat Mode (Your Development Partner)
 - 🤔 Helps you think through problems and plan
 - 🐛 Perfect for asking questions, debugging, and planning
 - 🔑 Key difference: Chat Mode doesn't change code - it helps you understand
@@ -149,13 +104,9 @@ Instead of writing code line by line, you chat with AI, and Lovable builds your 
 
 **🛠️ Hands-on:** Practice using both modes for different tasks
 
-</div>
-
 ---
 
-### ✏️ **Module 4: Editing and Refining Your Project**
-
-<div style="background-color: #f3e8ff; padding: 20px; border-radius: 10px; border-left: 4px solid #a855f7;">
+### ✏️ Module 4: Editing and Refining Your Project
 
 **🎯 Goal:** Learn how to make changes and improvements to your app
 
@@ -170,13 +121,9 @@ Instead of writing code line by line, you chat with AI, and Lovable builds your 
 
 **🛠️ Hands-on:** Take a basic project and improve it using these techniques
 
-</div>
-
 ---
 
-### 💬 **Module 5: Prompt Engineering - How to Get What You Want**
-
-<div style="background-color: #fce7f3; padding: 20px; border-radius: 10px; border-left: 4px solid #ec4899;">
+### 💬 Module 5: Prompt Engineering - How to Get What You Want
 
 **🎯 Goal:** Master the art of communicating with AI effectively
 
@@ -191,49 +138,41 @@ Instead of writing code line by line, you chat with AI, and Lovable builds your 
 
 **🛠️ Hands-on:** Practice writing effective prompts for different features
 
-</div>
-
 ---
 
-### 🔌 **Module 6: Adding Full-Stack Capabilities**
-
-<div style="background-color: #e0f2fe; padding: 20px; border-radius: 10px; border-left: 4px solid #0ea5e9;">
+### 🔌 Module 6: Adding Full-Stack Capabilities
 
 **🎯 Goal:** Add powerful backend features to your applications
 
 **📝 What you'll learn:**
 
-#### ☁️ **Lovable Cloud** (Built-in Backend)
+#### ☁️ Lovable Cloud (Built-in Backend)
 - 🔐 Authentication, database, and storage
 - 🎯 Perfect for most backend needs
 - ⚙️ Simple configuration process
 
-#### 🔗 **Connectors** (Add External Services)
+#### 🔗 Connectors (Add External Services)
 - 🗄️ **Supabase:** User authentication and data storage
 - 💳 **Stripe:** Payment processing and subscriptions
 - 🛒 **Shopify:** E-commerce operations
 - 📧 **Resend:** Email capabilities
 - 🔌 They're like plugins your app can use
 
-#### 📊 **MCP Servers** (Provide Context)
+#### 📊 MCP Servers (Provide Context)
 - 🔧 Give Lovable access to your existing tools
 - 📋 Examples: Linear, Notion, Atlassian, n8n
 - 🎯 Use when building apps based on your real workflows
 
-#### 🌐 **Any API** (Maximum Flexibility)
+#### 🌐 Any API (Maximum Flexibility)
 - 🌍 Integrating public APIs: No authentication needed
 - 🔒 Integrating private APIs: Using secrets and Edge Functions
 - 📡 Examples: Weather APIs, custom services, third-party tools
 
 **🛠️ Hands-on:** Add authentication and a database to a project
 
-</div>
-
 ---
 
-### 💻 **Module 7: Code Mode - Viewing and Editing Code Directly**
-
-<div style="background-color: #f1f5f9; padding: 20px; border-radius: 10px; border-left: 4px solid #64748b;">
+### 💻 Module 7: Code Mode - Viewing and Editing Code Directly
 
 **🎯 Goal:** Understand how to work with code when you need to (Optional for beginners)
 
@@ -245,13 +184,9 @@ Instead of writing code line by line, you chat with AI, and Lovable builds your 
 
 > **📌 Note:** This module is optional for complete beginners - you can build amazing apps without ever touching code!
 
-</div>
-
 ---
 
-### 🚀 **Module 8: Deploying and Publishing Your App**
-
-<div style="background-color: #fef3c7; padding: 20px; border-radius: 10px; border-left: 4px solid #f59e0b;">
+### 🚀 Module 8: Deploying and Publishing Your App
 
 **🎯 Goal:** Get your application live on the internet
 
@@ -264,13 +199,9 @@ Instead of writing code line by line, you chat with AI, and Lovable builds your 
 
 **🛠️ Hands-on:** Deploy your first complete application
 
-</div>
-
 ---
 
-### 🏗️ **Module 9: Real-World Project - Building a Complete App**
-
-<div style="background-color: #dcfce7; padding: 20px; border-radius: 10px; border-left: 4px solid #16a34a;">
+### 🏗️ Module 9: Real-World Project - Building a Complete App
 
 **🎯 Goal:** Apply everything you've learned in a full project
 
@@ -297,17 +228,11 @@ Instead of writing code line by line, you chat with AI, and Lovable builds your 
 5. 🧪 Testing and refining
 6. 🚀 Deploying to production
 
-</div>
-
 ---
 
 ## 🛠️ Prerequisites
 
-<div align="center">
-
-### **Absolutely None!** 🎉
-
-</div>
+**Absolutely None!** 🎉
 
 This course assumes you:
 - ❌ Have never written code before
@@ -323,20 +248,18 @@ This course assumes you:
 
 ### 📚 Official Lovable Resources
 
-| Resource | Description | Link |
-|:---:|:---:|:---:|
-| 📖 **Documentation** | Complete guides and reference | [docs.lovable.dev](https://docs.lovable.dev?via=chris-porter) |
-| 🎥 **Video Library** | Tutorials and demonstrations | [lovable.dev/videos](https://lovable.dev/videos?via=chris-porter) |
-| 🎨 **Templates** | Pre-built examples to start from | [lovable.dev/templates](https://lovable.dev/templates?via=chris-porter) |
-| 📝 **Guides** | Step-by-step tutorials | [lovable.dev/guides](https://lovable.dev/guides?via=chris-porter) |
-| 💬 **Discord** | Community support and help | Join the community |
+- **📖 Documentation:** [docs.lovable.dev](https://docs.lovable.dev?via=chris-porter) - Complete guides and reference
+- **🎥 Video Library:** [lovable.dev/videos](https://lovable.dev/videos?via=chris-porter) - Tutorials and demonstrations
+- **🎨 Templates:** [lovable.dev/templates](https://lovable.dev/templates?via=chris-porter) - Pre-built examples to start from
+- **📝 Guides:** [lovable.dev/guides](https://lovable.dev/guides?via=chris-porter) - Step-by-step tutorials
+- **💬 Discord:** Join the community for support and help
 
 ### 🔑 Key Documentation Pages
 
-- 📘 [Getting Started Guide](https://docs.lovable.dev/introduction/getting-started?via=chris-porter)
-- ⚡ [Features Overview](https://docs.lovable.dev/features?via=chris-porter)
-- 💬 [Prompt Engineering Tips](https://docs.lovable.dev/prompting?via=chris-porter)
-- 🔌 [Integrations Guide](https://docs.lovable.dev/integrations/introduction?via=chris-porter)
+- [Getting Started Guide](https://docs.lovable.dev/introduction/getting-started?via=chris-porter)
+- [Features Overview](https://docs.lovable.dev/features?via=chris-porter)
+- [Prompt Engineering Tips](https://docs.lovable.dev/prompting?via=chris-porter)
+- [Integrations Guide](https://docs.lovable.dev/integrations/introduction?via=chris-porter)
 
 ---
 
@@ -348,109 +271,75 @@ This course assumes you:
 
 ### 💰 Understanding Credits
 
-| Mode | Cost | Best For |
-|:---:|:---:|:---:|
-| 💬 **Chat Mode** | 1 credit per message | Planning, debugging, questions |
-| 🤖 **Agent Mode** | Usage-based (often < 1 credit) | Complex tasks, building features |
-| 💻 **Code Mode** | Included in paid plans | Advanced customization |
+**Chat Mode:**
+- Cost: 1 credit per message
+- Best for: Planning, debugging, questions
+
+**Agent Mode:**
+- Cost: Usage-based (often less than 1 credit)
+- Best for: Complex tasks, building features
+
+**Code Mode:**
+- Cost: Included in paid plans
+- Best for: Advanced customization
 
 **💡 Tip:** Many simple tasks cost very little, while complex tasks may cost more.
 
 ### 🎯 Modes Explained Simply
 
-```
-Agent Mode  →  "Build this for me"  →  AI does the work autonomously
-Chat Mode   →  "Help me understand"  →  AI helps you plan and debug
-Code Mode   →  "Show me the code"   →  View/edit code directly (paid plans)
-```
+- **Agent Mode** → "Build this for me" → AI does the work autonomously
+- **Chat Mode** → "Help me understand" → AI helps you plan and debug
+- **Code Mode** → "Show me the code" → View/edit code directly (paid plans)
 
 ### 🎨 Templates vs. Starting from Scratch
 
-| Approach | Best For | Description |
-|:---:|:---:|:---:|
-| 🎨 **Templates** | Beginners | Pre-built apps you can customize |
-| 🚀 **From Scratch** | Custom ideas | Describe your idea and build it fresh |
+- **🎨 Templates:** Pre-built apps you can customize (great for beginners!)
+- **🚀 From Scratch:** Describe your idea and build it fresh
 
-**Both approaches are valid - choose what feels right!**
+Both approaches are valid - choose what feels right!
 
 ---
 
 ## 🎓 Course Outcomes
 
-<div align="center">
+After completing this course, you will:
 
-### After completing this course, you will:
-
-</div>
-
-<table>
-<tr>
-<td width="50%">
-
-✅ Understand how Lovable works  
-✅ Create full-stack applications  
-✅ Add authentication & databases  
-✅ Deploy applications to the web  
-
-</td>
-<td width="50%">
-
-✅ Build real-world projects  
-✅ Master prompt engineering  
-✅ Feel confident building apps  
-✅ Have a portfolio project  
-
-</td>
-</tr>
-</table>
+✅ Understand how Lovable works and when to use different features  
+✅ Be able to create full-stack applications without writing code  
+✅ Know how to add authentication, databases, and payments  
+✅ Have deployed at least one complete application  
+✅ Feel confident building your own projects  
+✅ Understand how to communicate effectively with AI  
+✅ Have a portfolio project to showcase  
 
 ---
 
 ## 🚀 Getting Started
 
-<div align="center">
+**Ready to Begin Your Journey?**
 
-### **Ready to Begin Your Journey?**
-
-</div>
-
-1. **🔐 Create your Lovable account:**  
-   Go to [lovable.dev](https://lovable.dev?via=chris-porter) and sign up
-
-2. **📊 Explore the dashboard:**  
-   Get familiar with the interface
-
-3. **📖 Start Module 1:**  
-   Begin with the basics
-
-4. **💬 Join the community:**  
-   Connect with other learners on Discord
+1. **🔐 Create your Lovable account:** Go to [lovable.dev](https://lovable.dev?via=chris-porter) and sign up
+2. **📊 Explore the dashboard:** Get familiar with the interface
+3. **📖 Start Module 1:** Begin with the basics
+4. **💬 Join the community:** Connect with other learners on Discord
 
 ---
 
 ## 📝 Course Structure Notes
 
-<div align="center">
-
-| Feature | Description |
-|:---:|:---:|
-| ⏱️ **Self-paced** | Learn at your own speed |
-| 🛠️ **Project-based** | Each module includes hands-on practice |
-| 📈 **Progressive** | Each module builds on the previous one |
-| 🔄 **Flexible** | Skip ahead or spend extra time as needed |
-
-</div>
+- **⏱️ Self-paced:** Learn at your own speed
+- **🛠️ Project-based:** Each module includes hands-on practice
+- **📈 Progressive:** Each module builds on the previous one
+- **🔄 Flexible:** Skip ahead if you're comfortable, or spend extra time on challenging topics
 
 ---
 
 ## 🤝 Need Help?
 
-| Resource | How It Helps |
-|:---:|:---:|
-| 📖 **Documentation** | Check [docs.lovable.dev](https://docs.lovable.dev?via=chris-porter) for detailed guides |
-| 💬 **Community Discord** | Ask questions and share your progress |
-| 🆘 **Support** | Reach out through Lovable's support channels |
-| 🎥 **Videos** | Watch tutorials on [lovable.dev/videos](https://lovable.dev/videos?via=chris-porter) |
+- **📖 Documentation:** Check [docs.lovable.dev](https://docs.lovable.dev?via=chris-porter) for detailed guides
+- **💬 Community Discord:** Ask questions and share your progress
+- **🆘 Support:** Reach out through Lovable's support channels
+- **🎥 Videos:** Watch tutorials on [lovable.dev/videos](https://lovable.dev/videos?via=chris-porter)
 
 ---
 
@@ -462,7 +351,7 @@ Once you've completed this course, you can:
 - 🚀 Explore advanced Lovable features
 - 🔌 Integrate with more APIs and services
 - 💼 Build apps for clients or your business
-- 📚 Continue learning through advanced resources
+- 📚 Continue learning through Lovable's advanced resources
 - 🎓 Share your knowledge with other beginners
 
 ---
@@ -489,22 +378,16 @@ Once you've completed this course, you can:
 
 ---
 
-<div align="center">
-
 ## 🌟 Remember
 
-### **You don't need to know how to code to build amazing things!**
+**You don't need to know how to code to build amazing things!**
 
 Lovable makes it possible for anyone to create professional, full-stack applications. This course will guide you every step of the way, from your first prompt to your first deployed app.
 
----
-
-### **Let's build something Lovable together!** 🚀
+**Let's build something Lovable together!** 🚀
 
 **[Get Started Now →](https://lovable.dev?via=chris-porter)**
 
 ---
 
 *Last updated: Based on Lovable documentation as of December 2024*
-
-</div>
