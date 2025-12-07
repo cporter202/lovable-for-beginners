@@ -1,3 +1,5 @@
+<div align="center">
+
 # ✨ Lovable for Beginners
 
 **Your Complete Beginner's Course to Mastering Lovable Vibe Coding**
@@ -5,6 +7,8 @@
 ![Lovable](https://img.shields.io/badge/Lovable-AI%20Powered-blue?style=flat-square&logo=lovable)
 ![Beginner Friendly](https://img.shields.io/badge/Beginner-Friendly-green?style=flat-square)
 ![No Code Required](https://img.shields.io/badge/No%20Code-Required-purple?style=flat-square)
+
+</div>
 
 ---
 
@@ -378,6 +382,10 @@ Once you've completed this course, you can:
 
 ---
 
+---
+
+<div align="center">
+
 ## 🌟 Remember
 
 **You don't need to know how to code to build amazing things!**
@@ -391,3 +399,5 @@ Lovable makes it possible for anyone to create professional, full-stack applicat
 ---
 
 *Last updated: Based on Lovable documentation as of December 2024*
+
+</div>
