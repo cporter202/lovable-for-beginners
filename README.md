@@ -54,7 +54,7 @@ By the end of this course, you'll be able to:
 
 ## 📚 Course Structure
 
-**9 Comprehensive Modules | Self-Paced Learning | Project-Based**
+**10 Core Modules + 5 Advanced Modules | Self-Paced Learning | Project-Based**
 
 ---
 
@@ -237,6 +237,103 @@ By the end of this course, you'll be able to:
 4. ➕ Adding features one by one
 5. 🧪 Testing and refining
 6. 🚀 Deploying to production
+
+---
+
+### 🐛 [Module 10: Debugging and Testing](modules/module-10-debugging-and-testing.md)
+
+**🎯 Goal:** Learn how to find and fix problems, and test your apps thoroughly
+
+**📝 What you'll learn:**
+- 🔍 **Reading error messages:** Understanding what went wrong
+- 💬 **Using Chat Mode for debugging:** Get help fixing issues
+- ⏪ **Using History to revert:** Go back to working versions
+- ✏️ **Editing messages:** Fix mistakes in your prompts
+- 🧪 **Testing strategies:** Ensure everything works
+- 🔧 **Common debugging scenarios:** Real-world problem solving
+
+**🛠️ Hands-on:** Practice debugging workflows and testing your apps
+
+---
+
+## 🚀 Advanced Modules (Optional)
+
+*These modules are for learners who want to go deeper after completing the core course.*
+
+---
+
+### 🎨 [Module 11: Advanced Prompt Patterns](modules/module-11-advanced-prompt-patterns.md)
+
+**🎯 Goal:** Master advanced techniques for complex applications
+
+**📝 What you'll learn:**
+- 🔄 **Dynamic content generation:** Creating data-driven pages
+- 🔀 **Conditional logic:** Showing different content based on conditions
+- 🔁 **Loops and iterations:** Displaying multiple items efficiently
+- 🌊 **Complex user flows:** Multi-step processes and workflows
+- 🎯 **Advanced prompt structures:** Patterns for sophisticated apps
+
+**🛠️ Hands-on:** Build complex features using advanced patterns
+
+---
+
+### ⚡ [Module 12: Performance and Optimization](modules/module-12-performance-and-optimization.md)
+
+**🎯 Goal:** Learn how to make your apps fast and efficient
+
+**📝 What you'll learn:**
+- 🖼️ **Image optimization:** Compressing and sizing images
+- 📦 **Code splitting:** Loading code efficiently
+- 💾 **Caching strategies:** Speeding up your app
+- 🗄️ **Database optimization:** Fast queries and pagination
+- 📊 **Measuring performance:** Understanding speed metrics
+
+**🛠️ Hands-on:** Optimize an existing project for better performance
+
+---
+
+### 🔌 [Module 13: Advanced API Integration](modules/module-13-advanced-api-integration.md)
+
+**🎯 Goal:** Master integrating external APIs beyond basic connectors
+
+**📝 What you'll learn:**
+- 🖥️ **Server-side vs. client-side:** Understanding API call types
+- 🌐 **Public API integration:** Weather, news, and other public APIs
+- 🔐 **Private API integration:** Securely using APIs with keys
+- ⏳ **Asynchronous data handling:** Loading states and error handling
+- 📊 **Displaying API data:** Presenting external data effectively
+
+**🛠️ Hands-on:** Build a complete weather app with API integration
+
+---
+
+### 📦 [Module 14: Version Control with GitHub](modules/module-14-version-control-github.md)
+
+**🎯 Goal:** Learn how to use GitHub with Lovable for version control and collaboration
+
+**📝 What you'll learn:**
+- 📚 **Understanding version control:** Why it matters
+- 🔗 **Connecting to GitHub:** Linking your projects
+- 💾 **Commits and branches:** Managing code history
+- 🤝 **Collaboration:** Working with others
+- 📂 **Portfolio building:** Showcasing your work
+
+**🛠️ Hands-on:** Connect a project to GitHub and practice version control
+
+---
+
+### ☁️ [Module 15: Deploying to Custom Clouds](modules/module-15-deploying-to-custom-clouds.md)
+
+**🎯 Goal:** Understand deployment options beyond Lovable's built-in hosting
+
+**📝 What you'll learn:**
+- 🏠 **Lovable's hosting:** Understanding built-in options
+- 🤔 **When to consider alternatives:** Custom cloud scenarios
+- 📤 **Exporting your code:** Getting your code out
+- 🚀 **Deploying to Vercel/Netlify:** Alternative platforms
+- 🔄 **Migration considerations:** What to think about
+
+**🛠️ Hands-on:** Deploy a project to an alternative platform (optional)
 
 ---
 

@@ -365,11 +365,15 @@ Add finishing touches:
 
 ---
 
-## 🛠️ Step 7: Testing Your App
+## 🛠️ Step 7: Testing and Debugging Your App
 
-### Comprehensive Testing
+### Testing Strategy
 
-Test everything:
+**Test as you build!** Don't wait until the end. Test each feature after you build it.
+
+### Comprehensive Testing Checklist
+
+Test everything systematically:
 
 #### Authentication Testing
 - [ ] Can I sign up?
@@ -377,6 +381,7 @@ Test everything:
 - [ ] Can I logout?
 - [ ] Are pages protected (can't access without login)?
 - [ ] Does navigation show correctly based on login status?
+- [ ] Do error messages work (wrong password, etc.)?
 
 #### Task Management Testing
 - [ ] Can I create a task?
@@ -386,6 +391,7 @@ Test everything:
 - [ ] Can I mark tasks as complete?
 - [ ] Do filters work?
 - [ ] Does sorting work?
+- [ ] Are tasks linked to the correct user?
 
 #### Design Testing
 - [ ] Does it look good?
@@ -393,6 +399,7 @@ Test everything:
 - [ ] Are buttons easy to click?
 - [ ] Is text readable?
 - [ ] Do colors work well together?
+- [ ] Do images load correctly?
 
 #### Functionality Testing
 - [ ] Do statistics update correctly?
@@ -400,8 +407,147 @@ Test everything:
 - [ ] Do changes persist after refresh?
 - [ ] Are error messages helpful?
 - [ ] Do confirmations work?
+- [ ] Do loading states work?
 
-**💡 Beginner Tip:** Test thoroughly! It's better to find issues now than after publishing.
+### Debugging When Things Don't Work
+
+#### If Something Breaks During Testing
+
+**Step 1: Identify the Problem**
+- What exactly isn't working?
+- When does it happen?
+- What were you doing?
+- Any error messages?
+
+**Step 2: Use Chat Mode to Investigate**
+```
+[Describe the problem]
+
+Example: "My task creation form isn't saving tasks to the database. When I submit, nothing happens. Can you help me debug this?"
+```
+
+**Step 3: Understand the Issue**
+- Read Chat Mode's explanation
+- Understand what's wrong
+- Learn why it's happening
+
+**Step 4: Fix the Problem**
+- Use Agent Mode to fix it
+- Or follow Chat Mode's plan
+- Test the fix
+
+**Step 5: If Still Broken**
+- Try a different approach
+- Or revert and rebuild
+- Don't give up!
+
+### Using History During Testing
+
+**When to Use History:**
+- ✅ Something breaks after a change
+- ✅ You want to compare versions
+- ✅ You need to go back to a working state
+- ✅ You want to try a different approach
+
+**How to Use:**
+1. Go to **History**
+2. Find the last working version
+3. Click **"Revert"**
+4. Try again with a different approach
+
+**Example Workflow:**
+```
+1. Build feature → Test → Works!
+2. Make change → Test → Breaks!
+3. Go to History → Revert → Back to working
+4. Try different change → Test → Works!
+```
+
+### Editing Messages to Fix Issues
+
+**If you realize you asked for the wrong thing:**
+
+1. **Find the message** that caused the issue
+2. **Edit it** to what you actually want
+3. **Lovable adjusts** automatically
+
+**Example:**
+- **Original:** "Add a red button"
+- **Realized:** You wanted blue
+- **Edit message to:** "Add a blue button"
+- **Result:** Button changes to blue
+
+### Common Issues and How to Debug Them
+
+#### Issue: Feature Not Working
+
+**Debug Steps:**
+1. **Check if it was built:**
+   - Use Chat Mode: "Did the [feature] get added correctly?"
+2. **Check for errors:**
+   - Look for error messages
+   - Use Chat Mode: "Are there any errors with [feature]?"
+3. **Test the feature:**
+   - Try using it
+   - Note what happens
+4. **Fix it:**
+   - Use Chat Mode to understand
+   - Use Agent Mode to fix
+
+#### Issue: Data Not Saving
+
+**Debug Steps:**
+1. **Check backend:**
+   - Is Lovable Cloud enabled?
+   - Use Chat Mode: "Is the database set up for saving tasks?"
+2. **Check form connection:**
+   - Is form connected to database?
+   - Use Chat Mode: "Is the task form saving to the database?"
+3. **Fix connection:**
+   - Reconnect form to database
+   - Test again
+
+#### Issue: Design Looks Wrong
+
+**Debug Steps:**
+1. **Identify what's wrong:**
+   - Be specific: "Colors are wrong" or "Layout is broken"
+2. **Use Chat Mode:**
+   - "Why doesn't the design match what I asked for?"
+3. **Fix incrementally:**
+   - Fix one thing at a time
+   - Test after each fix
+
+### Testing Workflow Example
+
+**Complete Testing Process:**
+
+1. **Build a feature**
+   ```
+   Add task creation form
+   ```
+
+2. **Test immediately**
+   - Try creating a task
+   - Check if it saves
+   - Verify it appears in list
+
+3. **If it works:**
+   - Move to next feature
+   - Continue building
+
+4. **If it doesn't work:**
+   - Use Chat Mode to debug
+   - Fix the issue
+   - Test again
+   - Repeat until it works
+
+5. **After all features:**
+   - Do comprehensive testing
+   - Fix any remaining issues
+   - Test on different devices
+
+**💡 Beginner Tip:** Test thoroughly and debug as you go! It's better to find issues now than after publishing. Don't be afraid to revert and try again.
 
 ---
 

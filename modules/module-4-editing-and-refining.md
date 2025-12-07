@@ -177,29 +177,109 @@ You might want to revert when:
 2. Click on it
 3. You'll see a list of all changes made to your project
 
+**💡 Tip:** You can also ask Lovable: "Show me the project history" or "What changes have I made?"
+
 #### Step 2: View Previous Versions
 
-1. **See the timeline** - Changes are listed chronologically
+1. **See the timeline** - Changes are listed chronologically (most recent first)
 2. **Preview versions** - Click on a previous version to see what it looked like
 3. **Read descriptions** - Each version shows what was changed
+4. **Compare versions** - See what's different between versions
 
 #### Step 3: Revert to a Previous Version
 
+**Method 1: Revert from History**
 1. **Find the version** you want to go back to
-2. **Click "Revert"** or "Restore" button
-3. **Confirm** - You'll be asked to confirm
-4. **Your project reverts** - It goes back to that version
+2. **Preview it** - Make sure it's the right one
+3. **Click "Revert"** or "Restore" button
+4. **Confirm** - You'll be asked to confirm
+5. **Your project reverts** - It goes back to that version
 
-#### Step 4: Edit and Revert (Alternative Method)
+**Method 2: Ask to Revert**
+```
+Revert to the version before I added the navigation menu
+```
+
+or
+
+```
+Go back to yesterday's version
+```
+
+or
+
+```
+Undo the last change I made
+```
+
+#### Step 4: Edit Messages to Revert (Alternative Method)
 
 You can also revert by editing your message:
 
 1. **Find the message** that made the change you don't like
 2. **Edit the message** - Change what you asked for
-3. **Or delete it** - Remove that instruction
+   - Example: Change "Make all buttons red" to "Keep buttons blue"
+3. **Or delete it** - Remove that instruction entirely
 4. **Lovable will adjust** - It will revert that specific change
 
-**💡 Beginner Tip:** Don't be afraid to experiment! You can always revert if something doesn't work out.
+### Complete Workflow: Make Mistake → Revert → Iterate
+
+**Real Example:**
+
+#### Step 1: Make a Change
+```
+Change the homepage layout to a three-column grid
+```
+
+**Result:** Layout breaks - columns overlap, content is misaligned
+
+#### Step 2: Identify the Problem
+- Layout looks wrong
+- Content overlaps
+- Mobile view is broken
+
+#### Step 3: Use Chat Mode to Understand
+```
+The three-column layout I just added looks broken. Can you help me understand what went wrong?
+```
+
+**Chat Mode explains:** The grid needs better spacing and responsive breakpoints.
+
+#### Step 4: Revert the Change
+
+**Option A: Use History**
+1. Go to History
+2. Find version before grid change
+3. Click "Revert"
+4. Project restored!
+
+**Option B: Ask to Revert**
+```
+Revert the last change - go back to before I changed the layout to three columns
+```
+
+#### Step 5: Try a Better Approach
+```
+Create a two-column layout with main content on left and sidebar on right. Make sure it's fully responsive and has proper spacing.
+```
+
+**Result:** Better layout that works!
+
+#### Step 6: Iterate and Improve
+```
+The two-column layout works, but can you make the sidebar slightly narrower and add more spacing between columns?
+```
+
+**Result:** Perfect layout!
+
+**What You Learned:**
+- ✅ Made a mistake (that's okay!)
+- ✅ Identified the problem
+- ✅ Reverted safely
+- ✅ Tried a better approach
+- ✅ Iterated to perfection
+
+**💡 Beginner Tip:** Don't be afraid to experiment! You can always revert if something doesn't work out. Reverting is a normal part of development.
 
 ---
 
