@@ -4,13 +4,13 @@
 
 **Your Complete Beginner's Course to Mastering Lovable Vibe Coding**
 
-> **💚 This course is 100% free!** You do not have to pay anything to view or learn from this course. All content is freely available for everyone.
+**💚 This course is 100% free!** You do not have to pay anything to view or learn from this course.
+
+All content is freely available for everyone.
 
 ![AI Powered](https://img.shields.io/badge/AI%20Powered-0066FF?style=for-the-badge&logoColor=ffffff)
 ![Beginner Friendly](https://img.shields.io/badge/Beginner%20Friendly-32CD32?style=for-the-badge&logoColor=ffffff)
 ![No Code Required](https://img.shields.io/badge/No%20Code%20Required-6A0DAD?style=for-the-badge&logoColor=ffffff)
-
-[![GitHub stars](https://img.shields.io/github/stars/cporter202/lovable-for-beginners?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=24292e&color=FFD700)](https://github.com/cporter202/lovable-for-beginners/stargazers)
 
 [![Lovable Platform](https://firebasestorage.googleapis.com/v0/b/facesift.firebasestorage.app/o/user_uploads%2F83EXwNWgaKe1BHmyd9ISw3HCEfi2%2F1765069752349-Screenshot%202025-12-06%20200858.png?alt=media&token=b4b0a8ea-e345-43ee-9da9-e9da54fb00b3)](https://lovable.dev?via=chris-porter)
 
