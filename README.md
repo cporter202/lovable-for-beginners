@@ -4,12 +4,12 @@
 
 **Your Complete Beginner's Course to Mastering Lovable Vibe Coding**
 
-![Lovable](https://img.shields.io/badge/Lovable-424242?style=flat-square&labelColor=424242&color=ffffff)
-![AI Powered](https://img.shields.io/badge/AI%20Powered-0066FF?style=flat-square&labelColor=0066FF&color=ffffff)
-![Beginner](https://img.shields.io/badge/Beginner-424242?style=flat-square&labelColor=424242&color=ffffff)
-![Friendly](https://img.shields.io/badge/Friendly-32CD32?style=flat-square&labelColor=32CD32&color=ffffff)
-![No Code](https://img.shields.io/badge/No%20Code-424242?style=flat-square&labelColor=424242&color=ffffff)
-![Required](https://img.shields.io/badge/Required-6A0DAD?style=flat-square&labelColor=6A0DAD&color=ffffff)
+![Lovable](https://img.shields.io/badge/Lovable-555555?style=flat-square&labelColor=555555)
+![AI Powered](https://img.shields.io/badge/AI%20Powered-0066FF?style=flat-square&labelColor=0066FF)
+![Beginner](https://img.shields.io/badge/Beginner-555555?style=flat-square&labelColor=555555)
+![Friendly](https://img.shields.io/badge/Friendly-32CD32?style=flat-square&labelColor=32CD32)
+![No Code](https://img.shields.io/badge/No%20Code-555555?style=flat-square&labelColor=555555)
+![Required](https://img.shields.io/badge/Required-6A0DAD?style=flat-square&labelColor=6A0DAD)
 
 [![Lovable Platform](https://firebasestorage.googleapis.com/v0/b/facesift.firebasestorage.app/o/user_uploads%2F83EXwNWgaKe1BHmyd9ISw3HCEfi2%2F1765069752349-Screenshot%202025-12-06%20200858.png?alt=media&token=b4b0a8ea-e345-43ee-9da9-e9da54fb00b3)](https://lovable.dev?via=chris-porter)
 
