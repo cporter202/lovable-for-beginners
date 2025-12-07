@@ -388,6 +388,77 @@ Here's a simple guide:
 
 ---
 
+## 🎯 Module 2 Challenges
+
+**Practice starting projects with these challenges!**
+
+### Challenge 1: Start from Prompt (Beginner)
+
+**Your Task:** Create a project using a prompt for a simple landing page.
+
+**Requirements:**
+- Create a landing page for a local coffee shop
+- Include: hero section, menu preview, location, hours
+- Use warm, inviting colors
+- Make it mobile-friendly
+
+**💡 Hints:**
+- Be specific about what you want
+- Include design preferences
+- Mention target audience
+
+**Check your solution:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-2-challenge-1)
+
+---
+
+### Challenge 2: Remix and Customize (Intermediate)
+
+**Your Task:** 
+1. Find a portfolio template in the community
+2. Remix it
+3. Customize it for a photographer
+
+**Requirements:**
+- Change all colors to match photography theme
+- Update all text with photographer information
+- Add a new "Pricing" page
+- Modify the gallery layout
+
+**💡 Hints:**
+- Browse community projects first
+- Make at least 5 significant changes
+- Test each change as you go
+
+**Check your solution:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-2-challenge-2)
+
+---
+
+### Challenge 3: Use Multiple Methods (Advanced)
+
+**Your Task:** Combine methods to create a project:
+1. Start with a prompt for basic structure
+2. Attach a sketch/image for design inspiration
+3. Remix a component you like from community
+
+**Requirements:**
+- Create a restaurant website
+- Use prompt for structure
+- Attach a design reference
+- Incorporate a menu component from a remix
+
+**💡 Hints:**
+- Start with prompt for foundation
+- Then add visual references
+- Finally, remix specific components
+
+**Check your solution:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-2-challenge-3)
+
+---
+
+**💡 Pro Tip:** Try each challenge and compare your approach to the solutions. There's no single "right" way!
+
+---
+
 ## ✅ Module 2 Checklist
 
 Before moving to Module 3, make sure you can:

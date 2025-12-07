@@ -344,6 +344,32 @@ After completing this course, you will:
 
 ---
 
+## 💰 Pricing and Plans
+
+**Understanding what you can build on free vs. paid plans:**
+
+- **📊 [Pricing and Plans Guide](PRICING-AND-PLANS.md)** - Complete breakdown of free vs. paid features
+- **💳 [Official Pricing](https://lovable.dev/pricing?via=chris-porter)** - Current pricing and plan details
+- **💡 Key Point:** You can build almost everything on the free plan using prompts!
+
+---
+
+## 🎯 Module Challenges
+
+**Practice and consolidate your learning with progressive challenges!**
+
+Each module includes hands-on challenges that get progressively harder:
+- **Beginner challenges** - Basic concepts and single features
+- **Intermediate challenges** - Combining concepts and multiple steps  
+- **Advanced challenges** - Security, complex features, best practices
+- **Expert challenges** - Complete systems and production-ready features
+
+**📚 [Challenge Solutions](CHALLENGE-SOLUTIONS.md)** - Suggested solutions and hints for self-assessment
+
+**💡 Tip:** Try each challenge yourself first, then check the solutions to compare approaches!
+
+---
+
 ## 🤝 Need Help?
 
 - **📖 Documentation:** Check [docs.lovable.dev](https://docs.lovable.dev?via=chris-porter) for detailed guides

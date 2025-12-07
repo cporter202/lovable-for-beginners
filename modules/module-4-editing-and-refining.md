@@ -432,6 +432,90 @@ Let's practice all these editing techniques!
 
 ---
 
+## 🎯 Module 4 Challenges
+
+**Practice editing and refining with these challenges!**
+
+### Challenge 1: Visual Edits and Custom Knowledge (Beginner)
+
+**Your Task:** 
+1. Create a simple landing page
+2. Use Visual Edits to change colors and text
+3. Add custom knowledge about your brand
+4. Ask Lovable to make a change using that knowledge
+
+**Requirements:**
+- Make at least 3 visual edits
+- Add brand colors, name, and style to custom knowledge
+- Ask Lovable to update something using your brand info
+- Verify it used your custom knowledge
+
+**💡 Hints:**
+- Start with a basic page
+- Use Visual Edit mode for quick changes
+- Add knowledge in Settings → Custom Knowledge
+- Reference the knowledge in your next prompt
+
+**Check your solution:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-4-challenge-1)
+
+---
+
+### Challenge 2: Iterative Refinement (Intermediate)
+
+**Your Task:** Take a basic project and refine it through 5 iterations.
+
+**Starting Point:** A simple homepage with header, hero, and footer
+
+**Iterations:**
+1. Add better spacing and colors
+2. Add images to hero section
+3. Add a new "Features" section
+4. Improve mobile responsiveness
+5. Add animations and polish
+
+**Requirements:**
+- Make one improvement per iteration
+- Test after each change
+- Use History to revert if needed
+- Document what you changed each time
+
+**💡 Hints:**
+- Build incrementally
+- Test as you go
+- Don't try to do everything at once
+- Use both Visual Edits and prompts
+
+**Check your solution:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-4-challenge-2)
+
+---
+
+### Challenge 3: Multi-Page Expansion (Advanced)
+
+**Your Task:** Start with a single-page site and expand it to 5 pages.
+
+**Starting Point:** A simple landing page
+
+**Requirements:**
+- Add 4 new pages (About, Services, Portfolio, Contact)
+- Each page should have unique content
+- Navigation should work between all pages
+- Maintain consistent design
+- Add images to at least 2 pages
+
+**💡 Hints:**
+- Add pages one at a time
+- Test navigation after each page
+- Keep design consistent
+- Use custom knowledge for brand consistency
+
+**Check your solution:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-4-challenge-3)
+
+---
+
+**💡 Pro Tip:** These challenges help you practice the editing workflow you'll use in real projects!
+
+---
+
 ## ✅ Module 4 Checklist
 
 Before moving to Module 5, make sure you can:

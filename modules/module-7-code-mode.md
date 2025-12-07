@@ -34,6 +34,8 @@ By the end of this module, you will:
 > - Making precise technical changes
 > - Understanding what Lovable built
 
+**💡 Plan Information:** Code editing requires a paid plan, but viewing code is free. You can build everything using prompts on the free plan! See the [Pricing and Plans Guide](../PRICING-AND-PLANS.md) for details.
+
 ### What You'll See in Code Mode
 
 When you open Code Mode, you'll see:
@@ -136,6 +138,8 @@ your-project/
 ### Important: Code Editing Requires Paid Plan
 
 > **Note:** Viewing code is available on all plans, but **editing code directly requires a paid plan**. You can still make all changes using prompts on the free plan!
+
+**📊 For complete pricing details:** See the [Pricing and Plans Guide](../PRICING-AND-PLANS.md) for a full breakdown of what's included in free vs. paid plans.
 
 ### How to Edit Code (If You Have Paid Plan)
 

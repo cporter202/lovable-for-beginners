@@ -516,6 +516,101 @@ Use a clean, modern design
 
 ---
 
+## 🎯 Module 5 Challenges
+
+**Test your prompt engineering skills with these progressive challenges!**
+
+### Challenge 1: Rewrite Vague Prompts (Beginner)
+
+**Your Task:** Rewrite these three vague prompts using the techniques you learned. Make them specific, add context, and use best practices.
+
+**Vague Prompt 1:**
+```
+Add a form
+```
+
+**Vague Prompt 2:**
+```
+Make it look better
+```
+
+**Vague Prompt 3:**
+```
+Add some features
+```
+
+**💡 Hints:**
+- Be specific about what type of form/features
+- Add context about your project
+- Specify design preferences
+- Include validation requirements
+
+**Check your answers:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-5-challenge-1)
+
+---
+
+### Challenge 2: Add Context and Use Question Technique (Intermediate)
+
+**Your Task:** Take this basic prompt and:
+1. Add context about your project
+2. Use the "ask questions" technique
+3. Make it specific
+
+**Basic Prompt:**
+```
+Create a user dashboard
+```
+
+**Requirements:**
+- Your project is a task management app
+- Target users are busy professionals
+- You want it to be clean and efficient
+- You're not sure about all the features yet
+
+**Check your answer:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-5-challenge-2)
+
+---
+
+### Challenge 3: Iterative Improvement Practice (Advanced)
+
+**Your Task:** Start with this prompt and improve it through 3 iterations, getting more specific each time.
+
+**Starting Prompt:**
+```
+Build a blog
+```
+
+**Iteration 1:** Add basic details (type, audience, key features)  
+**Iteration 2:** Add design preferences and specific features  
+**Iteration 3:** Add technical requirements and edge cases
+
+**Check your answer:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-5-challenge-3)
+
+---
+
+### Challenge 4: Real-World Application (Expert)
+
+**Your Task:** You want to build a restaurant website. Write a comprehensive prompt that:
+- Uses the question technique
+- Provides context about the restaurant
+- Specifies design preferences
+- Lists key features
+- Includes technical requirements
+
+**Restaurant Info:**
+- Name: "Sunset Bistro"
+- Type: Fine dining, Italian cuisine
+- Target: Couples, special occasions
+- Needs: Menu, reservations, location, hours
+
+**Check your answer:** See [Challenge Solutions](CHALLENGE-SOLUTIONS.md#module-5-challenge-4)
+
+---
+
+**💡 Pro Tip:** Try these challenges yourself first, then check the solutions. Learning comes from practice!
+
+---
+
 ## ✅ Module 5 Checklist
 
 Before moving to Module 6, make sure you can:
