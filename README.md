@@ -58,7 +58,7 @@ By the end of this course, you'll be able to:
 
 ---
 
-### 📖 [Module 1: Welcome to Lovable - Your First Steps](module-1-welcome-to-lovable.md)
+### 📖 [Module 1: Welcome to Lovable - Your First Steps](module-01-welcome-to-lovable.md)
 
 **🎯 Goal:** Get comfortable with Lovable and understand what it can do
 
@@ -73,7 +73,7 @@ By the end of this course, you'll be able to:
 
 ---
 
-### 🚀 [Module 2: Starting Your First Project](module-2-starting-your-first-project.md)
+### 🚀 [Module 2: Starting Your First Project](module-02-starting-your-first-project.md)
 
 **🎯 Goal:** Learn all the different ways to begin building in Lovable
 
@@ -88,7 +88,7 @@ By the end of this course, you'll be able to:
 
 ---
 
-### 🤖 [Module 3: Understanding Lovable's Modes - How to Talk to AI](module-3-understanding-lovable-modes.md)
+### 🤖 [Module 3: Understanding Lovable's Modes - How to Talk to AI](module-03-understanding-lovable-modes.md)
 
 **🎯 Goal:** Master the different ways to interact with Lovable
 
@@ -116,7 +116,7 @@ By the end of this course, you'll be able to:
 
 ---
 
-### ✏️ [Module 4: Editing and Refining Your Project](module-4-editing-and-refining.md)
+### ✏️ [Module 4: Editing and Refining Your Project](module-04-editing-and-refining.md)
 
 **🎯 Goal:** Learn how to make changes and improvements to your app
 
@@ -133,7 +133,7 @@ By the end of this course, you'll be able to:
 
 ---
 
-### 💬 [Module 5: Prompt Engineering - How to Get What You Want](module-5-prompt-engineering.md)
+### 💬 [Module 5: Prompt Engineering - How to Get What You Want](module-05-prompt-engineering.md)
 
 **🎯 Goal:** Master the art of communicating with AI effectively
 
@@ -150,7 +150,7 @@ By the end of this course, you'll be able to:
 
 ---
 
-### 🔌 [Module 6: Adding Full-Stack Capabilities](module-6-adding-fullstack-capabilities.md)
+### 🔌 [Module 6: Adding Full-Stack Capabilities](module-06-adding-fullstack-capabilities.md)
 
 **🎯 Goal:** Add powerful backend features to your applications
 
@@ -182,7 +182,7 @@ By the end of this course, you'll be able to:
 
 ---
 
-### 💻 [Module 7: Code Mode - Viewing and Editing Code Directly](module-7-code-mode.md)
+### 💻 [Module 7: Code Mode - Viewing and Editing Code Directly](module-07-code-mode.md)
 
 **🎯 Goal:** Understand how to work with code when you need to (Optional for beginners)
 
@@ -196,7 +196,7 @@ By the end of this course, you'll be able to:
 
 ---
 
-### 🚀 [Module 8: Deploying and Publishing Your App](module-8-deploying-and-publishing.md)
+### 🚀 [Module 8: Deploying and Publishing Your App](module-08-deploying-and-publishing.md)
 
 **🎯 Goal:** Get your application live on the internet
 
@@ -211,7 +211,7 @@ By the end of this course, you'll be able to:
 
 ---
 
-### 🏗️ [Module 9: Real-World Project - Building a Complete App](module-9-real-world-project.md)
+### 🏗️ [Module 9: Real-World Project - Building a Complete App](module-09-real-world-project.md)
 
 **🎯 Goal:** Apply everything you've learned in a full project
 
