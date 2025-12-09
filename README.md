@@ -12,7 +12,9 @@ All content is freely available for everyone.
 ![Beginner Friendly](https://img.shields.io/badge/Beginner%20Friendly-32CD32?style=for-the-badge&logoColor=ffffff)
 ![No Code Required](https://img.shields.io/badge/No%20Code%20Required-6A0DAD?style=for-the-badge&logoColor=ffffff)
 
-**☕ [Buy me a coffee](https://buymeacoffee.com/viralwavestudio) if this repo has helped you!** Your support keeps me creating valuable content and keeping everything up to date! 💚
+[![Buy Me A Coffee](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=viralwavestudio&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff)](https://buymeacoffee.com/viralwavestudio)
+
+**💚 If this repo has helped you, consider buying me a coffee!** Your support keeps me creating valuable content and keeping everything up to date!
 
 [![Lovable Platform](https://firebasestorage.googleapis.com/v0/b/facesift.firebasestorage.app/o/user_uploads%2F83EXwNWgaKe1BHmyd9ISw3HCEfi2%2F1765069752349-Screenshot%202025-12-06%20200858.png?alt=media&token=b4b0a8ea-e345-43ee-9da9-e9da54fb00b3)](https://lovable.dev?via=chris-porter)
 
