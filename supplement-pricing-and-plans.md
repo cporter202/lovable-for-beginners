@@ -50,7 +50,7 @@
 - Advanced customization needs
 - Higher usage requirements
 
-**💡 Note:** Check [Lovable's official pricing page](https://lovable.dev/pricing?via=chris-porter) for current pricing and detailed feature comparison.
+**💡 Note:** Check [Lovable's official pricing page](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github) for current pricing and detailed feature comparison.
 
 ---
 
@@ -226,8 +226,8 @@ Consider upgrading to a paid plan if:
 
 For the most up-to-date pricing information:
 
-- **Official Pricing:** [lovable.dev/pricing](https://lovable.dev/pricing?via=chris-porter)
-- **Plans & Credits Docs:** [docs.lovable.dev/introduction/plans-and-credits](https://docs.lovable.dev/introduction/plans-and-credits?via=chris-porter)
+- **Official Pricing:** [lovable.dev/pricing](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
+- **Plans & Credits Docs:** [docs.lovable.dev/introduction/plans-and-credits](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
 - **Support:** Contact Lovable support for plan questions
 
 ---

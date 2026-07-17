@@ -7,7 +7,7 @@
 ## 🚀 Getting Started
 
 ### Create Account
-1. Go to [lovable.dev](https://lovable.dev?via=chris-porter)
+1. Go to [lovable.dev](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
 2. Click "Get started"
 3. Sign up with Google, Email, or GitHub
 
@@ -288,10 +288,10 @@ How can I fix [issue]?
 
 ## 📚 Quick Links
 
-- **Documentation:** [docs.lovable.dev](https://docs.lovable.dev?via=chris-porter)
-- **Templates:** [lovable.dev/templates](https://lovable.dev/templates?via=chris-porter)
-- **Videos:** [lovable.dev/videos](https://lovable.dev/videos?via=chris-porter)
-- **Guides:** [lovable.dev/guides](https://lovable.dev/guides?via=chris-porter)
+- **Documentation:** [docs.lovable.dev](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
+- **Templates:** [lovable.dev/templates](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
+- **Videos:** [lovable.dev/videos](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
+- **Guides:** [lovable.dev/guides](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
 
 ---
 
