@@ -4,6 +4,8 @@ The feature once commonly called Code Mode is now documented as the code editor.
 
 Code editing is currently available on paid plans. Build mode does not require you to edit code manually.
 
+> Inspect a real project while learning: [Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github).
+
 ## Learning goals
 
 - Navigate the code editor and identify a project's stack

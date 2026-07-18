@@ -2,6 +2,8 @@
 
 Debugging is the process of turning an observed failure into a reproducible case, finding its root cause, making the smallest correct fix, and proving the behavior stays fixed.
 
+> Run the debugging exercises in a project: [Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github).
+
 ## Learning goals
 
 - Investigate in Plan mode before editing fragile code

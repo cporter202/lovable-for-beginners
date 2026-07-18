@@ -2,6 +2,8 @@
 
 Verified against Lovable's official pricing documentation on July 18, 2026. Pricing, grants, and feature limits can change. Use the [live plan documentation](https://docs.lovable.dev/introduction/subscription-plans) and [Lovable pricing page](https://lovable.dev/pricing) before purchasing.
 
+> Compare the current options inside Lovable: [Open Lovable and get started](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github).
+
 ## Current plan overview
 
 | Plan | Best for | Starting monthly credits and price | Selected capabilities |

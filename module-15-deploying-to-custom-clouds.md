@@ -2,6 +2,8 @@
 
 Lovable Cloud is the recommended default for most projects. External hosting is appropriate when a real compliance, data-residency, network, infrastructure, or organizational requirement justifies the operational work.
 
+> Start with Lovable Cloud, then follow this portability guide: [Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github).
+
 ## Learning goals
 
 - Separate code, frontend hosting, and backend ownership

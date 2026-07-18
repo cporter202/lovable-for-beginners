@@ -2,6 +2,8 @@
 
 These are reference approaches, not scripts to follow blindly. Try each exercise first, compare your result, and adapt the solution to your project's stack and requirements.
 
+> Try the challenge before reading the solution: [Open Lovable and build it](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github).
+
 ## Module 2: Strong first project
 
 ### Challenge

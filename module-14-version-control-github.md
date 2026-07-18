@@ -2,6 +2,8 @@
 
 Git sync connects one Lovable project to one repository and keeps the active branch synchronized in both directions. Lovable currently supports GitHub and GitLab. This module focuses on GitHub.
 
+> Connect a practice project to GitHub: [Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github).
+
 ## Learning goals
 
 - Understand workspace connections and project repository links

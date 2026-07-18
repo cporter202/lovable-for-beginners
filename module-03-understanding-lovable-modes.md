@@ -2,6 +2,8 @@
 
 Lovable has two complementary working modes. The current interface calls them Build and Plan. Some official pages and older project history may use Agent mode for Build and Chat mode for Plan.
 
+> Follow along in the editor: [Open Lovable and try Build and Plan modes](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github).
+
 ## Learning goals
 
 - Choose the correct mode for a task

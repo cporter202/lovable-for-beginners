@@ -2,6 +2,8 @@
 
 In this project you will build a complete multi-user web app with planning, design, Lovable Cloud, authentication, row-level security, testing, publishing, SEO, analytics, and monitoring.
 
+> Build the complete project alongside this module: [Start in Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github).
+
 ## Product brief
 
 Book Club Hub helps small groups choose a monthly book, track reading status, and discuss notes. A user can create or join clubs, but can access only clubs where they are a member.

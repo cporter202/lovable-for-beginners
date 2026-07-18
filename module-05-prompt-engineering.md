@@ -2,6 +2,8 @@
 
 Prompting is product specification in compact form. The most reliable prompts define the user outcome, constrain scope, name important states, and say how success will be verified.
 
+> Test the prompt patterns as you read: [Start building in Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github).
+
 ## Learning goals
 
 - Write prompts with outcome, context, constraints, and acceptance criteria

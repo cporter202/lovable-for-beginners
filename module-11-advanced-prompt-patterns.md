@@ -2,6 +2,8 @@
 
 Advanced prompting is less about clever wording and more about structuring work so Lovable can investigate, decide, implement, and verify without losing the important constraints.
 
+> Try each advanced pattern in context: [Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github).
+
 ## Learning goals
 
 - Use prompts for audits, migrations, refactors, and staged delivery
