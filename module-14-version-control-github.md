@@ -1,328 +1,140 @@
-# Module 14: Version Control with GitHub
+# Module 14: Git Sync and Collaboration
 
-**Goal:** Learn how to use GitHub with Lovable for version control and collaboration
+Git sync connects one Lovable project to one repository and keeps the active branch synchronized in both directions. Lovable currently supports GitHub and GitLab. This module focuses on GitHub.
 
-**Estimated Time:** 30-40 minutes
+## Learning goals
 
-**Prerequisites:** Complete Modules 1-4 first
+- Understand workspace connections and project repository links
+- Set up two-way GitHub sync
+- Work safely with branches, local development, pull requests, and CI
+- Avoid conflicts and distinguish Git sync from the GitHub API connector
 
----
+## 1. How Git sync works
 
-## 🎯 What You'll Learn in This Module
+GitHub sync has two layers:
 
-By the end of this module, you will:
-- Understand what version control is and why it matters
-- Know how to connect Lovable to GitHub
-- Understand commits, branches, and pull requests
-- Learn how to collaborate with others
-- Know how to manage your code history
-- Be able to use GitHub for backup and portfolio
+1. A workspace connection authorizes Lovable to access a GitHub account or organization through the Lovable GitHub app.
+2. A project repository link connects one Lovable project to one repository.
 
----
+A workspace can have multiple GitHub connections. Once a project is linked:
 
-## 📖 Lesson 1: Understanding Version Control
+- Lovable changes are committed and pushed to the active branch.
+- Commits pushed to that branch sync back into Lovable.
+- Lovable edits and syncs one branch at a time.
 
-### What is Version Control?
+Commits on other branches do not appear until you switch Lovable to that branch or merge them into the active branch.
 
-**Version control** is like a time machine for your code. It:
-- ✅ Saves every version of your project
-- ✅ Lets you go back to any point
-- ✅ Tracks all changes
-- ✅ Enables collaboration
-- ✅ Provides backup
+Git sync is available across current plans. The code editor and one-time code download have separate plan requirements.
 
-### Why Use Version Control?
+## 2. Why connect GitHub
 
-**Benefits:**
-- **Backup** - Your code is safe
-- **History** - See how your project evolved
-- **Collaboration** - Work with others
-- **Experimentation** - Try things without fear
-- **Portfolio** - Show your work
-- **Recovery** - Get back lost work
+- Keep code in an account you control
+- Work in a local IDE
+- Use branches and pull requests
+- Review changes with developers
+- Run CI and automated checks
+- Deploy to external platforms
+- Maintain an auditable history
 
-### GitHub Basics
+You do not need GitHub to build or publish entirely within Lovable.
 
-**GitHub** is a platform for version control. Think of it as:
-- Google Drive for code
-- Time machine for projects
-- Collaboration platform
-- Portfolio showcase
+## 3. Connect a project
 
-**💡 Beginner Tip:** You don't need to understand all the technical details! Lovable makes it easy.
+Workspace owners or admins create the GitHub workspace connection. Project or workspace owners and admins link or disconnect a project repository. Editors can work with the synced repository and view status.
 
----
+Before linking:
 
-## 📖 Lesson 2: Connecting Lovable to GitHub
+- Confirm the target GitHub account or organization.
+- Confirm repository visibility.
+- Check organization policies and Lovable GitHub app access.
+- Decide the initial active branch.
+- Make sure no unrelated repository is selected.
 
-### How to Connect
+After linking, verify a small Lovable edit appears as a commit in GitHub, then push a harmless GitHub edit and confirm it appears in Lovable.
 
-#### Step 1: Have a GitHub Account
+## 4. Branch workflow
 
-If you don't have one:
-1. Go to [github.com](https://github.com)
-2. Click **"Sign up"**
-3. Create a free account
-4. Verify your email
+For a meaningful feature:
 
-#### Step 2: Connect in Lovable
+1. Start from an up-to-date main branch.
+2. Create a feature branch in Lovable or GitHub.
+3. Switch Lovable to that branch.
+4. Build and test the feature.
+5. Open a pull request in GitHub.
+6. Review CI and code changes.
+7. Merge through GitHub.
+8. Switch Lovable back to main and confirm sync.
 
-1. **In your Lovable project**, go to **Settings**
-2. **Find "GitHub"** or **"Version Control"** section
-3. **Click "Connect to GitHub"**
-4. **Authorize Lovable** - Click "Authorize" or "Allow"
-5. **Choose repository settings:**
-   - Create new repository
-   - Or use existing one
-   - Choose public or private
-   - Save
+Use descriptive branch names such as `feature/club-invitations` or `fix/member-book-access`.
 
-#### Step 3: Your Code Syncs
+## 5. Local development
 
-Once connected:
-- **Code syncs automatically** - Changes are saved to GitHub
-- **You can see it on GitHub** - Visit github.com to view
-- **Others can see it** - If public, people can view your work
+Clone the repository and follow its actual scripts:
 
-**💡 Beginner Tip:** Start with a private repository if you're learning. Make it public later if you want to showcase it.
-
----
-
-## 📖 Lesson 3: Understanding Commits
-
-### What is a Commit?
-
-A **commit** is like saving a snapshot of your project at a specific point in time.
-
-**Think of it like:**
-- Saving a document
-- Taking a photo
-- Creating a checkpoint
-
-### How Commits Work in Lovable
-
-**Lovable automatically:**
-- ✅ Creates commits when you make changes
-- ✅ Adds descriptive messages
-- ✅ Saves to GitHub
-- ✅ Keeps history organized
-
-**You can also:**
-- Create commits manually
-- Add custom commit messages
-- Control when commits happen
-
-### Commit Messages
-
-**Good commit messages:**
-- Describe what changed
-- Are clear and specific
-- Help you understand history
-
-**Examples:**
-- "Add user authentication"
-- "Fix contact form submission"
-- "Update homepage design"
-- "Add task filtering feature"
-
-**💡 Beginner Tip:** Lovable creates good commit messages automatically. You can customize them if you want.
-
----
-
-## 📖 Lesson 4: Branches
-
-### What are Branches?
-
-**Branches** are like parallel timelines. You can work on different features without affecting the main project.
-
-**Think of it like:**
-- Main branch = Published book
-- Feature branch = Draft chapter
-- You edit the draft, then merge it into the book
-
-### When to Use Branches
-
-**Use branches for:**
-- ✅ Trying new features
-- ✅ Experimenting
-- ✅ Working on big changes
-- ✅ Collaborating with others
-
-### How to Create Branches
-
-**In Lovable:**
-```
-Create a new branch called "feature-new-design" to work on redesigning the homepage
+```bash
+git clone <repository-url>
+cd <repository-name>
+npm ci
+npm run dev
 ```
 
-**Or in GitHub:**
-1. Go to your repository
-2. Click "main" branch dropdown
-3. Type new branch name
-4. Create branch
+Inspect `package.json`; newer TanStack Start and older React/Vite projects can differ.
 
-### Merging Branches
+Before pushing:
 
-**When you're done:**
-```
-Merge the "feature-new-design" branch into main
+```bash
+git pull --rebase
+npm test
+npm run build
+git status
 ```
 
-**Or in GitHub:**
-1. Go to your repository
-2. Create a Pull Request
-3. Review changes
-4. Merge
+Use the repository's real test, lint, and typecheck commands. Do not commit `.env` secrets, build output, or generated local files unless the repository intentionally tracks them.
 
-**💡 Beginner Tip:** Start with just the main branch. Use branches when you're comfortable or working on big features.
+## 6. Avoiding sync conflicts
 
----
+- Coordinate who is editing the active branch.
+- Pull before local work and before pushing.
+- Keep commits focused.
+- Avoid force-pushing the branch Lovable is actively syncing.
+- Resolve conflicts in Git, test the result, then let Lovable sync the resolved commit.
+- Use a separate branch for risky or long-running local changes.
 
-## 📖 Lesson 5: Pull Requests
+Version history in Lovable and Git history complement each other. Lovable history is convenient for project iteration; Git provides portable code history and collaboration workflows.
 
-### What is a Pull Request?
+## 7. Pull requests and CI
 
-A **Pull Request (PR)** is a way to:
-- Review changes before merging
-- Discuss changes with others
-- Get feedback
-- Merge branches safely
+A useful pull request explains:
 
-### How Pull Requests Work
+- User outcome
+- Main implementation decisions
+- Schema or configuration changes
+- Security implications
+- Tests and browser flows run
+- Deployment or rollback notes
 
-1. **Make changes** in a branch
-2. **Create Pull Request** - Propose merging into main
-3. **Review changes** - See what's different
-4. **Discuss** - Comment and get feedback
-5. **Merge** - Combine into main branch
+CI should at minimum install dependencies reproducibly and run the project's build and tests. Add lint, typecheck, security, and deployment checks according to risk.
 
-### Creating Pull Requests
+## 8. Git sync versus GitHub API connector
 
-**In GitHub:**
-1. Go to your repository
-2. Click "Pull Requests" tab
-3. Click "New Pull Request"
-4. Choose branches to compare
-5. Add description
-6. Create PR
+Git sync stores and synchronizes your project's source code. The GitHub API connector lets a deployed Lovable app read or manage repositories, issues, and pull requests. They solve different problems and have different permissions.
 
-**💡 Beginner Tip:** Pull Requests are great for collaboration. Even solo, they help you review your own changes!
+## Practice
 
----
+1. Link a disposable project to GitHub.
+2. Verify a change in both directions.
+3. Create a feature branch and switch Lovable to it.
+4. Make a small tested change.
+5. Open and merge a pull request.
+6. Return Lovable to main and verify the merged version.
 
-## 📖 Lesson 6: Collaboration with GitHub
+## Official references
 
-### Working with Others
+- [Git sync overview](https://docs.lovable.dev/integrations/git-sync-overview)
+- [Sync with GitHub](https://docs.lovable.dev/integrations/github)
+- [View and edit project code](https://docs.lovable.dev/features/code-mode)
+- [Deployment and ownership options](https://docs.lovable.dev/tips-tricks/deployment-hosting-ownership)
 
-**GitHub enables:**
-- Multiple people working on same project
-- Reviewing each other's code
-- Discussing changes
-- Merging work together
+[Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
 
-### Collaboration Workflow
-
-1. **Clone repository** - Get a copy
-2. **Create branch** - Work on feature
-3. **Make changes** - Build your feature
-4. **Commit changes** - Save your work
-5. **Push to GitHub** - Upload your changes
-6. **Create Pull Request** - Propose merging
-7. **Review and merge** - Combine into main
-
-### Using GitHub for Portfolio
-
-**Showcase your work:**
-- Make repositories public
-- Add README files
-- Include screenshots
-- Document your projects
-- Share with employers/clients
-
-**💡 Beginner Tip:** GitHub is like a portfolio for developers. Keep your best work public!
-
----
-
-## 🛠️ Hands-On Practice
-
-### Practice 1: Connect and First Commit
-
-**Task:** Connect a project to GitHub and make your first commit.
-
-**Steps:**
-1. **Connect to GitHub** (as described above)
-2. **Make a small change** to your project
-3. **Check GitHub** - See your change there
-4. **View commit history** - See the commit
-
-### Practice 2: Create a Branch
-
-**Task:** Create a branch and make changes.
-
-**Steps:**
-1. **Create a branch:**
-   ```
-   Create a new branch called "experiment-new-feature"
-   ```
-2. **Make changes** in that branch
-3. **Check GitHub** - See the branch
-4. **Switch back to main** - See it's unchanged
-
-### Practice 3: Merge a Branch
-
-**Task:** Merge your experimental branch.
-
-**Steps:**
-1. **Go to GitHub**
-2. **Create Pull Request** from your branch
-3. **Review changes**
-4. **Merge** into main
-5. **See changes** in main branch
-
----
-
-## ✅ Module 14 Checklist
-
-Before completing the course, make sure you can:
-
-- [ ] Understand what version control is
-- [ ] Connect Lovable to GitHub
-- [ ] Understand commits and commit messages
-- [ ] Create and use branches
-- [ ] Create and merge pull requests
-- [ ] Use GitHub for backup
-- [ ] Understand basic collaboration
-
----
-
-## 🤔 Common Questions (FAQ)
-
-### Q: Do I need GitHub?
-**A:** It's optional but recommended! Great for backup and learning.
-
-### Q: Is GitHub free?
-**A:** Yes! Free accounts have unlimited public repositories and some private ones.
-
-### Q: Can I use GitHub without knowing Git?
-**A:** Yes! Lovable handles most of it. You can use GitHub's web interface for the rest.
-
-### Q: What's the difference between Git and GitHub?
-**A:** Git is the tool, GitHub is the platform. Lovable uses Git and connects to GitHub.
-
-### Q: Should I make my repos public or private?
-**A:** Private for personal projects, public for portfolio pieces you want to showcase.
-
----
-
-## 🎯 What's Next?
-
-Great work! You now understand version control with GitHub. Use it to backup your work and build your portfolio.
-
-**Continue with:**
-- Module 15: Deploying to Custom Clouds
-- Or apply these skills to manage your projects!
-
----
-
-*Module 14 Complete! 🎉*
-
+Next: [Module 15 - External Hosting and Portability](module-15-deploying-to-custom-clouds.md)

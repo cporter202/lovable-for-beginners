@@ -1,332 +1,135 @@
-# Module 15: Deploying to Custom Clouds
+# Module 15: External Hosting and Portability
 
-**Goal:** Understand deployment options beyond Lovable's built-in hosting
+Lovable Cloud is the recommended default for most projects. External hosting is appropriate when a real compliance, data-residency, network, infrastructure, or organizational requirement justifies the operational work.
 
-**Estimated Time:** 30-40 minutes
+## Learning goals
 
-**Prerequisites:** Complete Modules 1-8 first
+- Separate code, frontend hosting, and backend ownership
+- Decide whether to stay on Lovable Cloud, use a hybrid setup, or self-host
+- Deploy from Git with stack-aware build settings
+- Migrate data and backend services without assuming full portability is automatic
+- Plan monitoring, rollback, OAuth, secrets, and security outside Lovable
 
----
+## 1. Three independent layers
 
-## 🎯 What You'll Learn in This Module
+| Layer | Default | Portable option |
+| --- | --- | --- |
+| Code | Managed in Lovable | GitHub or GitLab and any Git workflow |
+| Frontend | Lovable hosting | Managed host, CDN, container, VM, or Kubernetes |
+| Backend and data | Lovable Cloud | Managed or self-hosted Supabase-compatible services |
 
-By the end of this module, you will:
-- Understand Lovable's built-in hosting
-- Know when to consider custom cloud deployment
-- Learn about alternative hosting platforms
-- Understand how to export your code
-- Know how to deploy to Vercel, Netlify, etc.
-- Understand migration considerations
+You can move the frontend while keeping the backend on Lovable Cloud. Moving the backend is a separate project involving database, auth, storage, functions, secrets, and operations.
 
----
+## 2. Recommended adoption path
 
-## 📖 Lesson 1: Lovable's Built-in Hosting
+1. Start on Lovable Cloud.
+2. Sync to GitHub.
+3. Move only the layer that has a real constraint.
 
-### What Lovable Provides
+External hosting makes your team responsible for some combination of CI/CD, previews, rollbacks, environment variables, TLS, CDN behavior, uptime, logs, scaling, database backups, auth providers, OAuth token refresh, secrets, security scanning, and incident response.
 
-**Lovable's hosting includes:**
-- ✅ Automatic deployment
-- ✅ Free subdomain (yourproject.lovable.app)
-- ✅ HTTPS (secure connections)
-- ✅ CDN (fast global delivery)
-- ✅ Automatic updates
-- ✅ No configuration needed
+Lovable cannot monitor or debug production infrastructure it does not control.
 
-### When Lovable Hosting is Perfect
+## 3. Identify the project stack
 
-**Use Lovable hosting when:**
-- ✅ You're learning and building
-- ✅ You want simplicity
-- ✅ Free subdomain is fine
-- ✅ You want automatic updates
-- ✅ You're building personal projects
+Do this before selecting a hosting recipe:
 
-**💡 Beginner Tip:** Lovable's hosting is excellent for most projects! Only consider alternatives if you have specific needs.
+```text
+Inspect package.json, routing, build scripts, server entry points, and deployment
+configuration. Tell me whether this project is TanStack Start with SSR or an older
+React/Vite SPA, what runtime it requires, what the build output is, and which
+environment variables are public versus server-only. Do not change code.
+```
 
----
+Current official docs state that new projects created from May 13, 2026 use TanStack Start with SSR by default, except on Enterprise plans. Older projects use React and Vite.
 
-## 📖 Lesson 2: When to Consider Custom Clouds
+The official external-hosting guide still contains Vite SPA examples such as `npm run build`, `dist`, Node 22, and an `index.html` fallback. Apply those instructions only to a project that actually matches that stack. TanStack Start SSR requires a compatible server runtime or adapter and should not be deployed as a static SPA unless the project is explicitly configured for static output.
 
-### Reasons to Use Custom Clouds
+## 4. External frontend with Lovable Cloud backend
 
-**Consider custom deployment if you need:**
-- Custom domain requirements
-- Specific platform features
-- Integration with existing infrastructure
-- More control over deployment
-- Different pricing model
-- Team/organization requirements
+This is the most common hybrid setup.
 
-### Popular Alternatives
+1. Connect the project to GitHub.
+2. Import the repository into the hosting platform.
+3. Configure the actual install and build commands.
+4. Configure frontend-safe environment values required by the Cloud client.
+5. Configure routing or SSR runtime for the detected stack.
+6. Add the production domain to OAuth redirect and allowed-origin settings.
+7. Deploy and test from a clean session.
 
-#### Vercel
-- **Best for:** Next.js, React apps
-- **Features:** Automatic deployments, edge functions
-- **Pricing:** Free tier available
+For older Vite projects, public Cloud configuration commonly uses:
 
-#### Netlify
-- **Best for:** Static sites, JAMstack
-- **Features:** Forms, functions, split testing
-- **Pricing:** Free tier available
+```text
+VITE_SUPABASE_URL
+VITE_SUPABASE_PUBLISHABLE_KEY
+VITE_SUPABASE_PROJECT_ID
+```
 
-#### AWS/Google Cloud/Azure
-- **Best for:** Enterprise, complex needs
-- **Features:** Full cloud infrastructure
-- **Pricing:** Pay-as-you-go
+These values are embedded at build time. Never include private service-role or third-party secret keys.
 
-**💡 Beginner Tip:** Most beginners don't need custom clouds. Lovable's hosting works great!
+Common managed hosts include Netlify, Cloudflare Pages, Vercel, AWS Amplify, Azure Static Web Apps, and Firebase Hosting. Compatibility depends on the project's stack and required runtime.
 
----
+## 5. Self-managed frontend
 
-## 📖 Lesson 3: Exporting Your Code
+Containers, VMs, and Kubernetes provide control but require your own:
 
-### How to Get Your Code
+- Build and deployment automation
+- TLS and domain management
+- CDN or reverse-proxy configuration
+- Logs, metrics, alerting, and uptime checks
+- Runtime and dependency patching
+- Branch preview strategy
+- Rollback procedure
 
-**Option 1: From GitHub**
-- If connected to GitHub, code is already there
-- Clone repository
-- Use the code anywhere
+For a Vite SPA, the server usually needs an `index.html` fallback for client-side routes. For TanStack Start SSR, deploy the generated server using the project's supported adapter and runtime. Do not apply SPA rewrites to an SSR server without understanding the route behavior.
 
-**Option 2: Download from Lovable**
-- Go to project settings
-- Look for "Export" or "Download"
-- Download your code
+## 6. Moving the backend
 
-**Option 3: Use Code Mode**
-- View code in Code Mode
-- Copy files you need
-- (Requires paid plan for editing)
+Lovable Cloud uses a Supabase-compatible foundation. Managed Supabase is the most direct external target because it provides comparable database, auth, storage, realtime, functions, and RLS concepts.
 
-### What You Get
+Migration categories:
 
-**Exported code includes:**
-- All source files
-- Configuration files
-- Dependencies list
-- Project structure
+| Asset | Typical migration |
+| --- | --- |
+| Schema and RLS | Apply reviewed SQL migrations in order |
+| Table data | Export and import, then verify counts and relationships |
+| Storage policies | Migrate schema policies |
+| Stored files | Download and upload separately |
+| Auth providers | Reconfigure manually |
+| User passwords | Cannot be exported; plan password reset |
+| Secrets and environment values | Recreate manually |
+| Functions and webhooks | Deploy and reconfigure endpoints manually |
 
-**💡 Beginner Tip:** If you're connected to GitHub, your code is already exported there!
+The current Cloud export documentation limits database exports to 5 GB and one request per 24 hours. Confirm limits in the live docs before planning a migration.
 
----
+Plan migrations before onboarding real users. Use a maintenance window or dual-write strategy only if you can reason about consistency, replay, and rollback.
 
-## 📖 Lesson 4: Deploying to Vercel
+## 7. External release checklist
 
-### Why Vercel?
+- [ ] GitHub is current and the production commit is identified
+- [ ] Project stack and runtime were detected, not assumed
+- [ ] CI installs reproducibly and runs tests plus build
+- [ ] Public variables and private secrets are separated
+- [ ] OAuth redirects, CORS, webhooks, and domain restrictions are updated
+- [ ] SPA fallback or SSR adapter matches the stack
+- [ ] TLS, custom domain, and canonical URLs are correct
+- [ ] External logs, monitoring, alerts, backups, and rollback exist
+- [ ] Preview and production user flows pass
+- [ ] Security and dependency scans run outside Lovable as needed
+- [ ] Ownership and incident contacts are documented
 
-**Vercel is great for:**
-- React/Next.js apps
-- Fast deployments
-- Automatic CI/CD
-- Edge functions
-- Great developer experience
+## 8. Decision guide
 
-### How to Deploy
+Stay fully on Lovable Cloud when speed and low operations overhead matter most. Use hybrid hosting when you need frontend deployment control but want managed backend services. Move the backend only for a concrete infrastructure requirement and after a tested migration and operations plan.
 
-#### Step 1: Prepare Your Code
+## Official references
 
-1. **Connect to GitHub** (if not already)
-2. **Ensure code is pushed** to GitHub
-3. **Check that it builds** locally (optional)
+- [Deployment, hosting, and ownership options](https://docs.lovable.dev/tips-tricks/deployment-hosting-ownership)
+- [Deploying outside Lovable Cloud](https://docs.lovable.dev/tips-tricks/external-deployment-hosting)
+- [Git sync overview](https://docs.lovable.dev/integrations/git-sync-overview)
+- [Lovable Cloud](https://docs.lovable.dev/integrations/cloud)
+- [Current stack FAQ](https://docs.lovable.dev/introduction/faq)
 
-#### Step 2: Deploy to Vercel
+[Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
 
-1. **Sign up at [vercel.com](https://vercel.com)**
-2. **Import from GitHub:**
-   - Click "Import Project"
-   - Select your repository
-   - Vercel detects settings
-3. **Configure:**
-   - Framework preset (if needed)
-   - Build settings
-   - Environment variables
-4. **Deploy:**
-   - Click "Deploy"
-   - Wait for build
-   - Get your URL!
-
-#### Step 3: Custom Domain (Optional)
-
-1. **Add domain** in Vercel dashboard
-2. **Configure DNS** as instructed
-3. **Wait for propagation**
-4. **Your app is live!**
-
-**💡 Beginner Tip:** Vercel makes deployment easy! It auto-detects most settings.
-
----
-
-## 📖 Lesson 5: Deploying to Netlify
-
-### Why Netlify?
-
-**Netlify is great for:**
-- Static sites
-- JAMstack apps
-- Forms and functions
-- Split testing
-- Easy deployment
-
-### How to Deploy
-
-#### Step 1: Prepare Your Code
-
-1. **Ensure code is in GitHub**
-2. **Check build settings**
-3. **Prepare environment variables** (if needed)
-
-#### Step 2: Deploy to Netlify
-
-1. **Sign up at [netlify.com](https://netlify.com)**
-2. **Import from GitHub:**
-   - Click "New site from Git"
-   - Connect GitHub
-   - Select repository
-3. **Configure:**
-   - Build command (if needed)
-   - Publish directory
-   - Environment variables
-4. **Deploy:**
-   - Click "Deploy site"
-   - Wait for build
-   - Get your URL!
-
-#### Step 3: Custom Domain
-
-1. **Add domain** in Netlify
-2. **Follow DNS instructions**
-3. **Enable HTTPS** (automatic)
-4. **Done!**
-
-**💡 Beginner Tip:** Netlify is very beginner-friendly with great documentation!
-
----
-
-## 📖 Lesson 6: Migration Considerations
-
-### What to Consider
-
-**Before migrating, think about:**
-- ✅ Why are you migrating?
-- ✅ What features do you need?
-- ✅ What will you lose/gain?
-- ✅ Is it worth the effort?
-
-### What You Might Lose
-
-**Lovable-specific features:**
-- Visual editing in Lovable
-- Some Lovable integrations
-- Lovable's update system
-- Easy re-deployment from Lovable
-
-### What You Might Gain
-
-**Custom platform features:**
-- Platform-specific tools
-- Different pricing
-- More control
-- Team features
-
-### Migration Process
-
-**If you decide to migrate:**
-
-1. **Export your code** (from GitHub or Lovable)
-2. **Set up new hosting** (Vercel, Netlify, etc.)
-3. **Configure environment variables**
-4. **Set up custom domain** (if needed)
-5. **Test thoroughly**
-6. **Update DNS** (if using custom domain)
-7. **Monitor** for issues
-
-**💡 Beginner Tip:** Most people don't need to migrate! Lovable's hosting is excellent. Only migrate if you have specific requirements.
-
----
-
-## 🛠️ Hands-On Practice (Optional)
-
-### Practice: Deploy to Vercel
-
-**Task:** Deploy a Lovable project to Vercel.
-
-**Steps:**
-
-1. **Ensure GitHub connection:**
-   - Connect project to GitHub
-   - Verify code is synced
-
-2. **Sign up for Vercel:**
-   - Go to vercel.com
-   - Sign up with GitHub
-
-3. **Import project:**
-   - Click "Import Project"
-   - Select your repository
-   - Configure settings
-   - Deploy
-
-4. **Test deployment:**
-   - Visit your Vercel URL
-   - Test all features
-   - Verify everything works
-
-5. **Add custom domain (optional):**
-   - Add your domain
-   - Configure DNS
-   - Wait for propagation
-
-**What You Learned:**
-- ✅ How to export code
-- ✅ How to deploy to alternative platform
-- ✅ How to configure deployment
-- ✅ How to add custom domain
-
----
-
-## ✅ Module 15 Checklist
-
-Before completing the course, make sure you can:
-
-- [ ] Understand Lovable's hosting benefits
-- [ ] Know when to consider alternatives
-- [ ] Understand how to export code
-- [ ] Know how to deploy to Vercel/Netlify
-- [ ] Understand migration considerations
-- [ ] Know when to stay with Lovable hosting
-
----
-
-## 🤔 Common Questions (FAQ)
-
-### Q: Should I use custom cloud or Lovable hosting?
-**A:** For most beginners, Lovable hosting is perfect! Only use custom clouds if you have specific needs.
-
-### Q: Can I use both?
-**A:** Yes! You can deploy to multiple platforms. Some people use Lovable for development and custom cloud for production.
-
-### Q: Will I lose my Lovable project if I deploy elsewhere?
-**A:** No! Your project stays in Lovable. You're just deploying a copy elsewhere.
-
-### Q: Is it hard to migrate?
-**A:** It depends on your app's complexity. Simple apps are easy, complex apps with many integrations take more work.
-
-### Q: Can I come back to Lovable hosting?
-**A:** Yes! Your project is always in Lovable. You can deploy from Lovable anytime.
-
----
-
-## 🎯 What's Next?
-
-Excellent! You now understand deployment options. For most projects, Lovable's hosting is perfect. Custom clouds are there when you need them.
-
-**You've completed all advanced modules!** 🎉
-
-**Next steps:**
-- Apply everything to Module 9's capstone project
-- Build your own projects
-- Continue learning and experimenting!
-
----
-
-*Module 15 Complete! 🎉*
-
+Return to the [course overview](README.md).

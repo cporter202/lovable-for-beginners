@@ -1,323 +1,214 @@
-# Troubleshooting Guide - Common Issues and Solutions
+# Troubleshooting Lovable Projects
 
-**Having trouble? You're not alone!** This guide helps you solve common problems when learning Lovable.
+Use this guide to move from symptom to evidence. Menu names and plan availability are current as of July 18, 2026.
 
----
+## First response to any issue
 
-## 🔧 General Issues
+1. Decide whether it affects preview, production, or both.
+2. Record the route, user role, device, expected result, and actual result.
+3. Check whether production needs Publish -> Update.
+4. Reproduce in the smallest flow possible.
+5. Investigate in Plan mode before editing fragile code.
+6. Restore a known working version if impact is severe.
 
-### "I don't understand what Lovable built"
+## "Lovable built the wrong thing"
 
-**Problem:** Lovable created something, but you're not sure what it is or how it works.
+Likely cause: the request described appearance but not the user outcome, behavior, constraints, or states.
 
-**Solutions:**
-1. **Use Chat Mode** - Ask: "Can you explain what this does?"
-2. **Ask for a walkthrough** - "Show me how this feature works"
-3. **Break it down** - "What does each part of this page do?"
-4. **Review the code** - Open Code Mode to see the structure (optional)
+Response:
 
-**Prevention:** Use the "ask questions" technique in your prompts to ensure Lovable explains what it's building.
+- Select the exact element or reference the file.
+- State what is observably wrong.
+- Define the target behavior.
+- State what must remain unchanged.
+- Add acceptance criteria.
+- Revert first if the new version is substantially worse.
 
----
+## "I cannot find Chat, Agent, Visual Edits, or Code Mode"
 
-### "Lovable didn't build what I wanted"
+Current terminology:
 
-**Problem:** The result doesn't match what you envisioned.
+- Chat mode became Plan mode.
+- Agent mode is generally presented as Build mode, though some docs still say Agent.
+- Visual Edits was replaced by the preview toolbar.
+- Code Mode is documented as the code editor.
 
-**Solutions:**
-1. **Be more specific** - Add more details to your prompt
-2. **Use the question technique** - "Ask me questions to understand what I want"
-3. **Break it into steps** - Instead of one big request, make several smaller ones
-4. **Provide examples** - "Make it look like [reference website]"
-5. **Iterate** - Ask for changes: "That's close, but can you change X to Y?"
+Some controls move into menus on narrow windows, and code editing requires a paid plan.
 
-**Prevention:** Start with detailed prompts and use the question technique.
+## "My live site does not show the latest changes"
 
----
+Publishing deploys a snapshot. Editor changes are not automatic releases.
 
-### "I made a mistake and want to undo it"
+1. Open Publish.
+2. Check for unpublished changes.
+3. Click Update.
+4. Wait for deployment to finish.
+5. Test the live URL in a clean session.
+6. Check service-worker or CDN caching only if the updated deployment is confirmed.
 
-**Problem:** You made a change you don't like.
+## "The app works in preview but not production"
 
-**Solutions:**
-1. **Use History** - Go to History and revert to a previous version
-2. **Ask to undo** - "Revert the last change" or "Go back to before I added X"
-3. **Edit your message** - Find the message that made the change and edit/delete it
-4. **Ask for the opposite** - "Remove the feature I just added"
+Check:
 
-**Prevention:** Test changes on a copy or save important versions.
+- Production was updated
+- Production environment variables and secrets exist
+- OAuth redirect URLs include the live domain
+- Connector domain restrictions include the live domain
+- Webhook URLs point to production
+- Published website access permits the test user
+- Database and storage policies allow the production role
+- Production logs and network responses
 
----
+External hosting has separate configuration and cannot be monitored by Lovable infrastructure.
 
-## 💬 Chat Mode Issues
+## "A direct link returns 404"
 
-### "Chat Mode isn't helping"
+First identify the stack.
 
-**Problem:** Chat Mode isn't giving useful answers.
+- Older React/Vite SPAs on external static hosting need a fallback rewrite to `index.html`.
+- TanStack Start SSR projects need a compatible server runtime and route handling.
+- Lovable-hosted projects should be checked for a missing route and stale publish snapshot.
 
-**Solutions:**
-1. **Be more specific** - Ask detailed questions
-2. **Provide context** - Explain your situation
-3. **Ask follow-up questions** - Dig deeper into the response
-4. **Try rephrasing** - Sometimes a different way of asking helps
-5. **Use examples** - "Like when I do X, I want Y to happen"
+Do not add an SPA rewrite to an SSR deployment without inspecting the configuration.
 
----
+## "Authentication works for one user but not another"
 
-### "I don't know what to ask"
+Compare:
 
-**Problem:** You're stuck and don't know how to proceed.
+- Account confirmation and auth provider
+- User role and membership rows
+- Session and token state
+- RLS policies for the exact operation
+- OAuth redirect and allowed origin
+- Route guards versus server-side authorization
 
-**Solutions:**
-1. **Ask for guidance** - "I want to build X, but I don't know where to start. Can you help me plan?"
-2. **Ask for options** - "What are different ways I could do this?"
-3. **Ask for examples** - "Can you show me an example of how to do this?"
-4. **Break it down** - "What are the steps to build this feature?"
+Test as owner, ordinary member, signed-in non-member, and signed-out visitor. A hidden UI control does not prove the operation is secure.
 
----
+## "Data is missing or access is denied"
 
-## 🤖 Agent Mode Issues
+An RLS denial may be correct. Inspect the authenticated user, ownership fields, membership row, and policy conditions.
 
-### "Agent Mode didn't build what I asked for"
+Use a direct backend call or query to separate UI state from database behavior. Never fix the issue by disabling RLS or adding a universal policy.
 
-**Problem:** Agent Mode created something different than requested.
+## "Data is visible to the wrong user"
 
-**Solutions:**
-1. **Be more specific** - Add details about what you want
-2. **Provide context** - Explain the purpose and requirements
-3. **Ask for adjustments** - "That's not quite right. Can you change X to Y?"
-4. **Break it down** - Request features one at a time
-5. **Use references** - "Make it similar to [example]"
+Treat this as a security incident.
 
----
+1. Stop or roll back the affected release and republish if exposure is active.
+2. Preserve logs and identify the exposed tables and time window.
+3. Test the exact query as multiple roles.
+4. Repair RLS and server-side authorization.
+5. Run Basic and Deep security scans.
+6. Review whether notification or legal obligations apply.
 
-### "Agent Mode is taking too long"
+Do not rely on client filters to isolate user data.
 
-**Problem:** Agent Mode seems stuck or is taking a very long time.
+## "An API key is visible"
 
-**Solutions:**
-1. **Be patient** - Complex tasks take time
-2. **Check if it's still working** - Look for progress indicators
-3. **Simplify your request** - Break complex tasks into smaller ones
-4. **Cancel and retry** - If truly stuck, cancel and try a simpler approach
+First determine whether it is intentionally publishable. Values in `VITE_` variables are embedded in frontend output.
 
----
+For a private credential:
 
-## 🎨 Design Issues
+1. Revoke or rotate it at the provider immediately.
+2. Remove it from code, history where appropriate, logs, and prompts.
+3. Store the replacement in managed secrets.
+4. Move the call to an edge function or managed connector.
+5. Review provider logs for misuse.
+6. Run a Deep security scan.
 
-### "The colors don't look right"
+## "The API or connector fails"
 
-**Problem:** Colors aren't matching your vision.
+Check:
 
-**Solutions:**
-1. **Be specific about colors** - Use color codes: "Use #0066CC for blue"
-2. **Provide examples** - "Use colors similar to [website]"
-3. **Ask for adjustments** - "Make the background darker" or "Use warmer colors"
-4. **Use Visual Edits** - Click and change colors directly
+- Connection still exists and has sufficient scopes
+- Correct account owns the connection
+- Gateway or direct-key model for that connector
+- Secret names and server-side availability
+- Domain or IP restrictions
+- Request schema and endpoint
+- 401, 403, 404, 409, 429, and 5xx behavior
+- Timeout, retry, pagination, and rate limit
+- Disconnect and reconnect behavior
 
----
+Never print credentials while debugging. Log an operation ID, provider status, and safe metadata.
 
-### "It doesn't look good on mobile"
+## "Payments work in preview but not live"
 
-**Problem:** The design breaks or looks bad on phones.
+Preview payment flows use a test environment; published apps use live payments after go-live.
 
-**Solutions:**
-1. **Ask for responsiveness** - "Make this fully responsive for mobile devices"
-2. **Test and report** - "The menu doesn't work on mobile, can you fix it?"
-3. **Request mobile-first** - "Design this to work well on mobile first"
-4. **Ask for specific fixes** - "On mobile, the text is too small" or "Buttons are too close together"
+Verify:
 
----
+- Provider account verification is complete
+- Products and prices are live and synchronized
+- The latest project snapshot is published
+- Webhooks reach production and signatures validate
+- Users are authenticated and purchases map correctly
+- Live domain and redirects are configured
+- Access updates are idempotent
 
-## 🔐 Authentication Issues
+Test success, failure, cancellation, duplicate webhooks, refunds, and subscription changes.
 
-### "I can't sign up"
+## "Cloud cannot be moved to another region"
 
-**Problem:** Sign up isn't working.
+Cloud region is selected when the project is enabled and cannot be changed for that project. Existing Cloud projects also cannot be moved between regions. Migration requires a new backend project and a planned transfer of schema, data, storage, auth, functions, secrets, and domains.
 
-**Solutions:**
-1. **Check if backend is enabled** - "Is Lovable Cloud enabled for this project?"
-2. **Ask Lovable** - "The sign up form isn't working, can you check it?"
-3. **Test the form** - "Add validation to the sign up form"
-4. **Check error messages** - "Show better error messages if sign up fails"
+## "Browser testing cannot complete the flow"
 
----
+Browser testing may struggle with canvas, complex uploads, drag-and-drop, clipboard interactions, subtle visual comparisons, and icon-only controls. Signed-in tests currently require Lovable Cloud.
 
-### "I'm logged in but can't access pages"
+Break the flow into smaller checks, use direct edge calls for backend behavior, add frontend tests for UI rules, and manually verify unsupported interactions.
 
-**Problem:** Protected pages aren't working correctly.
+## "The project is slow"
 
-**Solutions:**
-1. **Ask to check protection** - "Make sure only logged-in users can access the dashboard"
-2. **Test the flow** - "If I'm not logged in and try to access X, redirect me to login"
-3. **Check navigation** - "Update the navigation to show different items for logged-in vs logged-out users"
+Collect evidence before optimizing:
 
----
+- Browser network timing and bundle size
+- Console errors and repeated requests
+- Cloud and edge-function logs
+- Database query shape and indexes
+- Data volume and realtime subscriptions
+- Image and video size
+- Cloud usage spikes
 
-## 💾 Database Issues
+Use a realistic device, network, and data set. Change one suspected bottleneck and measure again.
 
-### "My data isn't saving"
+## "Credits disappear faster than expected"
 
-**Problem:** Information isn't being stored in the database.
+Open Settings -> Plans & credit usage and filter Build, Cloud, and AI usage by project and person. Also inspect exact message cost and Cloud Usage.
 
-**Solutions:**
-1. **Verify database setup** - "Is the database set up correctly for storing tasks?"
-2. **Check the form** - "Make sure the form submits data to the database"
-3. **Test saving** - "When I create a task, it should save to the database"
-4. **Ask for debugging** - "Data isn't saving, can you check what's wrong?"
+Common causes include broad Build prompts, repeated failed iterations, browser tests, web research, image generation, polling, large queries, realtime usage, jobs, retry loops, and runtime AI calls.
 
----
+## "GitHub changes are not appearing"
 
-### "I can't see my saved data"
+Confirm:
 
-**Problem:** Data is saved but not displaying.
+- The workspace connection and project repository link are healthy
+- Lovable and GitHub are using the same active branch
+- The commit was pushed, not only created locally
+- Organization app permissions still permit the repository
+- There is no unresolved merge conflict
 
-**Solutions:**
-1. **Check the query** - "Make sure the page loads data from the database"
-2. **Verify user association** - "Show only tasks that belong to the logged-in user"
-3. **Test the display** - "The tasks should appear in a list on the dashboard"
-4. **Ask for debugging** - "My tasks aren't showing up, can you fix it?"
+Lovable syncs one branch at a time. Work on another branch does not appear until you switch to it or merge it into the active branch.
 
----
+## Escalation package
 
-## 🚀 Deployment Issues
+When requesting support, provide:
 
-### "My app won't publish"
+- Project URL or ID, without secrets
+- Preview or production URL
+- Approximate timestamp and timezone
+- User role and route
+- Expected and actual behavior
+- Reproduction steps
+- Screenshots or short recording
+- Safe console, network, and backend log excerpts
+- Last working version and recent change
+- Tests and scans already run
 
-**Problem:** Publishing fails or gets stuck.
+## Official references
 
-**Solutions:**
-1. **Check for errors** - Look for error messages
-2. **Fix obvious issues** - Resolve any errors shown
-3. **Try again** - Sometimes it's a temporary issue
-4. **Contact support** - If it keeps failing, reach out to Lovable support
-
----
-
-### "My published app doesn't work"
-
-**Problem:** The live version has issues.
-
-**Solutions:**
-1. **Test locally first** - Make sure it works before publishing
-2. **Check the live URL** - Visit it and test everything
-3. **Compare to local version** - See what's different
-4. **Republish** - Make fixes and republish
-5. **Clear cache** - Sometimes browser cache causes issues
-
----
-
-## 🔗 Integration Issues
-
-### "My API isn't working"
-
-**Problem:** External API integration isn't functioning.
-
-**Solutions:**
-1. **Check API key** - Make sure it's set up correctly in secrets
-2. **Verify the endpoint** - "Is the API endpoint correct?"
-3. **Test the connection** - "Can you test if the API is accessible?"
-4. **Check error messages** - Look for specific error information
-5. **Ask for help** - "The weather API isn't working, can you debug it?"
-
----
-
-### "Connector isn't connecting"
-
-**Problem:** A connector (Stripe, Supabase, etc.) isn't working.
-
-**Solutions:**
-1. **Verify setup** - Check if connector is configured in settings
-2. **Check API keys** - Make sure they're correct and active
-3. **Test the connection** - "Can you test the Supabase connection?"
-4. **Review documentation** - Check Lovable's integration docs
-5. **Ask for help** - "Stripe isn't working, can you check the setup?"
-
----
-
-## 📱 General Tips for Troubleshooting
-
-### 1. Use Chat Mode First
-
-When something doesn't work, start with Chat Mode:
-- "Why isn't X working?"
-- "Can you help me debug this?"
-- "What might be causing this issue?"
-
-### 2. Be Specific About Problems
-
-Instead of "it's broken," say:
-- "The button doesn't do anything when clicked"
-- "The form doesn't submit"
-- "The page shows an error message"
-
-### 3. Test Incrementally
-
-Build and test one feature at a time:
-- Add a feature
-- Test it
-- Fix any issues
-- Move to the next feature
-
-### 4. Use the History Feature
-
-If something breaks:
-- Check what changed
-- Revert if needed
-- Try a different approach
-
-### 5. Ask for Explanations
-
-Don't just ask for fixes, ask to understand:
-- "Why did this happen?"
-- "How can I prevent this?"
-- "What's the best way to do this?"
-
----
-
-## 🆘 When to Get More Help
-
-If you've tried troubleshooting and still stuck:
-
-1. **Use Chat Mode** - Ask Lovable for help
-2. **Check Documentation** - Visit docs.lovable.dev
-3. **Join the Community** - Discord, Reddit, forums
-4. **Contact Support** - Lovable's support team
-5. **Search for Similar Issues** - Others might have had the same problem
-
----
-
-## 💡 Prevention Tips
-
-**Avoid problems before they happen:**
-
-1. **Start simple** - Build basic features first, then add complexity
-2. **Test frequently** - Check things as you build
-3. **Use clear prompts** - Specific instructions prevent misunderstandings
-4. **Save important versions** - Use History to mark good versions
-5. **Read error messages** - They often tell you exactly what's wrong
-6. **Ask questions early** - Don't wait until you're completely stuck
-
----
-
-## 🎯 Quick Problem-Solving Checklist
-
-When something doesn't work:
-
-- [ ] Can I describe the problem clearly?
-- [ ] Have I tried Chat Mode to understand it?
-- [ ] Have I checked for error messages?
-- [ ] Have I tested if it works in a simple case?
-- [ ] Have I tried reverting to see if it worked before?
-- [ ] Have I asked Lovable for help?
-- [ ] Have I checked the documentation?
-- [ ] Have I reached out to the community?
-
----
-
-**Remember:** Every problem has a solution! Don't give up - use these troubleshooting techniques, and you'll get unstuck. 🚀
-
----
-
-*Last updated: December 2024*
-
+- [Debugging prompts](https://docs.lovable.dev/prompting/prompting-debugging)
+- [Testing](https://docs.lovable.dev/features/testing)
+- [Security](https://docs.lovable.dev/features/security)
+- [Publish troubleshooting](https://docs.lovable.dev/features/publish)
+- [GitHub sync troubleshooting](https://docs.lovable.dev/integrations/github)

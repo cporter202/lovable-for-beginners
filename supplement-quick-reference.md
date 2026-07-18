@@ -1,347 +1,181 @@
-# Quick Reference Guide - Lovable Cheat Sheet
+# Lovable Quick Reference
 
-**Quick lookup for common tasks and prompts in Lovable.**
+Current as of July 18, 2026.
 
----
+## Mode chooser
 
-## 🚀 Getting Started
+| Need | Use |
+| --- | --- |
+| Ask questions, compare options, investigate, or create a plan | Plan mode |
+| Generate, edit, fix, refactor, or verify the project | Build mode |
+| Inspect or manually edit files | Code editor, paid plans |
+| Point at visible UI | Preview toolbar |
 
-### Create Account
-1. Go to [lovable.dev](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
-2. Click "Get started"
-3. Sign up with Google, Email, or GitHub
+Older references may call Plan mode Chat mode and Build mode Agent mode.
 
-### Start New Project
-```
-Create a [type of app] called "[name]" with [key features]
-```
-
----
-
-## 💬 Common Prompts
-
-### Basic Page Creation
-```
-Create a [page type] page with [features]
-```
-
-### Adding Features
-```
-Add [feature] to [location/page]
-```
-
-### Changing Design
-```
-Change [element] to [new style/color/size]
-```
-
-### Fixing Issues
-```
-Fix [problem] - [what should happen instead]
-```
-
----
-
-## 🎨 Design Prompts
-
-### Colors
-```
-Change the primary color to #0066CC
-Use [color1] and [color2] as the main colors
-Make the background [color]
-```
-
-### Layout
-```
-Make the layout responsive for mobile
-Add more spacing between elements
-Center the content
-Make it full-width
-```
-
-### Typography
-```
-Change the font to [font name]
-Make the headings larger
-Improve text readability
-```
-
----
-
-## 🔐 Authentication Prompts
-
-### Enable Authentication
-```
-Enable Lovable Cloud for user authentication
-```
-
-### Create Auth Pages
-```
-Create a sign up page with email and password
-Create a login page
-Add logout functionality
-```
-
-### Protect Pages
-```
-Make this page only accessible to logged-in users
-Redirect non-logged-in users to login
-```
-
----
-
-## 💾 Database Prompts
-
-### Set Up Database
-```
-Create a database table for [data type] with fields: [list fields]
-```
-
-### Use Database
-```
-Save [data] to the database when [action]
-Display all [items] from the database
-Update [item] in the database
-Delete [item] from the database
-```
-
----
-
-## 📄 Page Management
-
-### Add New Page
-```
-Create a new [page type] page called "[name]"
-Add it to the navigation menu
-```
-
-### Update Page
-```
-Update the [page name] page to include [features]
-```
-
-### Delete Page
-```
-Remove the [page name] page
-```
-
----
-
-## 🖼️ Images & Media
+## Best prompt structure
 
-### Add Images
-```
-Add [image description] to [location]
-Use [uploaded image] as [purpose]
-```
-
-### Image Optimization
-```
-Optimize images for faster loading
-Add alt text to all images
-```
-
----
-
-## 🔗 Navigation
+```text
+Outcome:
+What should become true for the user?
 
-### Create Menu
-```
-Add a navigation menu with links to [pages]
-Make the menu sticky (stays at top)
-```
-
-### Update Navigation
-```
-Add [page] to the navigation
-Remove [page] from navigation
-Update navigation to show [items] when logged in
-```
-
----
+Context:
+Who is the user, what exists now, and which files or references matter?
 
-## 📱 Responsive Design
+Requirements:
+- Required behavior
+- Required content and states
 
-### Mobile Optimization
-```
-Make this fully responsive for mobile devices
-Fix the mobile layout for [element]
-Improve touch targets for mobile
-```
+Constraints:
+- What must not change
+- Required patterns, security, accessibility, and scope limits
 
-### Tablet Optimization
+Acceptance criteria:
+- Observable checks
+- Tests and viewport coverage
 ```
-Ensure it works well on tablets
-Adjust layout for medium screens
-```
 
----
+## First-project prompt
 
-## 🎯 Forms
-
-### Create Form
-```
-Create a [form type] form with fields: [list fields]
-Add form validation
-```
+```text
+Build [product] for [audience].
+The primary user action is [action].
 
-### Form Features
-```
-Add form validation
-Show success message after submission
-Add loading state to submit button
+Include [routes/components/workflow].
+Use [visual direction, colors, type, density].
+Include realistic content and loading, empty, error, success, and mobile states.
+Use local sample data only. Do not add [out-of-scope features].
+Ask focused questions if any product or design decision is ambiguous.
 ```
 
----
+## Plan before a risky change
 
-## 🔍 SEO Prompts
+```text
+Inspect the current implementation and plan [change].
+Do not modify code.
 
-### Basic SEO
-```
-Add SEO:
-- Title: "[title]"
-- Description: "[description]"
-```
+Preserve:
+- [invariants]
 
-### Advanced SEO
+Return:
+- Current-state summary
+- Decisions and tradeoffs
+- Affected files and data
+- Security and migration risks
+- Ordered implementation steps
+- Tests and rollback plan
 ```
-Add Open Graph tags for social sharing
-Add meta keywords
-Optimize for search engines
-```
-
----
 
-## 🚀 Deployment
+## Build safely
 
-### Publish
-1. Click "Publish" button
-2. Fill in project details
-3. Click "Deploy"
-4. Get your URL!
-
-### Custom Domain
-```
-Add custom domain [yourdomain.com]
+```text
+Implement the approved plan for [feature].
+Change only [scope]. Preserve [stable behavior].
+Do not weaken authorization or expose secrets.
+Add focused regression tests and run related checks.
+Report changed files, test results, and remaining risk.
 ```
-
----
-
-## 🛠️ Editing
-
-### Visual Edits
-1. Click "Visual Edit" mode
-2. Click on element to edit
-3. Make changes
-4. Save
-
-### Revert Changes
-1. Go to History
-2. Find previous version
-3. Click "Revert"
 
----
+## Debugging prompt
 
-## 💡 Pro Tips
+```text
+Expected: [behavior]
+Actual: [behavior]
+Steps: [numbered reproduction]
+Role/session: [state]
+Environment: [preview or production, device, route]
+Started after: [change or version]
 
-### Better Prompts
-- ✅ Be specific
-- ✅ Provide context
-- ✅ Use "Ask me questions" technique
-- ✅ Break complex requests into steps
-
-### Common Patterns
-```
-Create [thing] with:
-- [Feature 1]
-- [Feature 2]
-- [Feature 3]
-```
-
-```
-Make [thing] similar to [reference] but [your changes]
-```
-
+Investigate in Plan mode. Separate confirmed facts, likely causes, and unknowns.
+Do not change code until the root cause and narrow fix are identified.
 ```
-[Describe what you want]. Ask me any questions you need.
-```
-
----
 
-## 🆘 Getting Help
-
-### Chat Mode
-```
-I'm stuck on [problem]. Can you help?
-How do I [task]?
-What's the best way to [goal]?
-```
+## Verification prompts
 
-### Debugging
-```
-[Feature] isn't working. Can you check what's wrong?
-Why is [problem] happening?
-How can I fix [issue]?
+```text
+Run the existing frontend tests and add a regression test for [behavior].
 ```
-
----
-
-## 📚 Quick Links
-
-- **Documentation:** [docs.lovable.dev](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
-- **Templates:** [lovable.dev/templates](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
-- **Videos:** [lovable.dev/videos](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
-- **Guides:** [lovable.dev/guides](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
-
----
-
-## 🎯 Mode Quick Reference
-
-### Chat Mode
-- **Use for:** Questions, planning, debugging
-- **Cost:** 1 credit per message
-- **Does:** Helps you understand, doesn't change code
-
-### Agent Mode
-- **Use for:** Building, implementing, fixing
-- **Cost:** Usage-based
-- **Does:** Makes changes automatically
-
-### Code Mode
-- **Use for:** Viewing/editing code directly
-- **Cost:** Free to view, paid to edit
-- **Does:** Shows raw code
-
----
-
-## ✅ Common Checklists
-
-### Before Publishing
-- [ ] Everything works
-- [ ] Tested on mobile
-- [ ] SEO added
-- [ ] No obvious bugs
-- [ ] Content complete
-
-### Adding Authentication
-- [ ] Backend enabled
-- [ ] Sign up page created
-- [ ] Login page created
-- [ ] Logout works
-- [ ] Pages protected
-
-### Adding Database
-- [ ] Database table created
-- [ ] Fields defined
-- [ ] Forms save data
-- [ ] Data displays correctly
-- [ ] User association works
-
----
-
-**Keep this handy for quick reference while building!** 🚀
-
----
-
-*Last updated: December 2024*
 
+```text
+Call [edge function] directly with valid, unauthorized, malformed,
+duplicate, and boundary inputs. Add edge tests for durable rules.
+```
+
+```text
+Use browser testing on mobile and desktop to verify [user flow].
+Inspect screenshots, console errors, and network failures. Report what passed.
+```
+
+## Preview toolbar
+
+| Shortcut | Action |
+| --- | --- |
+| `S` | Select one or more elements and prompt a change |
+| `T` | Edit visible text inline |
+| `D` | Draw an annotation and send it with a prompt |
+
+Use Add comment to pin collaborative feedback. Cmd or Ctrl-click selects multiple elements.
+
+## Knowledge and references
+
+- Workspace knowledge: always-on standards across projects
+- Project knowledge: product, domain, architecture, and brand context for one project
+- Skill: task-specific reusable workflow loaded on demand
+- `@file`: reference a project file
+- Exact line reference: add from the code editor gutter
+- `@Project`: read-only reference to an accessible project in the same workspace
+
+## Lovable Cloud checklist
+
+- Choose the correct region before enabling Cloud
+- Review Cloud tool permissions
+- Plan schema, indexes, relationships, and delete behavior
+- Enforce authorization with RLS and server-side checks
+- Keep secrets in managed storage and privileged calls in edge functions
+- Define file type, size, and storage access rules
+- Inspect logs and usage
+- Test with multiple users and a signed-out session
+
+## Integration chooser
+
+| Need | Integration |
+| --- | --- |
+| Deployed app calls a supported service | App connector |
+| Each app user connects their own account | App-user connector |
+| Lovable reads builder context from tools | Chat connector using MCP |
+| Unsupported custom functionality | Custom API through an edge function |
+
+## Pre-publish checklist
+
+- [ ] Critical user flow passes in browser testing
+- [ ] Frontend, edge, build, and type checks pass
+- [ ] Basic and Deep security scans are current
+- [ ] RLS is tested across roles
+- [ ] No secrets appear in client code or logs
+- [ ] Site title, description, icon, and social image are correct
+- [ ] SEO and AI search review is complete
+- [ ] A rollback version is identified
+- [ ] Production is tested after publishing
+
+Remember: edits are not live until Publish -> Update.
+
+## Current navigation
+
+- Cloud settings: Cloud tab or Connectors -> App connectors -> Lovable Cloud
+- Security: More -> Security
+- SEO and AI search: More -> SEO & AI search
+- Analytics: More -> Analytics
+- Domains: Project Settings -> Domains or Publish -> Custom domain
+- Credit usage: Settings -> Plans & credit usage
+- Project monitoring: Project Settings -> Project monitoring
+
+## Official references
+
+- [Documentation index](https://docs.lovable.dev/llms.txt)
+- [Plan mode](https://docs.lovable.dev/features/plan-mode)
+- [Build mode](https://docs.lovable.dev/features/agent-mode)
+- [Lovable Cloud](https://docs.lovable.dev/integrations/cloud)
+- [Testing](https://docs.lovable.dev/features/testing)
+- [Publish](https://docs.lovable.dev/features/publish)
+
+[Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)

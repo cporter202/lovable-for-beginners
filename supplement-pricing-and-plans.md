@@ -1,294 +1,113 @@
-# Pricing and Plans Guide
+# Pricing, Credits, and Plans
 
-**Understanding Lovable's pricing model and what you can do on each plan.**
+Verified against Lovable's official pricing documentation on July 18, 2026. Pricing, grants, and feature limits can change. Use the [live plan documentation](https://docs.lovable.dev/introduction/subscription-plans) and [Lovable pricing page](https://lovable.dev/pricing) before purchasing.
 
----
+## Current plan overview
 
-## 📊 Plan Comparison
+| Plan | Best for | Starting monthly credits and price | Selected capabilities |
+| --- | --- | --- | --- |
+| Free | Trying Lovable and smaller projects | No paid monthly credits | Git sync, public publishing, daily build grant; no code editor or custom domain |
+| Pro | Individuals and fast-moving teams | 100 credits from $25/month | Code editor, custom domains, badge removal, monitoring, top-ups, rollover |
+| Business | Departments needing controls | 100 credits from $50/month | Pro features plus internal publishing, roles, security center, SSO, templates |
+| Enterprise | Large organizations | Contract-based | Advanced governance, publishing controls, SCIM, audit logs, scheduled security scans |
 
-### Free Plan
+Annual billing and higher credit tiers are available for Pro and Business. Enterprise terms vary by contract.
 
-**What's Included:**
-- ✅ Create unlimited projects
-- ✅ Use Chat Mode (1 credit per message)
-- ✅ Use Agent Mode (usage-based pricing)
-- ✅ View code in Code Mode
-- ✅ All core features (prompts, remixing, templates)
-- ✅ Visual Edits
-- ✅ Deploy and publish apps
-- ✅ Free hosting with Lovable subdomain
-- ✅ Basic integrations
-- ✅ Community support
+## One credit balance
 
-**Limitations:**
-- ❌ Cannot edit code directly (Code Mode is view-only)
-- ❌ Limited credits per month (varies)
-- ❌ Some advanced features may require credits
+Lovable is gradually rolling out one credit balance across three usage types:
 
-**Best For:**
-- Learning and experimenting
-- Building personal projects
-- Testing ideas
-- Building your portfolio
+| Usage | What it covers |
+| --- | --- |
+| Build | Plan and Build mode messages, edits, generation, investigation, and verification |
+| Cloud | Database server, storage, compute, network, realtime, and related hosted resources |
+| AI gateway | Runtime AI features used by deployed apps |
 
----
+Some workspaces may temporarily still display the older Cloud and AI balance experience during rollout.
 
-### Paid Plans
+## Included usage-specific grants
 
-**What's Included (Everything in Free, Plus):**
-- ✅ Direct code editing in Code Mode
-- ✅ More credits per month
-- ✅ Priority support
-- ✅ Advanced features
-- ✅ Custom domains
-- ✅ Higher usage limits
-- ✅ Advanced integrations
+Current Free, Pro, and Business grants:
 
-**Best For:**
-- Professional development
-- Building client projects
-- Advanced customization needs
-- Higher usage requirements
+| Grant | Free | Pro | Business |
+| --- | --- | --- | --- |
+| Daily build credits | 5/day, capped at 30/month | 5/day | 5/day |
+| Monthly Cloud grant | 20 credits | 20 credits | 20 credits |
+| Monthly AI grant | 4 credits | 4 credits | 4 credits |
 
-**💡 Note:** Check [Lovable's official pricing page](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github) for current pricing and detailed feature comparison.
+Daily credits reset at 00:00 UTC and do not roll over. On Free, the monthly 30-credit cap means the daily grant stops after six grant days and resumes the next calendar month.
 
----
+Cloud and AI grants are described by Lovable as temporary and subject to change. Usage-specific grants are spent before general credits.
 
-## 💰 Understanding Credits
+## Build costs
 
-### What Are Credits?
+- Plan mode currently costs 1 credit per message.
+- Build mode is usage-based. Small focused edits often cost less than broad generation, multi-file work, browser testing, web research, or image generation.
+- Stopped Build requests are charged for work already completed.
+- The exact message cost is available from the three-dot menu below the response.
+- Preview-toolbar element selections use normal message credits.
+- Inline text editing is currently free for the first 100 edits per user each day, then uses credits.
 
-**Credits** are Lovable's currency for using AI features. Different actions cost different amounts of credits.
+Do not treat example Build costs in the docs as quotes. Actual cost varies by the project and request.
 
-### Credit Costs
+## General credits and rollover
 
-| Action | Cost | Notes |
-|-------|------|-------|
-| **Chat Mode message** | 1 credit | Per message/question |
-| **Agent Mode (simple)** | < 1 credit | Simple tasks cost less |
-| **Agent Mode (complex)** | 1-5+ credits | Complex tasks cost more |
-| **Code viewing** | Free | Viewing code costs nothing |
-| **Code editing** | Included in paid plans | Free plan: view only |
+Paid monthly plan credits are general credits. They can cover Build, Cloud, and AI usage after relevant grants are exhausted.
 
-### How Credits Work
+- Monthly plan credits roll over while the paid subscription remains active.
+- Monthly-plan credits expire two months after issue.
+- Credits on annual plans expire one month after the annual billing period ends.
+- Purchased top-up credits expire 12 months after purchase.
+- Top-ups and auto top-up are available on Pro and Business.
 
-- **Free plan:** You get a monthly credit allowance
-- **Paid plans:** Higher credit allowances
-- **Usage varies:** Simple tasks cost less, complex tasks cost more
-- **Credits reset:** Monthly allowance refreshes each month
+If a workspace downgrades to Free, unexpired paid subscription and rollover credits are frozen until the workspace upgrades again or the credits reach their original expiry. Purchased top-up and bonus credits can remain usable until expiry.
 
-**💡 Beginner Tip:** Most simple tasks cost very little. You can build a lot with the free plan!
+## Selected plan differences
 
----
+| Feature | Free | Pro | Business | Enterprise |
+| --- | --- | --- | --- | --- |
+| GitHub and GitLab sync | Yes | Yes | Yes | Yes |
+| Code editor and code download | No | Yes | Yes | Yes |
+| Custom domains | No | Yes | Yes | Yes |
+| Remove Lovable badge | No | Yes | Yes | Yes |
+| Project monitoring | No | Yes | Yes | Yes |
+| Internal publishing | No | No | Yes | Yes |
+| Design templates | No | No | Yes | Yes |
+| Security center | No | No | Yes | Yes |
+| SSO | No | No | Yes | Yes |
+| Publishing controls | No | No | No | Yes |
+| SCIM and audit logs | No | No | No | Yes |
 
-## 🎯 What You Can Build on Free Plan
+Free and Pro published sites are externally accessible to anyone with the link. Business and Enterprise can publish internally to the workspace or externally.
 
-### ✅ You CAN Build on Free:
+## Managing usage
 
-- **Full-stack applications** - Complete apps with frontend and backend
-- **User authentication** - Sign up, login, logout
-- **Databases** - Store and retrieve data
-- **Multiple pages** - As many pages as you need
-- **Beautiful designs** - Professional-looking interfaces
-- **Deploy and publish** - Make apps live on the internet
-- **Use templates** - Start from pre-built examples
-- **Remix projects** - Learn from others' work
-- **Add integrations** - Connect external services
-- **Everything with prompts** - Build anything using prompts
+Open Settings -> Plans & credit usage to:
 
-### ❌ You CANNOT Do on Free:
+- View balance and expiry
+- Filter usage by time, project, person, and usage type
+- Review Build, Cloud, and AI consumption
+- Configure alerts
+- Purchase one-time or automatic top-ups
+- Upgrade, downgrade, cancel, change billing cycle, or view invoices
 
-- **Edit code directly** - Code Mode is view-only
-- **Unlimited usage** - Monthly credit limits apply
-- **Some advanced features** - May require paid plan
+For Cloud projects, also inspect the Cloud Usage view. It breaks down database server, database storage, compute, file storage, live updates, and network consumption.
 
-**💡 Key Point:** You can build **almost everything** using prompts on the free plan! Code editing is optional and mainly for advanced users.
+## Cost-control habits
 
----
-
-## 📈 Monitoring Your Usage
-
-### How to Check Your Credits
-
-1. **Go to your account settings**
-2. **Look for "Credits" or "Usage" section**
-3. **See your:**
-   - Current credit balance
-   - Monthly allowance
-   - Usage history
-   - When credits reset
-
-### Tips for Managing Credits
-
-**Save Credits:**
-- ✅ Use Chat Mode efficiently (plan before building)
-- ✅ Break complex tasks into smaller steps
-- ✅ Test locally before deploying
-- ✅ Use templates and remixes (saves building from scratch)
-- ✅ Review before implementing (use Chat Mode to plan)
-
-**Avoid Wasting Credits:**
-- ❌ Don't make the same request multiple times
-- ❌ Don't build features you'll delete
-- ❌ Don't use Agent Mode for simple questions (use Chat Mode)
-- ❌ Don't forget to test before asking for changes
-
-**💡 Beginner Tip:** Start with Chat Mode to plan, then use Agent Mode to build. This saves credits!
-
----
-
-## 🔒 Understanding Plan Limitations
-
-### Code Editing
-
-**Free Plan:**
-- ✅ Can view code
-- ✅ Can understand structure
-- ❌ Cannot edit code directly
-
-**Paid Plan:**
-- ✅ Can view code
-- ✅ Can edit code directly
-- ✅ Full Code Mode access
-
-**Workaround on Free Plan:**
-- Use prompts to make code changes
-- Ask Lovable to modify code
-- Works for almost everything!
-
-### Usage Limits
-
-**Free Plan:**
-- Monthly credit allowance
-- May have project limits
-- Basic support
-
-**Paid Plan:**
-- Higher credit allowance
-- More projects
-- Priority support
-
-### Advanced Features
-
-Some features may require:
-- Paid plan
-- Additional credits
-- Specific connectors
-
-**Always check:** If a feature doesn't work, it might be plan-related. Check the documentation or ask in Chat Mode.
-
----
-
-## 💡 Making the Most of Free Plan
-
-### Strategy 1: Plan Before Building
-
-1. **Use Chat Mode** to plan (1 credit)
-2. **Get a clear plan** from Lovable
-3. **Then use Agent Mode** to build (more efficient)
-
-### Strategy 2: Use Templates and Remixes
-
-- **Start from templates** - Saves building from scratch
-- **Remix existing projects** - Learn and customize
-- **Saves credits** - Less building needed
-
-### Strategy 3: Iterate Efficiently
-
-- **Test before asking for changes** - Make sure you need the change
-- **Be specific** - Reduces back-and-forth
-- **Use "ask questions" technique** - Gets it right the first time
-
-### Strategy 4: Build Incrementally
-
-- **Start simple** - Basic features first
-- **Add complexity gradually** - One feature at a time
-- **Test as you go** - Catch issues early
-
----
-
-## 🚀 When to Consider Upgrading
-
-Consider upgrading to a paid plan if:
-
-- ✅ You need to edit code directly
-- ✅ You're building client projects professionally
-- ✅ You need higher credit limits
-- ✅ You want priority support
-- ✅ You need advanced features
-- ✅ You're using Lovable heavily
-
-**💡 Beginner Tip:** Start with the free plan! You can always upgrade later when you need more features.
-
----
-
-## 📚 Official Resources
-
-For the most up-to-date pricing information:
-
-- **Official Pricing:** [lovable.dev/pricing](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
-- **Plans & Credits Docs:** [docs.lovable.dev/introduction/plans-and-credits](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
-- **Support:** Contact Lovable support for plan questions
-
----
-
-## ✅ Quick Reference
-
-### Free Plan Checklist
-
-- [ ] Can build full-stack apps ✅
-- [ ] Can use Chat Mode ✅
-- [ ] Can use Agent Mode ✅
-- [ ] Can view code ✅
-- [ ] Can deploy apps ✅
-- [ ] Cannot edit code directly ❌
-- [ ] Has credit limits ⚠️
-
-### Paid Plan Checklist
-
-- [ ] Everything in free plan ✅
-- [ ] Can edit code directly ✅
-- [ ] Higher credit limits ✅
-- [ ] Priority support ✅
-- [ ] Advanced features ✅
-
----
-
-## 🤔 Common Questions
-
-### Q: Do I need a paid plan to build apps?
-**A:** No! You can build complete apps on the free plan using prompts.
-
-### Q: How many credits do I get?
-**A:** Check your account settings or Lovable's pricing page for current limits.
-
-### Q: Can I build everything with prompts?
-**A:** Yes! Almost everything can be built with prompts. Code editing is optional.
-
-### Q: What happens if I run out of credits?
-**A:** You'll need to wait for the monthly reset or upgrade to a paid plan.
-
-### Q: Should I upgrade?
-**A:** Only if you need code editing or higher limits. Free plan works for most learners!
-
-### Q: Can I downgrade later?
-**A:** Yes, you can change plans anytime. Check Lovable's terms for details.
-
----
-
-## 💡 Pro Tips
-
-1. **Start free** - Learn on the free plan first
-2. **Monitor usage** - Check credits regularly
-3. **Use efficiently** - Plan before building
-4. **Upgrade when needed** - Don't upgrade until you need paid features
-5. **Read the docs** - Official pricing is always most accurate
-
----
-
-**Remember:** The free plan is powerful! You can build amazing apps without paying. Only upgrade when you need specific paid features.
-
----
-
-*Last updated: December 2024*
-
+1. Use Plan mode when a broad Build request would likely be thrown away.
+2. Keep Build prompts focused and include acceptance criteria.
+3. Implement and browser-test large work in separate messages.
+4. Stop repeated error loops and investigate the root cause.
+5. Monitor Cloud queries, realtime subscriptions, storage, retries, and AI limits.
+6. Use project-monitoring conditions that avoid unchanged projects.
+7. Set credit alerts before a production launch.
+
+## Official references
+
+- [Subscription plans](https://docs.lovable.dev/introduction/subscription-plans)
+- [Credits and usage](https://docs.lovable.dev/introduction/credits-and-usage)
+- [Lovable Cloud usage](https://docs.lovable.dev/integrations/cloud)
+- [Preview toolbar credit behavior](https://docs.lovable.dev/features/preview-toolbar)
+
+[Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)

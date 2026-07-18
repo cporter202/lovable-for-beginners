@@ -1,16 +1,12 @@
 <div align="center">
 
-# ✨ Lovable for Beginners
+# Lovable for Beginners
 
-**Your Complete Beginner's Course to Mastering Lovable Vibe Coding**
+Build, test, secure, publish, and operate full-stack web apps with Lovable.
 
-**💚 This course is 100% free!** You do not have to pay anything to view or learn from this course.
-
-All content is freely available for everyone.
-
-![AI Powered](https://img.shields.io/badge/AI%20Powered-0066FF?style=for-the-badge&logoColor=ffffff)
-![Beginner Friendly](https://img.shields.io/badge/Beginner%20Friendly-32CD32?style=for-the-badge&logoColor=ffffff)
-![No Code Required](https://img.shields.io/badge/No%20Code%20Required-6A0DAD?style=for-the-badge&logoColor=ffffff)
+[![AI Powered](https://img.shields.io/badge/AI-Powered-FF6B6B?style=for-the-badge)](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
+[![Beginner Friendly](https://img.shields.io/badge/Beginner-Friendly-32CD32?style=for-the-badge)](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
+[![No Code Required](https://img.shields.io/badge/No_Code-Required-0066FF?style=for-the-badge)](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
 
 [![GitHub Stars](https://img.shields.io/github/stars/cporter202/lovable-for-beginners?style=for-the-badge&logo=github&color=FFD700)](https://github.com/cporter202/lovable-for-beginners/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/cporter202/lovable-for-beginners?style=for-the-badge&logo=github&color=32CD32)](https://github.com/cporter202/lovable-for-beginners/forks)
@@ -22,519 +18,102 @@ All content is freely available for everyone.
 
 </div>
 
----
+## About this course
 
-## 🎯 What is Lovable?
+Lovable is a full-stack AI development platform for creating web applications with natural language and editable code. This free course follows the current Lovable lifecycle: plan, build, refine, connect a backend, test, secure, publish, measure, and operate.
 
-**Lovable is an AI-powered platform that lets you create full-stack websites and applications by simply describing what you want in natural language. No coding experience required!**
+The entire curriculum was audited against Lovable's official documentation on **July 18, 2026**. Lovable changes quickly, so time-sensitive pricing and feature availability link back to the live docs.
 
-Instead of writing code line by line, you chat with AI, and Lovable builds your app for you. It's like having a conversation with a developer who understands exactly what you mean.
+This overhaul reflects the current platform:
 
-**[🚀 Get Started with Lovable →](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)**
+- **Build mode and Plan mode**, with notes for older Agent and Chat terminology
+- The **preview toolbar**, which replaced the old Visual Edits experience
+- **Workspace and project knowledge**, reusable skills, references, and subagents
+- **Lovable Cloud** for database, auth, storage, functions, jobs, secrets, logs, and AI
+- Clear separation between **app connectors, app-user connectors, chat connectors, and APIs**
+- Built-in **browser testing, frontend tests, edge verification, and security scans**
+- Current **GitHub and GitLab two-way sync** behavior
+- Publishing snapshots, custom domains, **SEO/AEO, analytics, and project monitoring**
+- Stack-aware guidance for new **TanStack Start SSR** and older **React/Vite** projects
 
----
+## Who this is for
 
-## 👥 Who is This Course For?
+- First-time app builders
+- Founders and small business owners
+- Designers, marketers, educators, and operations teams
+- Developers evaluating Lovable or collaborating with non-developers
+- Anyone who wants a production-minded workflow without starting from a blank editor
 
-- **🎓 Complete Beginners** - Never coded before? Perfect! No technical background needed.
-- **💼 Entrepreneurs** - Build MVPs quickly and validate ideas fast.
-- **🎨 Designers** - Turn designs into apps and showcase portfolios.
-- **📊 Marketers** - Create landing pages and marketing sites easily.
+No coding experience is required for Modules 1-6. Later modules introduce code inspection, testing, Git, APIs, and hosting in beginner-friendly language.
 
----
+## Course path
 
-## 🎓 What Will You Learn?
+### Foundations
 
-By the end of this course, you'll be able to:
+1. [Welcome to Lovable](module-01-welcome-to-lovable.md): Accounts, workspaces, projects, current stacks, dashboard, preview, and the first build.
 
-✅ Create full-stack applications using just your words  
-✅ Communicate effectively with AI to build what you want  
-✅ Add powerful features like authentication, databases, and payments  
-✅ Deploy applications to the web  
-✅ Build real-world projects from scratch  
-✅ Understand Lovable's features and when to use them  
-✅ Master prompt engineering for better results  
-✅ Feel confident building your own projects
+2. [Starting Your First Project](module-02-starting-your-first-project.md): Prompts, remixes, screenshots, design guidance, templates, and cross-project references.
 
----
+3. [Build Mode and Plan Mode](module-03-understanding-lovable-modes.md): Planning, implementation, approvals, prompt queues, stopping, undo, and credits.
 
-## 📚 Course Structure
+4. [Editing, Knowledge, and Iteration](module-04-editing-and-refining.md): Preview-toolbar modes, persistent knowledge, references, comments, and version history.
 
-**10 Core Modules + 5 Advanced Modules | Self-Paced Learning | Project-Based**
+5. [Prompting for Reliable Results](module-05-prompt-engineering.md): Outcomes, context, constraints, acceptance criteria, states, guardrails, and verification.
 
----
+### Full-stack delivery
 
-### 📖 [Module 1: Welcome to Lovable - Your First Steps](module-01-welcome-to-lovable.md)
+6. [Full-Stack Apps with Lovable Cloud](module-06-adding-fullstack-capabilities.md): Regions, permissions, database, auth, RLS, storage, functions, secrets, connectors, APIs, and payments.
 
-**🎯 Goal:** Get comfortable with Lovable and understand what it can do
+7. [Inspecting and Editing Code](module-07-code-mode.md): The current code editor, file and line references, manual edits, variables, downloads, and Git sync.
 
-**📝 What you'll learn:**
-- ✨ What is "Vibe Coding" and why it's revolutionary
-- 🔐 How to create your Lovable account
-- 📊 Understanding the Lovable dashboard
-- 👀 Your first look at the interface
-- 📖 Basic terminology you need to know
+8. [Publishing and Operating Your App](module-08-deploying-and-publishing.md): Release checks, website access, publishing, updates, domains, SEO/AEO, analytics, and monitoring.
 
-**🛠️ Hands-on:** Create your first simple project (a basic landing page)
+9. [Real-World Project: Book Club Hub](module-09-real-world-project.md): A milestone-based multi-user app with Lovable Cloud, RLS, invitations, tests, security, and launch.
 
----
+10. [Debugging, Testing, and Security](module-10-debugging-and-testing.md): Reproduction, root cause, browser testing, frontend and edge tests, and Basic and Deep scans.
 
-### 🚀 [Module 2: Starting Your First Project](module-02-starting-your-first-project.md)
+### Advanced practice
 
-**🎯 Goal:** Learn all the different ways to begin building in Lovable
+11. [Advanced Prompt Patterns](module-11-advanced-prompt-patterns.md): Audits, invariants, staged migrations, vertical slices, skills, subagents, and evidence-based review.
 
-**📝 What you'll learn:**
-- 💬 **Starting from a prompt:** Simply describe what you want
-- 🔄 **Remixing existing projects:** Learn from what others have built
-- 🎨 **Using Figma designs:** Turn your designs into working apps
-- ✏️ **Using sketches:** Upload drawings and turn them into code
-- 🌐 **Cloning websites:** Recreate existing sites you like
+12. [Performance, SEO, and Operations](module-12-performance-and-optimization.md): Measurement, frontend and data performance, Cloud cost, search visibility, analytics, and monitoring.
 
-**🛠️ Hands-on:** Try each method and see which works best for you
+13. [Advanced Integrations and APIs](module-13-advanced-api-integration.md): Connector models, gateway security, OAuth, custom APIs, retries, idempotency, webhooks, and tests.
 
----
+14. [Git Sync and Collaboration](module-14-version-control-github.md): GitHub connections, repositories, branches, local work, pull requests, CI, and conflict avoidance.
 
-### 🤖 [Module 3: Understanding Lovable's Modes - How to Talk to AI](module-03-understanding-lovable-modes.md)
+15. [External Hosting and Portability](module-15-deploying-to-custom-clouds.md): Hybrid hosting, stack detection, managed and self-hosted frontends, backend migration, and operations.
 
-**🎯 Goal:** Master the different ways to interact with Lovable
+## Supplements
 
-**📝 What you'll learn:**
+- [Quick Reference](supplement-quick-reference.md)
+- [Pricing, Credits, and Plans](supplement-pricing-and-plans.md)
+- [Troubleshooting Guide](supplement-troubleshooting.md)
+- [Practice Solutions and Hints](supplement-challenge-solutions.md)
 
-#### 🤖 Agent Mode (The Autonomous Builder)
-- 🧠 AI thinks, plans, and builds on its own
-- ⚡ Perfect for complex tasks that need multiple steps
-- 🔍 AI explores your code, fixes errors, and searches the web
-- 💰 Usage-based pricing (many messages cost less than 1 credit)
+## Recommended use
 
-#### 💬 Chat Mode (Your Development Partner)
-- 🤔 Helps you think through problems and plan
-- 🐛 Perfect for asking questions, debugging, and planning
-- 🔑 Key difference: Chat Mode doesn't change code - it helps you understand
-- 🔗 The "Implement the plan" button connects Chat Mode to Agent Mode
+Work through Modules 1-10 in order and build alongside the lessons. Complete Modules 11-15 when your projects need repeatable team workflows, optimization, custom integrations, Git collaboration, or external infrastructure.
 
-**💡 Best use cases:**
-- 🐛 Debugging issues before fixing them
-- 🗄️ Planning database structures
-- 💡 Getting implementation tips
-- 🔍 Understanding how features will work
+Use a disposable practice project for migrations, destructive actions, and security experiments. Product screenshots and menu labels can change before documentation text catches up, so follow the concepts and verify current controls in the live product.
 
-**🛠️ Hands-on:** Practice using both modes for different tasks
+## Official Lovable documentation
 
----
+- [Documentation index](https://docs.lovable.dev/llms.txt)
+- [Quick start](https://docs.lovable.dev/introduction/getting-started)
+- [Prompting best practices](https://docs.lovable.dev/prompting/prompting-one)
+- [Lovable Cloud](https://docs.lovable.dev/integrations/cloud)
+- [Testing](https://docs.lovable.dev/features/testing)
+- [Security](https://docs.lovable.dev/features/security)
+- [Publish](https://docs.lovable.dev/features/publish)
+- [Credits and usage](https://docs.lovable.dev/introduction/credits-and-usage)
 
-### ✏️ [Module 4: Editing and Refining Your Project](module-04-editing-and-refining.md)
+## Start building
 
-**🎯 Goal:** Learn how to make changes and improvements to your app
+[Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github), then begin with [Module 1](module-01-welcome-to-lovable.md).
 
-**📝 What you'll learn:**
-- 🎨 **Visual Edits:** Make changes by clicking and editing directly
-- 📚 **Adding custom knowledge:** Teach Lovable about your specific needs
-- ↩️ **Reverting changes:** Undo mistakes and try different approaches
-- 📄 **Adding new pages:** Expand your application
-- 🔧 **Refactoring code:** Improve your app's structure (for paid plans)
-- 🖼️ **Adding images:** Include visuals in your prompts
-- 🔗 **Connecting to GitHub:** Save your code to GitHub
+## Contributing
 
-**🛠️ Hands-on:** Take a basic project and improve it using these techniques
+Open an issue or pull request when a Lovable workflow changes, a documentation link moves, or a lesson needs clarification. Include the official source and the date you verified it.
 
----
-
-### 💬 [Module 5: Prompt Engineering - How to Get What You Want](module-05-prompt-engineering.md)
-
-**🎯 Goal:** Master the art of communicating with AI effectively
-
-**📝 What you'll learn:**
-- ❓ **The power of asking questions:** Let Lovable ask you clarifying questions
-- 🎯 **Being specific:** How to describe features clearly
-- 📋 **Providing context:** Why details matter
-- 🔄 **Iterative improvement:** Refining your prompts for better results
-- 📝 **Common prompt patterns:** Templates that work well
-
-> **💡 Pro Tip:** Add *"Ask me any questions you need to fully understand what I want"* to your prompts - this helps Lovable build exactly what you envision!
-
-**🛠️ Hands-on:** Practice writing effective prompts for different features
-
----
-
-### 🔌 [Module 6: Adding Full-Stack Capabilities](module-06-adding-fullstack-capabilities.md)
-
-**🎯 Goal:** Add powerful backend features to your applications
-
-**📝 What you'll learn:**
-
-#### ☁️ Lovable Cloud (Built-in Backend)
-- 🔐 Authentication, database, and storage
-- 🎯 Perfect for most backend needs
-- ⚙️ Simple configuration process
-
-#### 🔗 Connectors (Add External Services)
-- 🗄️ **Supabase:** User authentication and data storage
-- 💳 **Stripe:** Payment processing and subscriptions
-- 🛒 **Shopify:** E-commerce operations
-- 📧 **Resend:** Email capabilities
-- 🔌 They're like plugins your app can use
-
-#### 📊 MCP Servers (Provide Context)
-- 🔧 Give Lovable access to your existing tools
-- 📋 Examples: Linear, Notion, Atlassian, n8n
-- 🎯 Use when building apps based on your real workflows
-
-#### 🌐 Any API (Maximum Flexibility)
-- 🌍 Integrating public APIs: No authentication needed
-- 🔒 Integrating private APIs: Using secrets and Edge Functions
-- 📡 Examples: Weather APIs, custom services, third-party tools
-
-**🛠️ Hands-on:** Add authentication and a database to a project
-
----
-
-### 💻 [Module 7: Code Mode - Viewing and Editing Code Directly](module-07-code-mode.md)
-
-**🎯 Goal:** Understand how to work with code when you need to (Optional for beginners)
-
-**📝 What you'll learn:**
-- 👁️ What Code Mode is: View and edit your project's raw code
-- 🎯 When you might need it: Advanced customization
-- ⚠️ Important note: Available on paid plans
-- 🤔 When to use it vs. when to use prompts
-
-> **📌 Note:** This module is optional for complete beginners - you can build amazing apps without ever touching code!
-
----
-
-### 🚀 [Module 8: Deploying and Publishing Your App](module-08-deploying-and-publishing.md)
-
-**🎯 Goal:** Get your application live on the internet
-
-**📝 What you'll learn:**
-- 🔍 **Setting up SEO:** Make your app discoverable
-- 🌐 **Adding a custom domain:** Use your own website address
-- 📢 **Publishing your project:** Make it live for the world to see
-- ☁️ **Understanding hosting:** How Lovable hosts your app
-- 📤 **Sharing your work:** Getting your app in front of users
-
-**🛠️ Hands-on:** Deploy your first complete application
-
----
-
-### 🏗️ [Module 9: Real-World Project - Building a Complete App](module-09-real-world-project.md)
-
-**🎯 Goal:** Apply everything you've learned in a full project
-
-**🎨 Project Options:**
-- ✅ **Task Manager App:** Create, assign, and track tasks
-- 🎨 **Portfolio Website:** Showcase your work professionally
-- 📝 **Blog Platform:** Create a content publishing site
-- 🛒 **E-commerce Store:** Build an online shop
-- 🎉 **Event Platform:** Create an event registration system
-
-**🏗️ What you'll build:**
-- 🔐 User authentication (sign up, login, logout)
-- 🗄️ Database for storing information
-- 📄 Multiple pages and navigation
-- ⚡ Interactive features
-- 🎨 Beautiful, modern design
-- 🚀 Fully deployed and live
-
-**📋 Step-by-step process:**
-1. 📝 Planning your app
-2. ⚙️ Setting up the backend
-3. 🎨 Building the user interface
-4. ➕ Adding features one by one
-5. 🧪 Testing and refining
-6. 🚀 Deploying to production
-
----
-
-### 🐛 [Module 10: Debugging and Testing](module-10-debugging-and-testing.md)
-
-**🎯 Goal:** Learn how to find and fix problems, and test your apps thoroughly
-
-**📝 What you'll learn:**
-- 🔍 **Reading error messages:** Understanding what went wrong
-- 💬 **Using Chat Mode for debugging:** Get help fixing issues
-- ⏪ **Using History to revert:** Go back to working versions
-- ✏️ **Editing messages:** Fix mistakes in your prompts
-- 🧪 **Testing strategies:** Ensure everything works
-- 🔧 **Common debugging scenarios:** Real-world problem solving
-
-**🛠️ Hands-on:** Practice debugging workflows and testing your apps
-
----
-
-## 🚀 Advanced Modules (Optional)
-
-*These modules are for learners who want to go deeper after completing the core course.*
-
----
-
-### 🎨 [Module 11: Advanced Prompt Patterns](module-11-advanced-prompt-patterns.md)
-
-**🎯 Goal:** Master advanced techniques for complex applications
-
-**📝 What you'll learn:**
-- 🔄 **Dynamic content generation:** Creating data-driven pages
-- 🔀 **Conditional logic:** Showing different content based on conditions
-- 🔁 **Loops and iterations:** Displaying multiple items efficiently
-- 🌊 **Complex user flows:** Multi-step processes and workflows
-- 🎯 **Advanced prompt structures:** Patterns for sophisticated apps
-
-**🛠️ Hands-on:** Build complex features using advanced patterns
-
----
-
-### ⚡ [Module 12: Performance and Optimization](module-12-performance-and-optimization.md)
-
-**🎯 Goal:** Learn how to make your apps fast and efficient
-
-**📝 What you'll learn:**
-- 🖼️ **Image optimization:** Compressing and sizing images
-- 📦 **Code splitting:** Loading code efficiently
-- 💾 **Caching strategies:** Speeding up your app
-- 🗄️ **Database optimization:** Fast queries and pagination
-- 📊 **Measuring performance:** Understanding speed metrics
-
-**🛠️ Hands-on:** Optimize an existing project for better performance
-
----
-
-### 🔌 [Module 13: Advanced API Integration](module-13-advanced-api-integration.md)
-
-**🎯 Goal:** Master integrating external APIs beyond basic connectors
-
-**📝 What you'll learn:**
-- 🖥️ **Server-side vs. client-side:** Understanding API call types
-- 🌐 **Public API integration:** Weather, news, and other public APIs
-- 🔐 **Private API integration:** Securely using APIs with keys
-- ⏳ **Asynchronous data handling:** Loading states and error handling
-- 📊 **Displaying API data:** Presenting external data effectively
-
-**🛠️ Hands-on:** Build a complete weather app with API integration
-
----
-
-### 📦 [Module 14: Version Control with GitHub](module-14-version-control-github.md)
-
-**🎯 Goal:** Learn how to use GitHub with Lovable for version control and collaboration
-
-**📝 What you'll learn:**
-- 📚 **Understanding version control:** Why it matters
-- 🔗 **Connecting to GitHub:** Linking your projects
-- 💾 **Commits and branches:** Managing code history
-- 🤝 **Collaboration:** Working with others
-- 📂 **Portfolio building:** Showcasing your work
-
-**🛠️ Hands-on:** Connect a project to GitHub and practice version control
-
----
-
-### ☁️ [Module 15: Deploying to Custom Clouds](module-15-deploying-to-custom-clouds.md)
-
-**🎯 Goal:** Understand deployment options beyond Lovable's built-in hosting
-
-**📝 What you'll learn:**
-- 🏠 **Lovable's hosting:** Understanding built-in options
-- 🤔 **When to consider alternatives:** Custom cloud scenarios
-- 📤 **Exporting your code:** Getting your code out
-- 🚀 **Deploying to Vercel/Netlify:** Alternative platforms
-- 🔄 **Migration considerations:** What to think about
-
-**🛠️ Hands-on:** Deploy a project to an alternative platform (optional)
-
----
-
-## 🛠️ Prerequisites
-
-**Absolutely None!** 🎉
-
-This course assumes you:
-- ❌ Have never written code before
-- ✅ Are comfortable using a web browser
-- ✅ Can type and communicate in English
-- ✅ Have curiosity and enthusiasm
-
-**That's it! No technical background needed.**
-
----
-
-## 📖 Learning Resources
-
-### 📚 Official Lovable Resources
-
-- **📖 Documentation:** [docs.lovable.dev](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github) - Complete guides and reference
-- **🎥 Video Library:** [lovable.dev/videos](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github) - Tutorials and demonstrations
-- **🎨 Templates:** [lovable.dev/templates](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github) - Pre-built examples to start from
-- **📝 Guides:** [lovable.dev/guides](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github) - Step-by-step tutorials
-- **💬 Discord:** Join the community for support and help
-
-### 🔑 Key Documentation Pages
-
-- [Getting Started Guide](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
-- [Features Overview](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
-- [Prompt Engineering Tips](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
-- [Integrations Guide](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
-
----
-
-## 💡 Key Concepts for Beginners
-
-### 🎨 What is "Vibe Coding"?
-
-> **Vibe Coding** is Lovable's approach to building apps. Instead of writing code line by line, you describe what you want in natural language, and AI builds it for you. It's like having a conversation with a developer who understands exactly what you mean.
-
-### 💰 Understanding Credits
-
-**Chat Mode:**
-- Cost: 1 credit per message
-- Best for: Planning, debugging, questions
-
-**Agent Mode:**
-- Cost: Usage-based (often less than 1 credit)
-- Best for: Complex tasks, building features
-
-**Code Mode:**
-- Cost: Included in paid plans
-- Best for: Advanced customization
-
-**💡 Tip:** Many simple tasks cost very little, while complex tasks may cost more.
-
-### 🎯 Modes Explained Simply
-
-- **Agent Mode** → "Build this for me" → AI does the work autonomously
-- **Chat Mode** → "Help me understand" → AI helps you plan and debug
-- **Code Mode** → "Show me the code" → View/edit code directly (paid plans)
-
-### 🎨 Templates vs. Starting from Scratch
-
-- **🎨 Templates:** Pre-built apps you can customize (great for beginners!)
-- **🚀 From Scratch:** Describe your idea and build it fresh
-
-Both approaches are valid - choose what feels right!
-
----
-
-## 🎓 Course Outcomes
-
-After completing this course, you will:
-
-✅ Understand how Lovable works and when to use different features  
-✅ Be able to create full-stack applications without writing code  
-✅ Know how to add authentication, databases, and payments  
-✅ Have deployed at least one complete application  
-✅ Feel confident building your own projects  
-✅ Understand how to communicate effectively with AI  
-✅ Have a portfolio project to showcase  
-
----
-
-## 🚀 Getting Started
-
-**Ready to Begin Your Journey?**
-
-1. **🔐 Create your Lovable account:** Go to [lovable.dev](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github) and sign up
-2. **📊 Explore the dashboard:** Get familiar with the interface
-3. **📖 Start Module 1:** Begin with the basics
-4. **💬 Join the community:** Connect with other learners on Discord
-
----
-
-## 📝 Course Structure Notes
-
-- **⏱️ Self-paced:** Learn at your own speed
-- **🛠️ Project-based:** Each module includes hands-on practice
-- **📈 Progressive:** Each module builds on the previous one
-- **🔄 Flexible:** Skip ahead if you're comfortable, or spend extra time on challenging topics
-
----
-
-## 💰 Pricing and Plans
-
-**Understanding what you can build on free vs. paid plans:**
-
-- **📊 [Pricing and Plans Guide](supplement-pricing-and-plans.md)** - Complete breakdown of free vs. paid features
-- **💳 [Official Pricing](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)** - Current pricing and plan details
-- **💡 Key Point:** You can build almost everything on the free plan using prompts!
-
----
-
-## 🎯 Module Challenges
-
-**Practice and consolidate your learning with progressive challenges!**
-
-Each module includes hands-on challenges that get progressively harder:
-- **Beginner challenges** - Basic concepts and single features
-- **Intermediate challenges** - Combining concepts and multiple steps  
-- **Advanced challenges** - Security, complex features, best practices
-- **Expert challenges** - Complete systems and production-ready features
-
-**📚 [Challenge Solutions](supplement-challenge-solutions.md)** - Suggested solutions and hints for self-assessment
-
-**💡 Tip:** Try each challenge yourself first, then check the solutions to compare approaches!
-
----
-
-## 🤝 Need Help?
-
-- **📖 Documentation:** Check [docs.lovable.dev](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github) for detailed guides
-- **🔧 Troubleshooting Guide:** [Common issues and solutions](supplement-troubleshooting.md)
-- **⚡ Quick Reference:** [Cheat sheet for common tasks](supplement-quick-reference.md)
-- **💬 Community Discord:** Ask questions and share your progress
-- **🆘 Support:** Reach out through Lovable's support channels
-- **🎥 Videos:** Watch tutorials on [lovable.dev/videos](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
-
----
-
-## 🎯 Next Steps After This Course
-
-Once you've completed this course, you can:
-
-- 🏗️ Build your own custom applications
-- 🚀 Explore advanced Lovable features
-- 🔌 Integrate with more APIs and services
-- 💼 Build apps for clients or your business
-- 📚 Continue learning through Lovable's advanced resources
-- 🎓 Share your knowledge with other beginners
-
----
-
-## 📚 Additional Learning Paths
-
-### 💼 For Entrepreneurs
-- 🚀 Building MVPs quickly
-- ✅ Validating business ideas
-- 🎨 Creating landing pages
-- 🧪 Prototyping products
-
-### 🎨 For Designers
-- 🎨 Turning Figma designs into code
-- 🖼️ Creating interactive prototypes
-- 📱 Building portfolio sites
-- 🧪 Testing design concepts
-
-### 📊 For Marketers
-- 🎯 Creating landing pages
-- 🌐 Building marketing sites
-- 📝 Creating lead capture forms
-- 📢 Building campaign pages
-
----
-
----
-
-<div align="center">
-
-## 🌟 Remember
-
-**You don't need to know how to code to build amazing things!**
-
-Lovable makes it possible for anyone to create professional, full-stack applications. This course will guide you every step of the way, from your first prompt to your first deployed app.
-
-**Let's build something Lovable together!** 🚀
-
-**[Get Started Now →](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)**
-
----
-
-*Last updated: Based on Lovable documentation as of December 2024*
-
-</div>
+This is an independent educational repository and is not official Lovable documentation.

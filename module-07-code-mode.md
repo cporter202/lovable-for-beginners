@@ -1,318 +1,118 @@
-# Module 7: Code Mode - Viewing and Editing Code Directly
+# Module 7: Inspecting and Editing Code
 
-**Goal:** Understand how to work with code when you need to (Optional for beginners)
+The feature once commonly called Code Mode is now documented as the code editor. It provides direct access to project files for inspection, targeted manual edits, downloads, and precise references back into chat.
 
-**Estimated Time:** 20-30 minutes
+Code editing is currently available on paid plans. Build mode does not require you to edit code manually.
 
-**Note:** This module is optional for complete beginners. You can build amazing apps without ever touching code! This module is for those who want to understand or customize code directly.
+## Learning goals
 
----
+- Navigate the code editor and identify a project's stack
+- Search, inspect, edit, format, and download files
+- Reference files and exact lines in prompts
+- Make small manual changes safely
+- Know when Git sync or a local IDE is a better tool
 
-## 🎯 What You'll Learn in This Module
+## 1. Start by identifying the project
 
-By the end of this module, you will:
-- Understand what Code Mode is
-- Know when you might need to view code
-- Understand when to use Code Mode vs. prompts
-- Know how to view your project's code
-- Understand how to make direct code edits (paid plans)
-- Know when Code Mode is helpful vs. when prompts are better
+Before changing code, inspect:
 
----
+- `package.json` for framework, scripts, and dependencies
+- Route files for page structure
+- `src/components` or equivalent for reusable UI
+- Styling tokens and Tailwind configuration
+- Backend configuration and migrations
+- Test files and test scripts
+- `.env` names, without exposing values
 
-## 📖 Lesson 1: What is Code Mode?
+Current projects may use TanStack Start or an older React and Vite stack. File layout, routing, rendering, and deployment requirements can differ.
 
-### Understanding Code Mode
+## 2. Code editor capabilities
 
-**Code Mode** lets you view and edit your project's raw code directly in Lovable. It's like opening the hood of a car - you can see and modify how everything works under the surface.
+The editor can:
 
-### Important Note for Beginners
+- Browse and search the full project tree
+- Inspect and edit files directly
+- Format code
+- Copy or download files
+- Preview Markdown as rendered text
+- Download the full codebase
+- Reference files in chat with `@`
+- Reference an exact line or range from the line-number control
 
-> **You don't need Code Mode to build amazing apps!** Lovable is designed so you can build everything using prompts. Code Mode is optional and mainly for:
-> - Advanced customization
-> - Learning how code works
-> - Making precise technical changes
-> - Understanding what Lovable built
+Changes made in the editor affect the project immediately. Make one coherent edit at a time and check the preview.
 
-**💡 Plan Information:** Code editing requires a paid plan, but viewing code is free. You can build everything using prompts on the free plan! See the [Pricing and Plans Guide](supplement-pricing-and-plans.md) for details.
+## 3. Use references instead of pasting code
 
-### What You'll See in Code Mode
-
-When you open Code Mode, you'll see:
-- **File structure** - All the files in your project
-- **Code files** - The actual code (HTML, CSS, JavaScript, etc.)
-- **Configuration files** - Settings and configurations
-- **Organized folders** - Everything organized logically
-
-**💡 Beginner Tip:** Don't be intimidated by code! Even if you don't understand it, you can still use Lovable effectively with prompts.
-
----
-
-## 📖 Lesson 2: When to Use Code Mode vs. Prompts
-
-### Use Prompts When:
-
-✅ **You want to build features** - "Add a contact form"  
-✅ **You want to make changes** - "Change the colors to blue"  
-✅ **You're learning** - Prompts help you understand  
-✅ **You want quick results** - Prompts are faster  
-✅ **You're not comfortable with code** - Prompts are easier  
-
-**Prompts are usually the better choice!**
-
-### Use Code Mode When:
-
-✅ **You need precise control** - Exact positioning, specific values  
-✅ **You want to learn code** - See how things are built  
-✅ **You're debugging** - Find and fix specific issues  
-✅ **You need advanced customization** - Things prompts can't do  
-✅ **You understand code** - You know what you're looking for  
-
-**Code Mode is for advanced users or learners.**
-
-### The Best Approach
-
-**For beginners:** Use prompts for everything. Only use Code Mode if you're curious about how things work or if a prompt isn't giving you the exact result you need.
-
-**For advanced users:** Use prompts for most things, Code Mode for fine-tuning.
-
-**💡 Beginner Tip:** Start with prompts! You can build entire apps without ever opening Code Mode.
-
----
-
-## 📖 Lesson 3: Viewing Your Code
-
-### How to Open Code Mode
-
-#### Step 1: Find Code Mode
-
-1. In your Lovable project, look for a **"Code"** button or tab
-2. It might be in the top menu, sidebar, or as a toggle
-3. Click it to enter Code Mode
-
-**What you'll see:** Your project's file structure and code files.
-
-#### Step 2: Explore the File Structure
-
-You'll see folders and files organized like:
-
-```
-your-project/
-├── src/
-│   ├── components/
-│   │   ├── Header.jsx
-│   │   ├── Footer.jsx
-│   │   └── Button.jsx
-│   ├── pages/
-│   │   ├── Home.jsx
-│   │   └── About.jsx
-│   └── App.jsx
-├── public/
-│   └── images/
-└── package.json
+```text
+Review @src/components/BookForm.tsx:42-88.
+Explain why validation errors appear only after a second submit.
+Do not modify code yet.
 ```
 
-**Don't worry if this looks confusing!** You don't need to understand it to use Lovable.
+After the cause is clear:
 
-#### Step 3: Open a File
-
-1. **Click on a file** - It opens in the editor
-2. **See the code** - You'll see the actual code
-3. **Read it** - Even if you don't understand, you can see what Lovable built
-
-### Understanding What You See
-
-**Common file types:**
-
-- **.jsx or .js** - JavaScript/React code (the logic)
-- **.css** - Styling code (how things look)
-- **.html** - Structure code (the layout)
-- **.json** - Configuration files (settings)
-
-**💡 Beginner Tip:** You don't need to understand the code! Just knowing it exists and that Lovable created it is enough.
-
----
-
-## 📖 Lesson 4: Making Code Edits (Paid Plans)
-
-### Important: Code Editing Requires Paid Plan
-
-> **Note:** Viewing code is available on all plans, but **editing code directly requires a paid plan**. You can still make all changes using prompts on the free plan!
-
-**📊 For complete pricing details:** See the [Pricing and Plans Guide](supplement-pricing-and-plans.md) for a full breakdown of what's included in free vs. paid plans.
-
-### How to Edit Code (If You Have Paid Plan)
-
-#### Step 1: Open the File
-
-1. Navigate to the file you want to edit
-2. Click on it to open it
-
-#### Step 2: Make Your Changes
-
-1. **Click where you want to edit** - The cursor appears
-2. **Type your changes** - Just like editing a document
-3. **Save the file** - Usually auto-saves or click Save
-
-#### Step 3: See Your Changes
-
-- Changes appear in the preview
-- Your app updates automatically
-- You can test immediately
-
-### When Direct Code Edits Help
-
-- **Precise values** - "Change this exact number to 42"
-- **Complex logic** - Advanced functionality
-- **Quick tweaks** - Small changes faster than prompts
-- **Learning** - Understanding how code works
-
-**💡 Beginner Tip:** Even with a paid plan, prompts are usually easier and faster. Use code edits only when you need precise control.
-
----
-
-## 📖 Lesson 5: Learning from Code
-
-### Code as a Learning Tool
-
-Even if you don't edit code, **viewing it can teach you a lot!**
-
-### What You Can Learn
-
-1. **How Lovable structures projects** - See the organization
-2. **How features are built** - Understand the implementation
-3. **Code patterns** - See common approaches
-4. **Best practices** - Learn from Lovable's code quality
-
-### Example: Learning from a Button
-
-**You ask Lovable:**
-```
-Add a blue button that says "Click Me"
+```text
+Fix the validation timing in the referenced form.
+Preserve the schema, field labels, and submit behavior.
+Add a regression test and run it.
 ```
 
-**Then in Code Mode, you can see:**
-- How the button is created
-- How the color is applied
-- How the text is added
-- The structure and style
+Exact references improve scope and leave a clearer review trail.
 
-**This teaches you** how buttons work in code!
+## 4. Safe manual edits
 
-### Using Code to Improve Prompts
+Good manual edits are small and obvious:
 
-After viewing code, you might understand:
-- What's possible
-- How to describe things better
-- What to ask for in prompts
+- Correcting copy or an import
+- Adjusting one token or class
+- Fixing a simple condition
+- Adding a missing type
+- Updating a configuration value that is safe for source control
 
-**💡 Beginner Tip:** Don't feel pressured to understand code! View it out of curiosity, but stick with prompts for building.
+Use Build mode for cross-file features, migrations, auth, payment logic, or changes that need systematic tests.
 
----
+After a manual edit:
 
-## 🛠️ Hands-On Practice
+1. Format the file.
+2. Check diagnostics and imports.
+3. Refresh the preview.
+4. Run the relevant test, typecheck, or build command.
+5. Review the changed file in history or Git.
 
-### Practice 1: View Your Code
+## 5. Environment variables and secrets
 
-**Task:** Explore your project's code structure
+Variable names beginning with `VITE_` are public at runtime because their values are embedded in frontend output. Never store private API keys in them.
 
-1. **Open Code Mode** - Click the Code button/tab
-2. **Browse the files** - Click through different files
-3. **Open a component** - Click on a file like "Header.jsx" or "Button.jsx"
-4. **Look at the code** - See what Lovable created
-5. **Don't worry about understanding** - Just observe!
+Use Cloud secrets and an edge function for private credentials. It is fine for frontend code to contain identifiers or publishable keys designed for browser use, but confirm each service's security model.
 
-**What you learned:** Your project has organized code files, even though you built it with prompts!
+## 6. Download versus Git sync
 
-### Practice 2: Find a Specific Feature
+Download the codebase when you need a one-time copy. Use Git sync when you need:
 
-**Task:** Locate code for a feature you built
+- Continuous backup
+- Local development
+- Branches and pull requests
+- Code review
+- External CI/CD or hosting
+- Collaboration with developers
 
-1. **Think of a feature** - Like "the contact form" or "the navigation menu"
-2. **Look for it in Code Mode** - Browse files to find it
-3. **Open the file** - See how it's coded
-4. **Notice the structure** - See how it's organized
+Do not edit the same synced branch simultaneously in Lovable and locally without coordination. Pull and inspect changes before pushing to reduce conflicts.
 
-**What you learned:** Every feature you build with prompts has corresponding code!
+## Practice
 
-### Practice 3: Compare Prompt vs. Code (Optional)
+1. Find the framework and build scripts in `package.json`.
+2. Locate the component that renders the main card.
+3. Reference one exact line in Plan mode and ask for an explanation.
+4. Make a one-line manual copy edit.
+5. Use Build mode for a related behavioral change and ask it to run a test.
 
-**Task:** See how prompts translate to code
+## Official references
 
-1. **Make a change with a prompt:**
-   ```
-   Change the button color to red
-   ```
-2. **Open Code Mode** - Find the button file
-3. **See the change** - Notice how the code changed
-4. **Understand the connection** - Prompts modify code!
+- [View and edit project code](https://docs.lovable.dev/features/code-mode)
+- [Implement changes in Build mode](https://docs.lovable.dev/features/agent-mode)
+- [Git sync overview](https://docs.lovable.dev/integrations/git-sync-overview)
+- [Security overview](https://docs.lovable.dev/features/security)
 
-**What you learned:** Prompts and code are connected - prompts modify the code for you!
+[Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
 
----
-
-## ✅ Module 7 Checklist
-
-Before moving to Module 8, make sure you can:
-
-- [ ] Explain what Code Mode is
-- [ ] Know when to use Code Mode vs. prompts
-- [ ] View your project's code structure
-- [ ] Open and view code files
-- [ ] Understand that code editing requires a paid plan
-- [ ] Know that prompts work for everything on free plans
-- [ ] Use Code Mode as a learning tool (optional)
-
----
-
-## 🤔 Common Questions (FAQ)
-
-### Q: Do I need to learn code to use Lovable?
-**A:** No! You can build entire apps using only prompts. Code Mode is optional.
-
-### Q: Can I build everything with prompts?
-**A:** Yes! Prompts can handle almost everything. Code Mode is mainly for advanced customization.
-
-### Q: What if I want to learn code?
-**A:** Code Mode is great for learning! View the code Lovable creates to see how things work.
-
-### Q: Do I need a paid plan?
-**A:** Only if you want to edit code directly. You can view code on all plans, and prompts work on all plans.
-
-### Q: Is code editing hard?
-**A:** It can be, but you don't need it! Prompts are much easier for beginners.
-
-### Q: Should I use Code Mode or prompts?
-**A:** Start with prompts! Only use Code Mode if you're curious, learning, or need precise control.
-
----
-
-## 🎯 What's Next?
-
-Great job! You now understand Code Mode and when (or if) you might want to use it. Remember:
-- **Prompts are usually better** - Easier and faster
-- **Code Mode is optional** - You can build everything without it
-- **It's a learning tool** - Great for understanding how things work
-
-**Ready for Module 8?** In the next module, we'll learn how to deploy and publish your applications - making them live on the internet for the world to see!
-
----
-
-## 💡 Pro Tips for Beginners
-
-1. **Stick with prompts** - They're easier and work for almost everything
-
-2. **Don't be intimidated** - Code looks complex, but you don't need to understand it
-
-3. **Use Code Mode to learn** - View code out of curiosity, not necessity
-
-4. **Focus on building** - Prompts let you build without code knowledge
-
-5. **Learn gradually** - If you're interested in code, learn slowly by viewing what Lovable creates
-
-6. **Remember: You're not required to use Code Mode** - Many successful Lovable users never touch code!
-
----
-
-*Module 7 Complete! 🎉*
-
+Next: [Module 8 - Publishing and Operating Your App](module-08-deploying-and-publishing.md)

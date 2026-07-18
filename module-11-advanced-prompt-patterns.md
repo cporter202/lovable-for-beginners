@@ -1,469 +1,164 @@
 # Module 11: Advanced Prompt Patterns
 
-**Goal:** Master advanced techniques for complex applications
+Advanced prompting is less about clever wording and more about structuring work so Lovable can investigate, decide, implement, and verify without losing the important constraints.
 
-**Estimated Time:** 40-50 minutes
+## Learning goals
 
-**Prerequisites:** Complete Modules 1-5 first
+- Use prompts for audits, migrations, refactors, and staged delivery
+- Combine knowledge, skills, references, and subagents
+- Define invariants and rollback points for risky work
+- Review AI output as evidence, not authority
 
----
+## Pattern 1: Read-only audit
 
-## 🎯 What You'll Learn in This Module
+Use Plan mode when you need findings before changes.
 
-By the end of this module, you will:
-- Understand advanced prompt patterns for complex flows
-- Know how to create dynamic, data-driven content
-- Learn conditional logic in prompts
-- Understand how to handle loops and iterations
-- Be able to build more sophisticated applications
-- Know patterns for complex user interactions
+```text
+Audit the current authentication and authorization system without changing code.
 
----
+Trace:
+- Sign-up, sign-in, sign-out, password reset, and Google OAuth
+- Session loading and protected routing
+- Every database policy for user-owned data
+- Every edge function that depends on identity
 
-## 📖 Lesson 1: Dynamic Content Generation
-
-### What is Dynamic Content?
-
-**Dynamic content** changes based on data, user input, or conditions. Instead of static pages, you create pages that adapt.
-
-### Basic Dynamic Content
-
-**Example:**
-```
-Create a blog post page that displays:
-- Post title (from database)
-- Post content (from database)
-- Author name (from database)
-- Publication date (from database)
-- Related posts (based on category)
+Return:
+- A diagram of the current flow
+- Findings ordered by severity
+- Evidence with file or policy references
+- A minimal remediation plan
+- Tests that would prove each fix
 ```
 
-**What this does:** Creates a template that fills with different data for each post.
+## Pattern 2: Invariants for fragile changes
 
-### Advanced Dynamic Patterns
+An invariant is behavior that must remain true.
 
-#### Pattern 1: Conditional Display
+```text
+Add organization switching while preserving these invariants:
+- A user never reads data from an organization they do not belong to
+- Existing single-organization accounts continue to work
+- Refreshing preserves the active organization
+- Server-side operations derive authorization from the session
+- Current email and Google sign-in flows are unchanged
 
-**Example:**
-```
-On the product page, show different content based on product availability:
-- If product is in stock: Show "Add to Cart" button and stock count
-- If product is out of stock: Show "Notify Me" button and "Out of Stock" message
-- If product is on sale: Show sale badge and discounted price
-```
-
-#### Pattern 2: Data-Driven Lists
-
-**Example:**
-```
-Create a task list that:
-- Shows all tasks from the database
-- Displays different information based on task status:
-  - Pending tasks: Show in yellow with "Complete" button
-  - Completed tasks: Show in green with strikethrough
-  - Overdue tasks: Show in red with warning icon
-- Updates automatically when tasks change
+Inspect the implementation first. If any invariant conflicts with the current
+architecture, stop and explain before changing code.
 ```
 
-#### Pattern 3: User-Specific Content
+## Pattern 3: Staged migration
 
-**Example:**
-```
-Create a dashboard that shows:
-- Personalized greeting with user's name
-- Content based on user's role:
-  - Admin users: Show admin panel and all data
-  - Regular users: Show only their own data
-  - Guest users: Show limited preview
-- Recommendations based on user's activity
-```
+For schema or architecture changes, separate additive, backfill, switch, and cleanup stages.
 
-**💡 Beginner Tip:** Start simple, then add conditions. Build the basic version first, then add the conditional logic.
+```text
+Plan the migration from a single `name` column to `first_name` and `last_name`.
+Use four reversible stages:
+1. Additive schema and compatibility reads
+2. Backfill with verification queries
+3. Switch writes and UI
+4. Remove old behavior only after validation
 
----
-
-## 📖 Lesson 2: Conditional Logic in Prompts
-
-### What is Conditional Logic?
-
-**Conditional logic** means "if this, then that" - showing different content or behavior based on conditions.
-
-### Basic Conditional Patterns
-
-#### Pattern 1: Simple If-Then
-
-**Example:**
-```
-Create a user profile page that:
-- If user is logged in: Show full profile with edit button
-- If user is not logged in: Show limited preview with "Sign up to see more" message
+For each stage include rollback, data checks, affected files, and tests.
+Do not combine destructive cleanup with the initial deployment.
 ```
 
-#### Pattern 2: Multiple Conditions
+## Pattern 4: Vertical slices
 
-**Example:**
-```
-Create a product card component that displays differently based on:
-- Product availability (in stock, out of stock, pre-order)
-- Product type (physical, digital, subscription)
-- User's purchase history (new, previously purchased, in cart)
-Show appropriate buttons and information for each combination
-```
+Build one complete user outcome across UI, data, authorization, and tests before starting the next.
 
-#### Pattern 3: Conditional Styling
+```text
+Implement only the "create club" vertical slice:
+- Form and validation
+- Server-side creation
+- Owner membership
+- RLS
+- Loading, duplicate, success, and failure states
+- Frontend and edge tests
+- Browser verification
 
-**Example:**
-```
-Style the task list items based on priority:
-- High priority tasks: Red background, bold text, urgent icon
-- Medium priority tasks: Yellow background, normal text
-- Low priority tasks: Gray background, lighter text
-- Completed tasks: Green checkmark, strikethrough, grayed out
+Do not implement invitations, books, or notes yet.
 ```
 
-### Advanced Conditional Patterns
+## Pattern 5: Evidence-based debugging
 
-#### Pattern 4: Nested Conditions
+```text
+Investigate the intermittent duplicate order issue.
+Do not propose a fix until you have:
+- A reproducible sequence or strongest available evidence
+- The request path from click to database write
+- Any retry, timeout, webhook, or double-submit behavior
+- The database constraints that should prevent duplication
 
-**Example:**
-```
-Create a notification system that shows different messages based on:
-- User type (admin, member, guest)
-  - If admin: Show all notifications including system alerts
-  - If member: Show user-specific notifications
-  - If guest: Show only public announcements
-- Notification type (message, alert, update)
-  - Messages: Show sender and preview
-  - Alerts: Show with warning icon
-  - Updates: Show with info icon
-- Read status (read, unread)
-  - Unread: Bold and highlighted
-  - Read: Normal styling
+Separate confirmed facts, likely causes, and unknowns.
 ```
 
-#### Pattern 5: Conditional Features
+## Pattern 6: Cross-project reuse
 
-**Example:**
-```
-Add features to the dashboard based on subscription level:
-- Free users: Basic features only
-- Pro users: Add advanced analytics and export
-- Enterprise users: Add team collaboration and API access
-Show upgrade prompts for features locked to higher tiers
+```text
+Use @MainApp as a read-only reference.
+Reuse its accessible form field and error-summary pattern in this project,
+but keep this project's colors, routes, dependencies, and data model.
+List what you copied or adapted and confirm @MainApp was not modified.
 ```
 
-**💡 Beginner Tip:** Break complex conditions into smaller parts. Build one condition at a time, test it, then add the next.
+## Pattern 7: Parallel investigation with subagents
 
----
+Lovable may use temporary read-only subagents for focused research and code exploration. They cannot edit files. The main agent combines their findings and makes changes.
 
-## 📖 Lesson 3: Loops and Iterations
+```text
+Use subagents to investigate this dashboard slowdown:
+- One should trace data fetching and database queries
+- One should inspect rendering and state updates
+- One should review bundle and asset costs
+- One should compare the current behavior with our performance requirements
 
-### What are Loops?
-
-**Loops** repeat actions for multiple items. Like saying "do this for each item in the list."
-
-### Basic Loop Patterns
-
-#### Pattern 1: Display List Items
-
-**Example:**
-```
-Create a blog listing page that:
-- Fetches all blog posts from the database
-- For each post, display:
-  - Post title (as clickable link)
-  - Featured image
-  - Excerpt (first 150 characters)
-  - Author name
-  - Publication date
-  - Read more button
-- Show 10 posts per page with pagination
+Combine the evidence into a prioritized plan. Do not change code yet.
 ```
 
-#### Pattern 2: Generate Multiple Components
+Subagents start with only the context Lovable gives them, so include important scope and constraints in the main request.
 
-**Example:**
-```
-Create a services page that displays:
-- For each service in the database, create a service card showing:
-  - Service name
-  - Description
-  - Price
-  - "Learn More" button
-- Arrange cards in a responsive grid (3 columns on desktop, 1 on mobile)
-```
+## Pattern 8: Reusable workspace skills
 
-#### Pattern 3: Dynamic Forms
+Skills are on-demand playbooks available across a workspace. Use them for repeatable workflows such as launch reviews, accessibility passes, release notes, or security handoffs. They can be invoked with a slash command or selected automatically when the description matches.
 
-**Example:**
-```
-Create a dynamic survey form that:
-- Loads questions from the database
-- For each question, displays:
-  - Question text
-  - Appropriate input type (text, multiple choice, rating, etc.)
-  - Required/optional indicator
-- Validates and submits all answers together
+Knowledge should contain always-on rules. A skill should contain a task-specific procedure.
+
+Example release skill content:
+
+```text
+When preparing a release:
+1. Identify the version being shipped and user-visible changes.
+2. Run focused tests, build, typecheck, and browser verification.
+3. Run current Basic and Deep security scans.
+4. Review metadata and SEO/AEO findings.
+5. Confirm rollback point and production owner.
+6. Return a go/no-go decision with evidence and unresolved risks.
 ```
 
-### Advanced Loop Patterns
+Workspace owners and admins manage custom skills. Skills can be written, built with Lovable, imported from GitHub or ZIP, or saved from a successful chat workflow.
 
-#### Pattern 4: Nested Loops
+## Pattern 9: Review against acceptance criteria
 
-**Example:**
-```
-Create a category page that shows:
-- For each category:
-  - Category name and description
-  - For each product in that category:
-    - Product card with image, name, price
-  - "View All" link for the category
-- Organize categories in sections
+```text
+Review the implementation against the approved plan and acceptance criteria.
+Do not make changes.
+
+For each criterion report Pass, Fail, or Not verified, with evidence.
+Then list regressions, security concerns, missing tests, and scope drift.
 ```
 
-#### Pattern 5: Conditional Loops
+## Practice
 
-**Example:**
-```
-Create a task dashboard that:
-- For each task category (Work, Personal, Shopping):
-  - Show category header
-  - For each task in that category:
-    - If task is not completed: Show full task card
-    - If task is completed: Show collapsed/minimized card
-  - Show category statistics (total, completed, pending)
-```
+Choose one real feature and produce: a read-only audit, an invariant list, a staged plan, one vertical-slice implementation prompt, and a final evidence-based review.
 
-**💡 Beginner Tip:** Loops are powerful! Use them whenever you need to display multiple similar items.
+## Official references
 
----
+- [Plan mode](https://docs.lovable.dev/features/plan-mode)
+- [Subagents](https://docs.lovable.dev/features/subagents)
+- [Workspace skills](https://docs.lovable.dev/features/skills)
+- [Knowledge](https://docs.lovable.dev/features/knowledge)
+- [Cross-project referencing](https://docs.lovable.dev/features/cross-project-referencing)
 
-## 📖 Lesson 4: Complex User Flows
+[Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
 
-### What are User Flows?
-
-**User flows** are the paths users take through your app to complete tasks. Complex flows have multiple steps and decisions.
-
-### Multi-Step Flow Patterns
-
-#### Pattern 1: Wizard/Onboarding Flow
-
-**Example:**
-```
-Create a multi-step onboarding wizard:
-- Step 1: Welcome and account setup
-- Step 2: Profile information (name, bio, preferences)
-- Step 3: Choose interests/categories
-- Step 4: Set preferences and notifications
-- Step 5: Confirmation and completion
-Each step should:
-- Save progress (so users can go back)
-- Show progress indicator
-- Have "Next" and "Back" buttons
-- Validate before proceeding
-```
-
-#### Pattern 2: Checkout Flow
-
-**Example:**
-```
-Create a checkout process with steps:
-- Step 1: Review cart items
-- Step 2: Shipping information
-- Step 3: Payment method
-- Step 4: Order confirmation
-- Each step validates before allowing next step
-- Show progress: "Step 2 of 4"
-- Allow going back to previous steps
-- Save information as user progresses
-```
-
-#### Pattern 3: Approval Workflow
-
-**Example:**
-```
-Create a content approval system:
-- Author creates content → Status: "Draft"
-- Author submits for review → Status: "Pending Review"
-- Reviewer approves → Status: "Approved" → Published
-- Reviewer rejects → Status: "Rejected" → Returned to author with comments
-- Show different views based on status and user role
-```
-
-### State Management Patterns
-
-#### Pattern 4: Form State Management
-
-**Example:**
-```
-Create a complex form that:
-- Saves progress automatically as user types
-- Shows which fields are completed
-- Validates fields in real-time
-- Shows error messages immediately
-- Allows saving as draft
-- Prevents data loss if user navigates away
-```
-
-#### Pattern 5: Multi-Select with Dependencies
-
-**Example:**
-```
-Create a product configuration form where:
-- User selects product type → Shows relevant options
-- User selects size → Updates available colors
-- User selects color → Updates available materials
-- Each selection updates what's available next
-- Shows running total price
-- Validates that all required selections are made
-```
-
-**💡 Beginner Tip:** Break complex flows into clear steps. Test each step before building the next.
-
----
-
-## 📖 Lesson 5: Advanced Prompt Structures
-
-### Pattern 1: Template-Based Generation
-
-**Example:**
-```
-Create email templates for different scenarios:
-- Welcome email (when user signs up)
-- Password reset email
-- Order confirmation email
-- Newsletter email
-Each template should:
-- Use user's name dynamically
-- Include relevant information
-- Match brand styling
-- Be responsive for email clients
-```
-
-### Pattern 2: Component Composition
-
-**Example:**
-```
-Build a dashboard using reusable components:
-- Header component (used on all pages)
-- Stats card component (reused for different metrics)
-- Chart component (used for different data visualizations)
-- Action button component (consistent across app)
-Each component should be flexible and reusable
-```
-
-### Pattern 3: Data Transformation
-
-**Example:**
-```
-Create a data display that:
-- Fetches raw data from API
-- Transforms it: formats dates, calculates totals, groups by category
-- Displays in user-friendly format:
-  - Charts for numerical data
-  - Tables for structured data
-  - Cards for individual items
-- Updates when data changes
-```
-
-### Pattern 4: Event-Driven Patterns
-
-**Example:**
-```
-Create an interactive app where:
-- User actions trigger updates:
-  - Clicking "Like" updates like count immediately
-  - Adding to cart updates cart icon badge
-  - Submitting form shows success message
-- Multiple components update based on same action
-- Changes reflect immediately without page refresh
-```
-
----
-
-## 🛠️ Hands-On Practice
-
-### Practice 1: Dynamic Product Display
-
-**Challenge:** Create a product listing that shows different information based on product status.
-
-**Requirements:**
-- Display products from database
-- Show "In Stock" badge for available products
-- Show "Sale" badge for discounted products
-- Show "New" badge for recently added products
-- Different styling for each status
-- Products can have multiple badges
-
-**💡 Hint:** Use conditional logic in your prompt to handle different statuses.
-
-### Practice 2: Multi-Step Form
-
-**Challenge:** Create a registration form with 3 steps.
-
-**Requirements:**
-- Step 1: Basic info (name, email)
-- Step 2: Preferences (interests, newsletter)
-- Step 3: Confirmation
-- Progress indicator
-- Can go back to previous steps
-- Validates each step
-
-**💡 Hint:** Build one step at a time, then connect them.
-
-### Practice 3: Conditional Dashboard
-
-**Challenge:** Create a dashboard that changes based on user role.
-
-**Requirements:**
-- Admin users see: All users, system stats, admin tools
-- Regular users see: Their own data, personal stats
-- Guest users see: Limited preview, sign up prompt
-- Same page, different content
-
-**💡 Hint:** Use conditional logic to show/hide sections based on user role.
-
----
-
-## ✅ Module 11 Checklist
-
-Before moving to the next module, make sure you can:
-
-- [ ] Create dynamic content that changes based on data
-- [ ] Use conditional logic in prompts
-- [ ] Create loops for displaying multiple items
-- [ ] Build multi-step user flows
-- [ ] Handle complex state management
-- [ ] Use advanced prompt patterns effectively
-
----
-
-## 🤔 Common Questions (FAQ)
-
-### Q: How complex can prompts get?
-**A:** Very complex! But start simple and build up. Break complex requests into smaller parts.
-
-### Q: Should I use these patterns for simple projects?
-**A:** Not always. Use simple prompts for simple projects. Use advanced patterns when you need the complexity.
-
-### Q: What if my conditional logic doesn't work?
-**A:** Break it down. Test each condition separately, then combine them.
-
-### Q: Can I combine multiple patterns?
-**A:** Yes! Advanced apps often use multiple patterns together.
-
----
-
-## 🎯 What's Next?
-
-Great work! You now understand advanced prompt patterns. These techniques help you build more sophisticated applications.
-
-**Continue learning with:**
-- Module 12: Performance and Optimization
-- Module 13: Advanced API Integration
-- Or go back to Module 9 to build your capstone project!
-
----
-
-*Module 11 Complete! 🎉*
-
+Next: [Module 12 - Performance, SEO, and Operations](module-12-performance-and-optimization.md)
