@@ -12,11 +12,13 @@ All content is freely available for everyone.
 ![Beginner Friendly](https://img.shields.io/badge/Beginner%20Friendly-32CD32?style=for-the-badge&logoColor=ffffff)
 ![No Code Required](https://img.shields.io/badge/No%20Code%20Required-6A0DAD?style=for-the-badge&logoColor=ffffff)
 
+[![GitHub Stars](https://img.shields.io/github/stars/cporter202/lovable-for-beginners?style=for-the-badge&logo=github&color=FFD700)](https://github.com/cporter202/lovable-for-beginners/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/cporter202/lovable-for-beginners?style=for-the-badge&logo=github&color=32CD32)](https://github.com/cporter202/lovable-for-beginners/forks)
+[![GitHub Issues](https://img.shields.io/github/issues/cporter202/lovable-for-beginners?style=for-the-badge&logo=github&color=FF6B6B)](https://github.com/cporter202/lovable-for-beginners/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/cporter202/lovable-for-beginners?style=for-the-badge&logo=github&color=0066FF)](https://github.com/cporter202/lovable-for-beginners/commits/main)
+[![Repo Size](https://img.shields.io/github/repo-size/cporter202/lovable-for-beginners?style=for-the-badge&logo=github&color=6A0DAD)](https://github.com/cporter202/lovable-for-beginners)
+
 [![Lovable Platform](https://firebasestorage.googleapis.com/v0/b/facesift.firebasestorage.app/o/user_uploads%2F83EXwNWgaKe1BHmyd9ISw3HCEfi2%2F1765069752349-Screenshot%202025-12-06%20200858.png?alt=media&token=b4b0a8ea-e345-43ee-9da9-e9da54fb00b3)](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
-
-[![Buy Me A Coffee](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=viralwavestudio&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff)](https://buymeacoffee.com/viralwavestudio)
-
-**💚 If this repo has helped you, consider buying me a coffee!** Your support keeps me creating valuable content and keeping everything up to date!
 
 </div>
 
