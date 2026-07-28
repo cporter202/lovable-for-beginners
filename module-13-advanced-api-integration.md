@@ -2,7 +2,7 @@
 
 An integration is secure only when credentials, authorization, rate limits, failure behavior, and data ownership are designed together. Lovable offers app connectors, app-user connectors, chat connectors, and custom APIs for different jobs.
 
-> Build an integration while following the guide: [Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github).
+> Build an integration while following the guide: [Open Lovable](https://lovablelabs.pxf.io/bky1Kg).
 
 ## Learning goals
 
@@ -147,6 +147,6 @@ Use direct edge-function calls for isolation, edge tests for durable rules, and 
 - [Chat connectors and MCP](https://docs.lovable.dev/integrations/mcp-servers)
 - [Test and verify your app](https://docs.lovable.dev/features/testing)
 
-[Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
+[Open Lovable](https://lovablelabs.pxf.io/bky1Kg)
 
 Next: [Module 14 - Git Sync and Collaboration](module-14-version-control-github.md)

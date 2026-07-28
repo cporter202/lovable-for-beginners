@@ -2,7 +2,7 @@
 
 Lovable has two complementary working modes. The current interface calls them Build and Plan. Some official pages and older project history may use Agent mode for Build and Chat mode for Plan.
 
-> Follow along in the editor: [Open Lovable and try Build and Plan modes](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github).
+> Follow along in the editor: [Open Lovable and try Build and Plan modes](https://lovablelabs.pxf.io/bky1Kg).
 
 ## Learning goals
 
@@ -148,6 +148,6 @@ In your reading-list project:
 - [Credits and usage](https://docs.lovable.dev/introduction/credits-and-usage)
 - [Test your app in a browser](https://docs.lovable.dev/features/browser-testing)
 
-[Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
+[Open Lovable](https://lovablelabs.pxf.io/bky1Kg)
 
 Next: [Module 4 - Editing, Knowledge, and Iteration](module-04-editing-and-refining.md)

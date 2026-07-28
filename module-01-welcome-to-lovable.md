@@ -4,7 +4,7 @@ Lovable is a full-stack AI development platform for building, iterating on, and 
 
 This course was reviewed against the official Lovable documentation on July 18, 2026.
 
-> Build alongside this lesson: [Open Lovable and create your first project](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github).
+> Build alongside this lesson: [Open Lovable and create your first project](https://lovablelabs.pxf.io/bky1Kg).
 
 ## Learning goals
 
@@ -122,6 +122,6 @@ You are ready for Module 2 when you can:
 - [Dashboard overview](https://docs.lovable.dev/introduction/dashboard-overview)
 - [Lovable FAQ and current tech stacks](https://docs.lovable.dev/introduction/faq)
 
-[Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
+[Open Lovable](https://lovablelabs.pxf.io/bky1Kg)
 
 Next: [Module 2 - Starting Your First Project](module-02-starting-your-first-project.md)

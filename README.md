@@ -8,8 +8,8 @@ Plan the product. Build the interface. Connect the backend. Test it. Secure it. 
 
 [![15 Modules](https://img.shields.io/badge/Modules-15-111827?style=for-the-badge)](#learning-roadmap)
 [![Updated July 2026](https://img.shields.io/badge/Updated-July_2026-0F766E?style=for-the-badge)](https://docs.lovable.dev/llms.txt)
-[![Beginner Friendly](https://img.shields.io/badge/Beginner-Friendly-16A34A?style=for-the-badge)](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
-[![No Code Required](https://img.shields.io/badge/No_Code-Required-2563EB?style=for-the-badge)](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
+[![Beginner Friendly](https://img.shields.io/badge/Beginner-Friendly-16A34A?style=for-the-badge)](https://lovablelabs.pxf.io/bky1Kg)
+[![No Code Required](https://img.shields.io/badge/No_Code-Required-2563EB?style=for-the-badge)](https://lovablelabs.pxf.io/bky1Kg)
 
 [![GitHub Stars](https://img.shields.io/github/stars/cporter202/lovable-for-beginners?style=flat-square&logo=github&color=F59E0B)](https://github.com/cporter202/lovable-for-beginners/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/cporter202/lovable-for-beginners?style=flat-square&logo=github&color=22C55E)](https://github.com/cporter202/lovable-for-beginners/forks)
@@ -17,9 +17,9 @@ Plan the product. Build the interface. Connect the backend. Test it. Secure it. 
 [![Last Commit](https://img.shields.io/github/last-commit/cporter202/lovable-for-beginners?style=flat-square&logo=github&color=3B82F6)](https://github.com/cporter202/lovable-for-beginners/commits/main)
 [![Repo Size](https://img.shields.io/github/repo-size/cporter202/lovable-for-beginners?style=flat-square&logo=github&color=64748B)](https://github.com/cporter202/lovable-for-beginners)
 
-[![Lovable Platform](https://firebasestorage.googleapis.com/v0/b/facesift.firebasestorage.app/o/user_uploads%2F83EXwNWgaKe1BHmyd9ISw3HCEfi2%2F1765069752349-Screenshot%202025-12-06%20200858.png?alt=media&token=b4b0a8ea-e345-43ee-9da9-e9da54fb00b3)](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
+[![Lovable Platform](https://firebasestorage.googleapis.com/v0/b/facesift.firebasestorage.app/o/user_uploads%2F83EXwNWgaKe1BHmyd9ISw3HCEfi2%2F1765069752349-Screenshot%202025-12-06%20200858.png?alt=media&token=b4b0a8ea-e345-43ee-9da9-e9da54fb00b3)](https://lovablelabs.pxf.io/bky1Kg)
 
-**[Start Building with Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)**
+**[Start Building with Lovable](https://lovablelabs.pxf.io/bky1Kg)**
 
 [Explore the course](#learning-roadmap) &nbsp;|&nbsp; [Open the quick reference](supplement-quick-reference.md) &nbsp;|&nbsp; [View practice solutions](supplement-challenge-solutions.md)
 
@@ -77,7 +77,7 @@ Build a strong product foundation before adding backend complexity.
 | **04** | [Editing, Knowledge, and Iteration](module-04-editing-and-refining.md) | Use the preview toolbar, persistent context, references, comments, and history |
 | **05** | [Prompting for Reliable Results](module-05-prompt-engineering.md) | Write scoped prompts with constraints, states, acceptance criteria, and verification |
 
-> **Foundation checkpoint:** [Open Lovable and build your first complete workflow](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github).
+> **Foundation checkpoint:** [Open Lovable and build your first complete workflow](https://lovablelabs.pxf.io/bky1Kg).
 
 ### Phase 2: Full-stack delivery
 
@@ -91,7 +91,7 @@ Turn the interface into a secure, tested, published application.
 | **09** | [Real-World Project: Book Club Hub](module-09-real-world-project.md) | Build a complete multi-user app through reviewable milestones |
 | **10** | [Debugging, Testing, and Security](module-10-debugging-and-testing.md) | Reproduce failures, prove fixes, prevent regressions, and review vulnerabilities |
 
-> **Launch checkpoint:** [Build, test, and publish your app with Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github).
+> **Launch checkpoint:** [Build, test, and publish your app with Lovable](https://lovablelabs.pxf.io/bky1Kg).
 
 ### Phase 3: Advanced practice
 
@@ -105,7 +105,7 @@ Scale your workflow, integrations, collaboration, and infrastructure choices.
 | **14** | [Git Sync and Collaboration](module-14-version-control-github.md) | Work with repositories, branches, local development, pull requests, and CI |
 | **15** | [External Hosting and Portability](module-15-deploying-to-custom-clouds.md) | Choose hybrid or external hosting based on the project's real stack and constraints |
 
-> **Advanced checkpoint:** [Open Lovable and apply the advanced workflows](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github).
+> **Advanced checkpoint:** [Open Lovable and apply the advanced workflows](https://lovablelabs.pxf.io/bky1Kg).
 
 ## The capstone
 
@@ -123,7 +123,7 @@ The project is intentionally milestone-based so you learn how to review architec
 
 ## Quick start
 
-1. **[Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)** and create a free account or enter your workspace.
+1. **[Open Lovable](https://lovablelabs.pxf.io/bky1Kg)** and create a free account or enter your workspace.
 2. Start with [Module 1](module-01-welcome-to-lovable.md) and create the reading-list practice project.
 3. Keep the [Quick Reference](supplement-quick-reference.md) open while you build.
 4. Complete Modules 1-10 in order, then choose advanced modules based on your project.
@@ -161,7 +161,7 @@ You do not need the perfect idea or a complete specification. Start with one use
 
 <div align="center">
 
-**[Open Lovable and Build Your First App](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)**
+**[Open Lovable and Build Your First App](https://lovablelabs.pxf.io/bky1Kg)**
 
 [Begin Module 1](module-01-welcome-to-lovable.md) &nbsp;|&nbsp; [Use the cheat sheet](supplement-quick-reference.md) &nbsp;|&nbsp; [Review the capstone](module-09-real-world-project.md)
 

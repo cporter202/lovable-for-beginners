@@ -2,7 +2,7 @@
 
 Lovable Cloud is the default managed path from a frontend prototype to a working full-stack app. It provides hosting, database, authentication, storage, edge functions, jobs, AI, secrets, logs, and usage controls on a Supabase-compatible open-source foundation.
 
-> Add a backend to your practice app: [Open Lovable Cloud in Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github).
+> Add a backend to your practice app: [Open Lovable Cloud in Lovable](https://lovablelabs.pxf.io/bky1Kg).
 
 ## Learning goals
 
@@ -145,6 +145,6 @@ Before continuing:
 - [Security overview](https://docs.lovable.dev/features/security)
 - [Add payments](https://docs.lovable.dev/features/payments)
 
-[Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
+[Open Lovable](https://lovablelabs.pxf.io/bky1Kg)
 
 Next: [Module 7 - Inspecting and Editing Code](module-07-code-mode.md)

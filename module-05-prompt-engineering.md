@@ -2,7 +2,7 @@
 
 Prompting is product specification in compact form. The most reliable prompts define the user outcome, constrain scope, name important states, and say how success will be verified.
 
-> Test the prompt patterns as you read: [Start building in Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github).
+> Test the prompt patterns as you read: [Start building in Lovable](https://lovablelabs.pxf.io/bky1Kg).
 
 ## Learning goals
 
@@ -159,6 +159,6 @@ Avoid "try again" or "make it nicer." Instead:
 - [Debugging prompts](https://docs.lovable.dev/prompting/prompting-debugging)
 - [Test and verify your app](https://docs.lovable.dev/features/testing)
 
-[Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
+[Open Lovable](https://lovablelabs.pxf.io/bky1Kg)
 
 Next: [Module 6 - Full-Stack Apps with Lovable Cloud](module-06-adding-fullstack-capabilities.md)

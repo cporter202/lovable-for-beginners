@@ -2,7 +2,7 @@
 
 Use this guide to move from symptom to evidence. Menu names and plan availability are current as of July 18, 2026.
 
-> Troubleshoot alongside your project: [Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github).
+> Troubleshoot alongside your project: [Open Lovable](https://lovablelabs.pxf.io/bky1Kg).
 
 ## First response to any issue
 

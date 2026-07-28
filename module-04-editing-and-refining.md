@@ -2,7 +2,7 @@
 
 Good Lovable work is iterative. Use the smallest editing surface that fits the change, give the agent persistent context where useful, and keep version history as part of the workflow.
 
-> Practice these editing workflows: [Open your project in Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github).
+> Practice these editing workflows: [Open your project in Lovable](https://lovablelabs.pxf.io/bky1Kg).
 
 ## Learning goals
 
@@ -145,6 +145,6 @@ Use all four preview-toolbar modes on one project. Add project knowledge, refere
 - [Cross-project referencing](https://docs.lovable.dev/features/cross-project-referencing)
 - [Project comments](https://docs.lovable.dev/features/project-comments)
 
-[Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
+[Open Lovable](https://lovablelabs.pxf.io/bky1Kg)
 
 Next: [Module 5 - Prompting for Reliable Results](module-05-prompt-engineering.md)

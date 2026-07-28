@@ -2,7 +2,7 @@
 
 Optimization begins with measurement. A fast preview does not prove a fast production experience, and a high pageview count does not prove users completed the key workflow.
 
-> Audit and optimize a live project: [Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github).
+> Audit and optimize a live project: [Open Lovable](https://lovablelabs.pxf.io/bky1Kg).
 
 ## Learning goals
 
@@ -140,6 +140,6 @@ Lovable cannot monitor production infrastructure hosted outside its control. Ext
 - [Lovable Cloud](https://docs.lovable.dev/integrations/cloud)
 - [Debugging prompts](https://docs.lovable.dev/prompting/prompting-debugging)
 
-[Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
+[Open Lovable](https://lovablelabs.pxf.io/bky1Kg)
 
 Next: [Module 13 - Advanced Integrations and APIs](module-13-advanced-api-integration.md)

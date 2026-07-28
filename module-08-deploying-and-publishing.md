@@ -2,7 +2,7 @@
 
 Publishing deploys a snapshot of the current project to a live URL. Later edits remain in preview until you explicitly publish an update.
 
-> Prepare a project for launch: [Open Lovable and follow the release checklist](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github).
+> Prepare a project for launch: [Open Lovable and follow the release checklist](https://lovablelabs.pxf.io/bky1Kg).
 
 ## Learning goals
 
@@ -119,6 +119,6 @@ Project monitoring is a Pro, Business, and Enterprise beta feature. It can run d
 - [Project analytics](https://docs.lovable.dev/features/analytics)
 - [Project monitoring](https://docs.lovable.dev/features/project-monitoring)
 
-[Open Lovable](https://afflat3a2.com/trk/lnk/7BB81506-2890-47A0-9BDD-D03343EC49CB/?o=32337&c=918277&a=184866&k=D5D811C96B2D90FAF2ABF3287B46C45F&l=38178&s1=github)
+[Open Lovable](https://lovablelabs.pxf.io/bky1Kg)
 
 Next: [Module 9 - Build a Complete App](module-09-real-world-project.md)
